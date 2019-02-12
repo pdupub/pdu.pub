@@ -1,1 +1,3 @@
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+
+theme: jekyll-theme-architect
