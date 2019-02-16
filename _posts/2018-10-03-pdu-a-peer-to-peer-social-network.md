@@ -14,7 +14,7 @@ tags:
 Parallel Digital Universe - A Peer-to-Peer Social Network
 
 email: hello@pdu.pub
-微信: ![wechat](Wechat.png)
+微信: pengpengt00
 
 [![GoDoc](https://img.shields.io/badge/godoc-reference-blue.svg)](https://godoc.org/github.com/pdupub/go-pdu)
 [![GoReport](https://goreportcard.com/badge/github.com/pdupub/go-pdu)](https://goreportcard.com/report/github.com/pdupub/go-pdu)
