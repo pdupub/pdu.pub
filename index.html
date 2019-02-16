@@ -2,7 +2,11 @@
 layout: default
 ---
 
+<!-- Before Posts -->
+
 {% for post in paginator.posts %}
+<!-- Post -->
+
 <div class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
         <h2 class="post-title">
@@ -14,11 +18,7 @@ layout: default
         </h3>
         {% endif %}
         <div class="post-content-preview">
-            {% if post.lang == 'en' %}
-                {{ post.content | strip_html | truncate:300 }}
-            {% else %}
                 {{ post.content | strip_html | truncate:200 }}
-            {% endif %}
         </div>
     </a>
     <p class="post-meta">
@@ -27,6 +27,9 @@ layout: default
 </div>
 <hr>
 {% endfor %}
+
+
+<!-- End Posts -->
 
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
