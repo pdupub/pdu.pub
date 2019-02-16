@@ -13,4 +13,4 @@ theme: jekyll-theme-architect
 # Sidebar settings
 sidebar: true
 sidebar-about-description: "Email: <a href=\"emailto:hello@pdu.pub\">hello@pdu.pub</a>"
-sidebar-avatar: Wechat.png
+sidebar-avatar: assets/images/Wechat.png
