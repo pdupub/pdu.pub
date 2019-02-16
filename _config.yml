@@ -1,8 +1,8 @@
 # Site settings
-title: PDU:一种点对点的社交网络 | Peer-to-Peer Social Network | pdu.pub
+title: 一种点对点的SNS
 SEOTitle: PDU:一种点对点的社交网络 | Peer-to-Peer Social Network | pdu.pub
 email: hello@pdu.pub
-description: "PDU是一种在纯粹P2P的环境下增加账户创建成本的方式，并基于这种账户系统，构建完整的P2P社交网络形态。"
+description: "Parallel Digital Universe - A Peer-to-Peer Social Network"
 keyword: "p2p, sns, social network, pdu"
 url: "https://pdu.pub"
 baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
