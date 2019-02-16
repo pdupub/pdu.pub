@@ -1,3 +1,15 @@
+---
+layout:     post
+title:      "PDU:一种点对点的社交网络"
+subtitle:   "Parallel Digital Universe - A Peer-to-Peer Social Network""
+date:       2018-10-03 10:00:00
+author:     "Liu Peng"
+catalog: true
+tags:
+    - SNS
+    - P2P
+---
+
 # PDU:一种点对点的社交网络
 Parallel Digital Universe - A Peer-to-Peer Social Network
 
