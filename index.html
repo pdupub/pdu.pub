@@ -2,8 +2,6 @@
 layout: default
 ---
 
-<!-- Before Posts -->
-
 {% for post in site.posts %}
 <!-- Post -->
 
@@ -28,9 +26,6 @@ layout: default
 <hr>
 {% endfor %}
 
-
-<!-- End Posts -->
-
 <!-- Pager -->
 {% if paginator.total_pages > 1 %}
 <ul class="pager">
@@ -46,3 +41,5 @@ layout: default
     {% endif %}
 </ul>
 {% endif %}
+
+
