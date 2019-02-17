@@ -2,8 +2,13 @@
 title: 点对点的SNS
 SEOTitle: PDU:一种点对点的社交网络 | Peer-to-Peer Social Network | pdu.pub
 email: hello@pdu.pub
+wechat: pengpengt00
 description: "Parallel Digital Universe - A Peer-to-Peer Social Network"
 keyword: "p2p, sns, social network, pdu"
 url: "https://pdu.pub"
 baseurl: ""                             
 theme: jekyll-theme-architect
+
+show_downloads: true
+github:
+  zip_url: "https://github.com/pdupub/go-pdu/archive/master.zip"
