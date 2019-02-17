@@ -5,12 +5,5 @@ email: hello@pdu.pub
 description: "Parallel Digital Universe - A Peer-to-Peer Social Network"
 keyword: "p2p, sns, social network, pdu"
 url: "https://pdu.pub"
-baseurl: ""                             # for example, '/blog' if your blog hosted on 'host/blog'
+baseurl: ""                             
 theme: jekyll-theme-architect
-
-post_ext: md
-
-# Sidebar settings
-sidebar: true
-sidebar-about-description: "Email: <a href=\"emailto:hello@pdu.pub\">hello@pdu.pub</a>"
-sidebar-avatar: assets/images/Wechat.png
