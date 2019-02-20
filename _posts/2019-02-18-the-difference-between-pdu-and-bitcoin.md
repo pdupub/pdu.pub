@@ -2,7 +2,7 @@
 layout: post
 title: "PDU和Bitcoin的N点区别"
 subtitle: "What is the difference between PDU and Bitcoin?"
-author: "liupeng@pdu.pub"
+author: Liu Peng <liupeng@pdu.pub>
 ---
 PDU和以Bitcoin为代表的基于区块链的数字加密货币是完全不同的概念，本文之所以类比其不同，只是试图以Bitcoin为参照物，在介绍PDU的过程中，能有一个更为具体的形象，方便记忆、理解。
 
