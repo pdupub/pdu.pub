@@ -2,7 +2,7 @@
 layout: post
 title: "PDU 一种点对点的社交网络"
 subtitle: "Parallel Digital Universe - A Peer-to-Peer Social Network"
-author: "liupeng@pdu.pub"
+author: Liu Peng<liupeng@pdu.pub>
 ---
 SNS，即社交网络服务，如Facebook，用户可以在其上创建身份，维护社交关系并进行信息传播，交互。但现有的SNS均依赖于某个第三方的网络服务，而这个第三方（*如Facebook*）则越来越不被信任。BitTorrent协议，能够实现P2P的信息传播，但其根本目的是提高对于已知内容的传播效率，缺乏在P2P网络下的账号系统，所以无法对未知内容有所判断。即便有数字签名，能够证明每个信息的来源，但是因为缺少第三方验证（*如手机号注册*），创建账号的成本为零，所以当无用（虚假）的信息会充斥整个网络且无法信息来源进行惩罚。
 
