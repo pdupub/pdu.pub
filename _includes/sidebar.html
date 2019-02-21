@@ -2,6 +2,15 @@
           {% if site.email %}
           <p>Email : <a href="mailto:{{ site.email }}"> {{ site.email }} </a> </p>
           {% endif %}
+                
+          {% if site.twitter_username %}
+          <p>Twitter : <a href="https://twitter.com/{{ site.twitter_username }}"> https://twitter.com/{{ site.twitter_username }} </a> </p>
+          {% endif %}
+                
+          {% if site.facebook_username %}
+          <p>Facebook : <a href="https://facebook.com/{{ site.facebook_username }}"> https://facebook.com/{{ site.facebook_username }} </a> </p>
+          {% endif %}
+                
 
           {% if site.wechat %}
           <p>WeChat :  {{ site.wechat }}  </p>
