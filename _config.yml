@@ -9,8 +9,8 @@ url: "https://pdu.pub"
 baseurl: ""                             
 theme: jekyll-theme-architect
 
-twitter_username:   PDUPUB
-facebook_username:  PDUPUB
+#twitter_username:   PDUPUB
+#facebook_username:  PDUPUB
 
 show_downloads: true
 github:
