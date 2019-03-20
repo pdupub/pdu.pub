@@ -8,7 +8,7 @@ keyword: "p2p, sns, social network, pdu"
 url: "https://pdu.pub"
 baseurl: ""                             
 #theme: jekyll-theme-architect
-theme: minimal-mistakes-jekyll
+remote_theme: mmistakes/minimal-mistakes
 
 twitter_username:   PDUPUB
 facebook_username:  PDUPUB
