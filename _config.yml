@@ -7,8 +7,7 @@ description: "Parallel Digital Universe - A Peer-to-Peer Social Network"
 keyword: "p2p, sns, social network, pdu"
 url: "https://pdu.pub"
 baseurl: ""                             
-#theme: jekyll-theme-architect
-remote_theme: mmistakes/minimal-mistakes
+theme: jekyll-theme-architect
 
 twitter_username:   PDUPUB
 facebook_username:  PDUPUB
