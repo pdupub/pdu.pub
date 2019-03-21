@@ -21,8 +21,8 @@ title_separator          : "-"
 name                     : "PDU"
 description              : "A decentralized identity-based social network."
 url                      : "https://pdu.pub"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+baseurl                  : "/"
+repository               : "pdupub/go-pdu"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -106,10 +106,10 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an amazing person."
-  location         : "Somewhere"
+  name             : "Liu Peng"
+  avatar           : "/assets/images/icon2.svg"
+  bio              : "I am Founder of PDU"
+  location         : "Beijing"
   email            :
   links:
     - label: "Email"
