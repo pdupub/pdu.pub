@@ -1,4 +1,4 @@
-# PDU:一种点对点的社交网络
-Parallel Digital Universe - A Peer-to-Peer Social Network
+# PDU 一种基于去中心化账户系统的社交网络
+Parallel Digital Universe - A decentralized identity-based social network
 
 Website: [https://pdu.pub](https://pdu.pub)
