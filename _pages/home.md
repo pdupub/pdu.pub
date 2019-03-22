@@ -10,21 +10,21 @@ header:
 excerpt: >
   A decentralized identity-based social network.<br />
 feature_row:
-  - image_path: /assets/images/beer.jpg
+  - image_path: /assets/images/feature_1.svg
     alt: ""
     title: ""
     excerpt: ""
     url: "/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/food.jpg
+  - image_path: /assets/images/feature_2.svg
     alt: ""
     title: ""
     excerpt: ""
     url: "/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/swim.jpg
+  - image_path: /assets/images/feature_3.svg
     alt: ""
     title: ""
     excerpt: ""
