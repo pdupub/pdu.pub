@@ -107,7 +107,7 @@ analytics:
 # Site Author
 author:
   name             : "Liu Peng"
-  avatar           : "/assets/images/icon2.svg"
+  avatar           : "https://avatars.githubusercontent.com/u/36190809?s=100"
   bio              : "I am Founder of PDU"
   location         : "Beijing"
   email            :
@@ -222,6 +222,16 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : algolia # lunr (default), algolia
+algolia:
+  application_id         : W1HKF4LDRT # YOUR_APPLICATION_ID
+  index_name             : / # YOUR_INDEX_NAME
+  search_only_api_key    : 96bf442921f9a8799bb93ee7d7317f0d # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : true # true (default), false
 
 
 # Plugins (previously gems:)
