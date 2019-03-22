@@ -224,6 +224,16 @@ paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
+search                   : true # true, false (default)
+search_full_content      : true # true, false (default)
+search_provider          : algolia # lunr (default), algolia
+algolia:
+  application_id         : W1HKF4LDRT # YOUR_APPLICATION_ID
+  index_name             : / # YOUR_INDEX_NAME
+  search_only_api_key    : 96bf442921f9a8799bb93ee7d7317f0d # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : true # true (default), false
+
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate
