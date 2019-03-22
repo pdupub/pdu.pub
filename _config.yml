@@ -229,7 +229,7 @@ search_full_content      : true # true, false (default)
 search_provider          : algolia # lunr (default), algolia
 algolia:
   application_id         : W1HKF4LDRT # YOUR_APPLICATION_ID
-  index_name             : pdupub# YOUR_INDEX_NAME
+  index_name             : pdupub # YOUR_INDEX_NAME
   search_only_api_key    : 96bf442921f9a8799bb93ee7d7317f0d # YOUR_SEARCH_ONLY_API_KEY
   powered_by             : true # true (default), false
 
