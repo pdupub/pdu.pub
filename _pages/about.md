@@ -1,7 +1,7 @@
 ---
 permalink: /about/
 title: "About"
-excerpt: "Minimal Mistakes is a flexible two-column Jekyll theme."
+excerpt: "PDU is a decentralized identity-based social network."
 layouts_gallery:
   - url: /assets/images/icon.svg
     image_path: /assets/images/icon.svg
@@ -14,6 +14,3 @@ toc: true
 ---
 
 PDU is a decentralized identity-based social network :smile:.
-
-
-
