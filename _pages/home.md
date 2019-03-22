@@ -11,23 +11,23 @@ excerpt: >
   A decentralized identity-based social network.<br />
 feature_row:
   - image_path: /assets/images/feature_1.svg
-    alt: "customizable"
-    title: "Super customizable"
-    excerpt: "Everything from the menus, sidebars, comments, and more can be configured or set with YAML Front Matter."
+    alt: "P2P"
+    title: "Peer-to-Peer"
+    excerpt: "A pure Peer-to-Peer social network, which is based on decentralized identity."
     url: "/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/feature_2.svg
-    alt: "fully responsive"
-    title: "Responsive layouts"
-    excerpt: "Built with HTML5 + CSS3. All layouts are fully responsive with helpers to augment your content."
+    alt: "unblockable"
+    title: "Impossible to block"
+    excerpt: "It is impossible for any one to decide what message can be or not received by others."
     url: "/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/feature_3.svg
     alt: "100% free"
     title: "100% free"
-    excerpt: "Free to use however you want under the MIT License. Clone it, fork it, customize it... whatever!"
+    excerpt: "Free to sign up, free to use, but relative accounts pay the cost for cosign new account."
     url: "/"
     btn_class: "btn--primary"
     btn_label: "Learn more"      
