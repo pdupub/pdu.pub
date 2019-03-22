@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "air" # "default" , "air", "aqua", "contrast", "dark"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "PDU"
+title                    : "Parallel Digital Universe"
 title_separator          : "-"
 name                     : "Parallel Digital Universe"
 description              : "A decentralized identity-based social network."
