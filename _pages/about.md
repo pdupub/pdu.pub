@@ -14,3 +14,5 @@ toc: true
 ---
 
 PDU is a decentralized identity-based social network :smile:.
+
+{% include gallery id="layouts_gallery" caption="Examples of icon." %}
