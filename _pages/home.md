@@ -5,7 +5,7 @@ header:
   overlay_color: "#5e616c"
   overlay_image: /assets/images/mm-home-page-feature.jpg
   actions:
-    - label: "<i class='fas fa-github'></i> GitHub"
+    - label: "<i class='fas fa-download'></i> GitHub"
       url: "https://github.com/pdupub/"
 excerpt: >
   A decentralized identity-based social network.<br />
