@@ -2,7 +2,7 @@
  <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
  <g class="layer">
   <title>Layer 1</title>
-  <rect fill="#0092ca" height="430.04997" id="svg_12" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" width="1600" x="-3.69997" y="2.85"/>
+  <rect fill="#2196f3" height="430.04997" id="svg_12" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" width="1600" x="-3.69997" y="2.85"/>
   <g id="svg_35">
    <g id="svg_8">
     <g id="svg_17">
@@ -13,18 +13,18 @@
      <ellipse cx="1289.80451" cy="241.1326" fill="#ffffff" id="svg_10" rx="25.50553" ry="40.78288" stroke="#ffffff" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
     </g>
     <g id="svg_18" transform="matrix(-0.00118763 0.22594 -0.233993 -0.00114677 -676.983 -422.422)">
-     <ellipse cx="2821.18902" cy="-8022.01911" fill="#0092ca" id="svg_19" rx="33.54718" ry="60.03587" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
-     <rect fill="#0092ca" height="98.45217" id="svg_20" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" width="183.4323" x="2806.8776" y="-8070.57998"/>
-     <ellipse cx="2898.1321" cy="-7975.45389" fill="#0092ca" id="svg_21" rx="94.48611" ry="30.26739" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
-     <ellipse cx="2898.43987" cy="-8067.91911" fill="#0092ca" id="svg_22" rx="94.48611" ry="30.26739" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
-     <ellipse cx="2975.07517" cy="-8022.01911" fill="#0092ca" id="svg_23" rx="33.54718" ry="60.03587" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+     <ellipse cx="2821.18902" cy="-8022.01911" fill="#2196f3" id="svg_19" rx="33.54718" ry="60.03587" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+     <rect fill="#2196f3" height="98.45217" id="svg_20" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" width="183.4323" x="2806.8776" y="-8070.57998"/>
+     <ellipse cx="2898.1321" cy="-7975.45389" fill="#2196f3" id="svg_21" rx="94.48611" ry="30.26739" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+     <ellipse cx="2898.43987" cy="-8067.91911" fill="#2196f3" id="svg_22" rx="94.48611" ry="30.26739" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+     <ellipse cx="2975.07517" cy="-8022.01911" fill="#2196f3" id="svg_23" rx="33.54718" ry="60.03587" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
     </g>
     <g id="svg_24" transform="matrix(-0.00118763 0.22594 -0.233993 -0.00114677 -606.699 -490.619)">
-     <ellipse cx="3121.52654" cy="-8023.50977" fill="#0092ca" id="svg_25" rx="33.54718" ry="60.03587" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
-     <rect fill="#0092ca" height="98.45217" id="svg_26" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" width="183.4323" x="3107.21513" y="-8072.07064"/>
-     <ellipse cx="3198.46963" cy="-7976.94456" fill="#0092ca" id="svg_27" rx="94.48611" ry="30.26739" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
-     <ellipse cx="3198.7774" cy="-8069.40977" fill="#0092ca" id="svg_28" rx="94.48611" ry="30.26739" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
-     <ellipse cx="3275.4127" cy="-8023.50977" fill="#0092ca" id="svg_29" rx="33.54718" ry="60.03587" stroke="#0092ca" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+     <ellipse cx="3121.52654" cy="-8023.50977" fill="#2196f3" id="svg_25" rx="33.54718" ry="60.03587" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+     <rect fill="#2196f3" height="98.45217" id="svg_26" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5" width="183.4323" x="3107.21513" y="-8072.07064"/>
+     <ellipse cx="3198.46963" cy="-7976.94456" fill="#2196f3" id="svg_27" rx="94.48611" ry="30.26739" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+     <ellipse cx="3198.7774" cy="-8069.40977" fill="#2196f3" id="svg_28" rx="94.48611" ry="30.26739" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
+     <ellipse cx="3275.4127" cy="-8023.50977" fill="#2196f3" id="svg_29" rx="33.54718" ry="60.03587" stroke="#2196f3" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="5"/>
     </g>
    </g>
    <g id="svg_54" transform="matrix(0.14978 0.149447 -0.148711 0.150521 -851.406 -505.26)">
