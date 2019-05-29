@@ -10,27 +10,8 @@ header:
 excerpt: >
   A decentralized identity-based social network.<br />
 feature_row:
-  - image_path: /assets/images/feature_1.svg
-    alt: "P2P"
-    title: "Peer-to-Peer"
-    excerpt: "A pure Peer-to-Peer social network, which is based on decentralized identity."
-    url: "/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/feature_2.svg
-    alt: "unblockable"
-    title: "Impossible to block"
-    excerpt: "It is impossible for any one to decide what message can be or not received by others."
-    url: "/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"
-  - image_path: /assets/images/feature_3.svg
-    alt: "100% free"
-    title: "100% free"
-    excerpt: "Free to sign up, free to use, but relative accounts pay the cost for cosign new account."
-    url: "/"
-    btn_class: "btn--primary"
-    btn_label: "Learn more"      
+   
 ---
+{% include https://github.com/pdupub/Documentation/blob/master/zh-CN/WhitePaper.md %}
 
 {% include feature_row %}
