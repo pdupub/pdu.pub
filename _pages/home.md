@@ -1,3 +1,20 @@
+---
+layout: splash
+permalink: /
+header:
+  overlay_color: "#0092ca"
+  overlay_image: /assets/images/home-page-feature.svg
+  actions:
+    - label: "<i class='fas fa-download'></i> GitHub"
+      url: "https://github.com/pdupub/"
+excerpt: >
+  A decentralized identity-based social network.<br />
+feature_row:
+
+---
+
+
+
 # PDU 一种基于去中心化账户系统的社交网络
 Parallel Digital Universe - A decentralized identity-based social network
 
@@ -296,4 +313,4 @@ PDU账户系统的创建发展过程通常会经历一下的几个步骤：
  
 一个已知的系统很难同时满足去中心化，效率及整体一致性，因为货币系统本身的特点，比特币选择了去中心化和整体信息的一致性，而根据信息传播的特点，PDU选择了去中心化和效率。我们认为在信息的传播过程中，单个节点无需实时获知全网的所有完整信息，也能够容忍由某账户恶意行为所产生的错误信息。
 
-
+{% include feature_row %}
