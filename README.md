@@ -18,7 +18,7 @@
 * The initial state of the system must contain limited individuals. Related subsequent systems are split from the initial system by changing time. The subsequent systems include individuals in the original system and inherit the remainder of their life length.
 * Individuals can choose orderly messages published by any individual including themselves as the time.
 * The time of the message is expressed by the directly or indirectly quoted specific time, which can prove that the message occurred after a that time.
-* Individuals can post specific messages to express the end of their life length.
+* Individuals can post specific messages to mark the end of their life.
 
 ## 八卦国编年史--PDU的通俗解释
 
