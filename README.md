@@ -6,8 +6,19 @@
 * 个体只接受任意个体从创建之后到特定时间之前发布的消息，并称之为其的生命周期。
 * 系统最初包必含有限个体，相关后续系统由最初系统通过改变时间分裂而来，其后续系统包含原系统中的个体并继承其生命周期的剩余。
 * 个体可选择包含自己在内的任一个体发布的有序消息作为时间。
-* 消息的时间由所引用的时间来表述，可证明本消息发生于特定时间之后。
+* 消息的时间由其直接或间接引用的时间来表述，可证明本消息发生于特定时间之后。
+* 个体可以发布特定消息来表述结束自己的生命周期。
 
+## Zen of PDU
+
+* The system consists of individuals who choose the same time。
+* Individuals can arbitrarily choose the creation cost and life length they accept.
+* New individuals in the system are created by existing individuals through specific messages, and the time interval for publishing the creating messages can be used to measure the creation cost.
+* An individual only accepts messages published by any individual from its creation to a specific time, and this is called its life length.
+* The initial state of the system must contain limited individuals. Related subsequent systems are split from the initial system by changing time. The subsequent systems include individuals in the original system and inherit the remainder of their life length.
+* Individuals can choose orderly messages published by any individual including themselves as the time.
+* The time of the message is expressed by the directly or indirectly quoted specific time, which can prove that the message occurred after a that time.
+* Individuals can post specific messages to express the end of their life length.
 
 ## 八卦国编年史--PDU的通俗解释
 
