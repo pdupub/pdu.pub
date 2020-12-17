@@ -1,3 +1,6 @@
+[🐦: Twitter](https://twitter.com/PDUPUB) <br>
+
+
 ## 对于PDU想法的再次精简
 
 * 事件通过直接或间接的影响确定偏序关系。
