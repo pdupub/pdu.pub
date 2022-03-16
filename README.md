@@ -1,5 +1,12 @@
 [🐦: Twitter](https://twitter.com/PDUPUB) <br>
 
+### Zen release 0.3
+* Events determine partial order relationships through directed associations.
+* Homologous fully sequenced events can constitute a single individual.
+* The composition of groups arises from the self-identification of individuals.
+* The system world is determined by the subjective choices of individuals.
+
+
 ## PDU之禅 Relase 0.3 
 * 事件通过有向关联确定偏序关系.
 * 同源的全序事件能构成单一个体.
