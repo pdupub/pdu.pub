@@ -1,6 +1,16 @@
 [🐦: Twitter](https://twitter.com/PDUPUB) <br>
 
-### Zen release 0.3
+## PDU 去中心化网络社交服务 
+
+**摘要：** 我们认为一个最接近自然状态的社交网络应当具备两个基础功能，任何参与者都能够**自由的传播信息**，同时也能够**有效的获取信息**。
+
+第三方平台的存在，为这两个目的提供了极大的帮助，通过手机号，邮箱等身份认证方式，有效的防止了大量创建虚拟身份和无限制的信息传播；利用推荐算法及用户之间的关联，提高了使用者获取目标信息的效率。但同时，第三方平台本身对于信息传播的影响也越来越严重，限制用户权限，屏蔽言论，利用推荐机制扩大特定话题的传播范围。我们并不否定舆论的引导在某特定事件上存在的积极意义，只想表达对于**信息非自然传播**的担忧。
+
+本文提出一种新的解决方案，基于点对点的方式构建社交网络服务。网络中的每一条信息均由签名确定其来源，称为消息。通过消息之间的引用，同源消息可以构成全序关系，异源消息构成偏序关系。以消息为基础，使用者可以自由的创建社区规则，并基于自我认同，邀请他人参与自己所在的社区。社区内的用户均存在偏序的关联，使用者可以基于这种关联关系，以身份为标志对信息，及其关联身份的信息进行筛选。
+
+[去中心化的SNS / A decentralized identity-based social networking service](https://github.com/pdupub/documentation/blob/master/zh-CN/WhitePaperV2.md)
+
+## Zen release 0.3
 * Events determine partial order relationships through directed associations.
 * Homologous fully sequenced events can constitute a single individual.
 * The composition of groups arises from the self-identification of individuals.
