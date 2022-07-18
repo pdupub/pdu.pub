@@ -2,8 +2,6 @@
 layout: default
 ---
 
-[🐦: Twitter](https://twitter.com/PDUPUB) <br>
-
 # PDU 去中心化网络社交服务 
 
 **摘要：** 我们认为一个最接近自然状态的社交网络应当具备两个基础功能，任何参与者都能够**自由的传播信息**，同时也能够**有效的获取信息**。
@@ -13,6 +11,7 @@ layout: default
 本文提出一种新的解决方案，基于点对点的方式构建社交网络服务。网络中的每一条信息均由签名确定其来源，称为消息。通过消息之间的引用，同源消息可以构成全序关系，异源消息构成偏序关系。以消息为基础，使用者可以自由的创建社区规则，并基于自我认同，邀请他人参与自己所在的社区。社区内的用户均存在偏序的关联，使用者可以基于这种关联关系，以身份为标志对信息，及其关联身份的信息进行筛选。
 
 [去中心化的SNS / A decentralized identity-based social networking service](https://github.com/pdupub/documentation/blob/master/zh-CN/WhitePaperV2.md)
+
 
 # Zen release 0.3
 * Events determine partial order relationships through directed associations.
@@ -28,6 +27,7 @@ layout: default
 * 系统世界决定于个体的主观选择.
 
 这个版本与之前有所区别，依然保留了关系的有向链接，但去掉了对于时序的强制。
+
 
 # 对于PDU想法的再次精简
 
@@ -53,6 +53,7 @@ layout: default
 * 消息的时间由其直接或间接引用的时间来表述，可证明本消息发生于特定时间之后。
 * 个体可以发布特定消息来表述结束自己的生命周期。
 
+
 # Zen of PDU
 
 * The system consists of individuals who choose the same time。
@@ -63,6 +64,7 @@ layout: default
 * Individuals can choose orderly messages published by any individual including themselves as the time.
 * The time of the message is expressed by the directly or indirectly quoted specific time, which can prove that the message occurred after a that time.
 * Individuals can post specific messages to mark the end of their life.
+
 
 # 八卦国编年史--PDU的通俗解释
 
@@ -79,6 +81,7 @@ layout: default
 
 [八卦国编年史更多章节...](https://github.com/pdupub/Documentation/blob/master/zh-CN/FakeHistory.md)
 
+
 # Parallel Digital Universe 
 A decentralized identity-based social network
 
@@ -86,13 +89,11 @@ We propose a way to make sure account creation costs in a pure P2P environment, 
 
 White Paper: [https://github.com/pdupub/Documentation](https://github.com/pdupub/Documentation/blob/master/WhitePaper.md)
 
+
+
 # PDU 基于去中心化账户系统的社交网络
 
 我们提出一种在纯粹P2P的环境下给予账户创建成本的方式，并基于这种账户系统，构建完整的P2P社交网络形态。首先，我们以引用构建有序，用以证明某个特定行为发生于某行为之后，即时间证明。然后，规定新账户的创建必须由多个已存在的合法账户联合确认且同一账户的此类确认需满足的时间间隔。每个账户系统的使用者（包括非用户），都可以DAG的结构维护部分或全部账户之间的关系拓扑，并随时可以根据自己获知的消息，对新的账户进行验证增补，同时也可因作恶行为对某些账户及关联账户进行惩罚。使用者并不需要对所有行为产生共识，也无需维护同完全一致的信息。
 
 白皮书: [https://github.com/pdupub/Documentation](https://github.com/pdupub/Documentation/blob/master/zh-CN/WhitePaper.md)
 
-
-
-
-<a href="https://pdu.pub"><img height="32" align="right" src="https://pdu.pub/images/icon3.svg"></a>
