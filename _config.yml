@@ -1,2 +1,6 @@
-theme: jekyll-theme-architect
-title: PDU | A decentralized social networking service
+title: PDU
+logo: /assets/img/logo.svg
+description: A Decentralized Social Networking Service.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-minimal
