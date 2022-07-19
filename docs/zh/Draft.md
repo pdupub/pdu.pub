@@ -1420,3 +1420,6 @@ A与B的交流是A改变了世界的客观存在，B通过感知去理解，改�
 
 
 
+[back](../../)
+
+<a href="https://pdu.pub"><img height="32" align="right" src="https://pdu.pub/assets/img/logo.png"></a>

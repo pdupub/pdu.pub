@@ -303,4 +303,6 @@ PDU账户系统的创建发展过程通常会经历一下的几个步骤：
 
 
 
-<a href="https://pdu.pub"><img height="32" align="right" src="https://pdu.pub/images/icon.svg"></a>
+[back](../../)
+
+<a href="https://pdu.pub"><img height="32" align="right" src="https://pdu.pub/assets/img/logo.png"></a>

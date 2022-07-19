@@ -103,4 +103,8 @@ layout: default
 
 
 未完待续...(估计还有三万字)
-不怕枯燥的可以直接看 [PDU基于去中心化账户系统的社交网络](https://github.com/pdupub/Documentation/blob/master/zh-CN/WhitePaper.md)
+
+
+[back](../../)
+
+<a href="https://pdu.pub"><img height="32" align="right" src="https://pdu.pub/assets/img/logo.png"></a>

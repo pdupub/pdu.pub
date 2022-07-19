@@ -49,3 +49,8 @@ layout: default
 
 
 > 泰勒斯认为世界的本源是水，我认为是光。
+
+
+[back](../../)
+
+<a href="https://pdu.pub"><img height="32" align="right" src="https://pdu.pub/assets/img/logo.png"></a>

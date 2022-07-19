@@ -29,4 +29,7 @@ layout: default
 7. The time of the message is expressed by the directly or indirectly quoted specific time, which can prove that the message occurred after a that time.
 8. Individuals can post specific messages to mark the end of their life.
 
-<a href="https://pdu.pub"><img height="32" align="right" src="https://pdu.pub/images/icon.svg"></a>
+
+[back](../../)
+
+<a href="https://pdu.pub"><img height="32" align="right" src="https://pdu.pub/assets/img/logo.png"></a>

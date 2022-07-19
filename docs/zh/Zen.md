@@ -38,5 +38,6 @@ layout: default
 引用产生客观有序，存在基于主观选择，时间不可逆，有限的生命和无限的延续
 
 
-<a href="https://pdu.pub"><img height="32" align="right" src="https://pdu.pub/images/icon.svg"></a>
+[back](../../)
 
+<a href="https://pdu.pub"><img height="32" align="right" src="https://pdu.pub/assets/img/logo.png"></a>
