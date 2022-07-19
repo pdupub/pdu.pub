@@ -10,7 +10,7 @@ layout: default
 
 本文提出一种新的解决方案，基于点对点的方式构建社交网络服务。网络中的每一条信息均由签名确定其来源，称为消息。通过消息之间的引用，同源消息可以构成全序关系，异源消息构成偏序关系。以消息为基础，使用者可以自由的创建社区规则，并基于自我认同，邀请他人参与自己所在的社区。社区内的用户均存在偏序的关联，使用者可以基于这种关联关系，以身份为标志对信息，及其关联身份的信息进行筛选。
 
-[去中心化的SNS / A decentralized identity-based social networking service](./docs/zh/WhitePaperV2.html)
+[去中心化的SNS / A decentralized social networking service](./docs/zh/WhitePaperV2.html)
 
 
 # Zen release 0.3
