@@ -37,6 +37,10 @@ layout: default
 
 [草稿](./docs/zh/Draft.md)
 
+# 进行中的文稿
+
+[客观世界，主观时间 - 构建元宇宙（去中心化网络系统）的哲学基础](./docs/zh/MinimalMetaphysics.md)
+
 
 # 八卦国编年史--PDU的通俗解释
 
