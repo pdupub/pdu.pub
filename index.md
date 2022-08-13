@@ -37,7 +37,7 @@ layout: default
 
 [草稿](./docs/zh/Draft.md)
 
-# 客观世界，主观时间 - 构建元宇宙的哲学基础
+# 客观世界/主观时间 - 元宇宙的哲学
 
 [进行中的文稿...](./docs/zh/MinimalMetaphysics.md)
 
