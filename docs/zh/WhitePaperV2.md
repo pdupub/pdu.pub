@@ -6,7 +6,7 @@ layout: default
 A decentralized social networking service
 
 * github: [github.com/pdupub/documentation](https://github.com/pdupub/documentation/blob/master/zh-CN/WhitePaperV2.md)
-* email: hello@pdu.pub
+* email: pdupub@gmail.com
 * wechat: pengpengt00
 * twitter: [@PDUPUB](https://twitter.com/pdupub)
 
