@@ -31,11 +31,14 @@ layout: default
 
 [历史版本](./docs/zh/Zen.html)
 
-# [笔记稿](./docs/zh/Draft.md)
+# [笔记](./docs/zh/Draft.md)
 
-随时更新的草稿，包含从PDU之禅 0.2 之后的笔记，待整理状态。主要是记录自己对于去中心化系统结构的一些认知、思考和疑问。如何从个体而非整体的角度去理解这个世界，理解这一切存在的原因和状态……
+随时更新的笔记，包含从PDU之禅 0.2 之后的内容，持续整理中。主要记录自己对于去中心化系统结构的一些认知、思考和疑问。如何从个体而非整体的角度去理解这个世界，理解所见世界存在原因和运行规律……
 
-[草稿](./docs/zh/Draft.md)
+- [笔记 1](./docs/zh/Draft.md#note1)
+- [笔记 2](./docs/zh/Draft.md#note2)
+- [笔记 3](./docs/zh/Draft.md#note3)
+- [笔记 4](./docs/zh/Draft.md#note4)
 
 # [客观世界/主观时间 - 元宇宙的哲学](./docs/zh/MinimalMetaphysics.md)
 
