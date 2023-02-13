@@ -20,19 +20,19 @@ This paper proposes a new solution, building a social network service (SNS) syst
 
 
 <!-- MarkdownTOC depth=4 autolink=true bracket=round list_bullets="-*+" -->
-- [Introduction](#Introduction)
-  * [Current Status](#Current-Status)
-  * [Objective](#Objective)
-  * [Prerequisites](#Prerequisites)
-- [Message](#Message)
-- [Individual](#Individual)
-- [Community](#Community)
-  * [Rules](#Rules)
-  * [Explanation](#Explanation)
-- [Network Propagation](#Network-Propagation)
-- [Rewards and Incentives](#Rewards-and-Incentives)
-- [Privacy](#Privacy)
-- [Summary](#Summary)
+- [Introduction](#introduction)
+  * [Current Status](#current-status)
+  * [Objective](#objective)
+  * [Prerequisites](#prerequisites)
+- [Message](#message)
+- [Individual](#individual)
+- [Community](#community)
+  * [Rules](#rules)
+  * [Explanation](#explanation)
+- [Network Propagation](#network-propagation)
+- [Rewards and Incentives](#rewards-and-incentives)
+- [Privacy](#privacy)
+- [Summary](#summary)
 - [FAQ](#faq)
 <!-- /MarkdownTOC -->
 
