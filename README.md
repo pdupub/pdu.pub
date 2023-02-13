@@ -4,7 +4,7 @@
 http://pdu.pub
 
 ## PDU White Paper
-- English v2
+- [English v2](docs/en/WhitePaperV2.md)
 - [中文 v2](docs/zh/WhitePaperV2.md) 
 
 - old version: [中文](docs/zh/WhitePaperV1.md)

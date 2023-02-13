@@ -1,6 +1,15 @@
 ---
 layout: default
 ---
+# [PDU - A decentralized social networking service](./docs/en/WhitePaperV2.html)
+
+**Abstract**: We believe that the closest social network to its natural state should have two fundamental functions: any participant can **freely spread information**, and also be able to **effectively obtain information**.
+
+The existence of third-party platforms has greatly helped to achieve the above two functions. By using identity authentication methods such as phone numbers and email addresses, it effectively prevents the creation of a large number of virtual identities and unrestricted information dissemination; using recommendation algorithms and user relationships, it improves the efficiency of users obtaining target information. However, at the same time, the impact of the third-party platform itself on information dissemination is becoming increasingly serious, limiting user rights, censoring speech, and using recommendation mechanisms to expand the scope of specific topics. We do not deny the positive meaning of public opinion guidance in certain specific events, but just want to express our concern about information not being naturally spread.
+
+This paper proposes a new solution, building a social network service (SNS) system based on peer-to-peer (P2P) methods. All information in the system is determined by the signature of its source, referred to as a message. Through references between messages, source messages can form a total order relationship, and different source messages form a partial order relationship. Based on the source total order messages, the definition of an account is established. Any account can freely create community rules and, based on self-identification, invite other accounts to join the community they belong to. Accounts within the community have partial order relationships, and based on this relationship, they can filter accounts and information to achieve effective information retrieval.
+
+[PDU - A decentralized social networking service](./docs/en/WhitePaperV2.html)
 
 # [PDU 去中心化网络社交服务](./docs/zh/WhitePaperV2.html)
 
