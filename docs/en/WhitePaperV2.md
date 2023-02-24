@@ -47,12 +47,12 @@ The reliance on and impact on centralized services in information dissemination 
 
 ### Objective
 
-We believe that a natural information dissemination system should have two basic functions:
+We believe that a natural information dissemination system should have two fundamental functions:
 
 1. Any participant should be able to freely disseminate information.
-2. Any participant should be able to effectively access information.
+2. Any participant should be able to effectively obtain information.
 
-This paper proposes a new solution based on the original natural information dissemination methods in reality, so that the information dissemination process can be free from dependence on centralized third-party services. First, each message in the system must be accompanied by a digital signature to identify the source of the information. Messages can be used to build one or more partial order relationships for the entire system by referencing each other. At the same time, all messages from the same private key signature form a total order relationship by referencing each other. We view a sequence of messages from the same source and with a total order relationship as a single account, identified by the signature. Accounts can freely create communities by publishing specific types of messages and specifying community rules. Accounts belonging to a specific community can add members to their own community by inviting them in the form of specific types of messages. The invitation relationship between accounts in a community will become the main form of account and information screening.
+Based on the natural information dissemination process in reality, this paper proposes a new solution so that this process can get rid of the dependence on centralized services. First, every message in the system must be digitally signed to confirm its origin. All messages in the system can construct one or more partial order relationships according to the reference relationship among them. All messages signed by the same private key can form a total order relationship by reference. We regard message sequences with the same source and total order relationship as a single account, and use signatures to identify them. Accounts can freely create communities and define rules by publishing create-type messages. Any account can invite new members to join their own community through an invite-type message. The invitation relationship between accounts in the community will become the basis for filtering spam accounts and redundant information.
 
 
 ### Prerequisites
