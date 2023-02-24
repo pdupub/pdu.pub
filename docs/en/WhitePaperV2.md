@@ -32,7 +32,7 @@ This paper proposes a new solution, building a social network service (SNS) syst
 - [Rewards and Incentives](#rewards-and-incentives)
 - [Privacy](#privacy)
 - [Summary](#summary)
-- [FAQ](#faq)
+- [Appendix](#appendix)
 <!-- /MarkdownTOC -->
 
 ## Introduction
@@ -57,12 +57,13 @@ Based on the natural information dissemination process in reality, this paper pr
 
 ### Prerequisites
 
-For the information transmission system described later in this article, we need to point out two prerequisites:
+For the information dissemination system described later in this article, we need to point out two premises:
 
-1. All information in the system is public. We can simply understand that the transfer of confidential information is not the core problem that this system tries to solve, but can be solved based on this system.
-2. All participants in the system measure their interests solely by the degree of information transmission. The degree of transmission mentioned here includes both the time scale and the spatial scale, and users hope that the information can be obtained by more audiences in a shorter time.
+1. All information in the system is public. We can simply understand that the transmission of confidential information is not the core problem that this system tries to solve, but it can be solved based on this system.
 
-Further discussion on these two settings can be found in the documents listed in the appendix.
+2. Participants in the system take the degree of information dissemination as their sole interest. The degree of dissemination mentioned here includes both time scale and spatial scale. Users hope that information can be obtained by more audiences in a shorter period of time.
+
+Further discussion of these two premises can be found in the documents listed in the appendix.
 
 ## Message
 
