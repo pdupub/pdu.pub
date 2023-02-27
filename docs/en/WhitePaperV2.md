@@ -24,7 +24,7 @@ This paper proposes a new solution, building a social network service (SNS) syst
   * [Objective](#objective)
   * [Prerequisites](#prerequisites)
 - [Message](#message)
-- [Individual](#individual)
+- [Account](#account)
 - [Community](#community)
   * [Rules](#rules)
   * [Explanation](#explanation)
@@ -94,15 +94,15 @@ The existence of the signature can authenticate the source of the message and de
 
 The figure above shows the construction and referencing relationship of each message.
 
-## Individual
+## Account
 
-In the system, all messages come with a signature for verifying their source, which is the account. The account and the private key correspond one to one, but they are not equivalent. Since a user (natural person) in the system can create multiple accounts, or multiple users can operate the same account, there is no necessary relationship between the account and the user. We believe that the account in this system is a subject with the sole purpose of maximizing information dissemination, which is represented by a series of messages with full ordering relationships, and is the smallest unit that can perceive external rewards and punishments and modify its future behavior.
+In the system, all messages come with a signature for verifying their source, which is the account. The account and the private key correspond one to one, but they are not equivalent. Since a user (natural person) in the system can create multiple accounts, or multiple users can operate the same account, there is no necessary relationship between the account and the user. We believe that the account in this system is a subject with the sole purpose of maximizing information dissemination, which is represented by a series of messages with total order relationship, and is the smallest unit that can perceive external rewards and punishments and modify its future behavior.
 
 ![msgs](../res/Individual.jpeg)
 
-In the system, individual messages can be considered as existing isolated objective events, their content itself won't change due to the influence of rewards or punishments and can't express a desire to spread. We order and combine all messages signed by the same account and the expected future messages, as an account, the subject of action to achieve its own purposes and receive feedback from the outside world.
+In the system, individual messages can be considered as existing isolated objective events, their content itself won't change due to the influence of rewards or punishments and can't express a desire to spread. We order and combine all messages signed by the same key and the expectation of possible future releases as an account, the subject of action to achieve its own purposes and receive feedback from the outside world.
 
-For the users who obtain information from the system, they can express rewards or punishments towards the message publishing account by treating the accounts differently, they will be more proactive in obtaining and spreading the information they like and paying attention to the messages that the account will publish in the future. On the other hand, they can also reduce the spread of this account through methods such as blocking accounts. For the account owner, due to the fact that the recipients of information can block the information based on the account identity, producing a large amount of meaningless information is not prohibited but loses its meaning due to its inability to be spread.
+For the users who obtain information from the system, they can express rewards or punishments towards the message publishing account by treating the accounts differently. Users will be more proactive in obtaining and spreading the information they like and paying attention to the messages that the account will publish in the future. On the other hand, they can also reduce the spread of this account or blocking accounts. For the account owner, due to the fact that the recipients of information can block the information based on the account identity, producing a large amount of meaningless information is not prohibited but loses its meaning due to its inability to be spread.
 
 We believe that due to the unrestricted and anonymous nature of private key creation, the existence of an account won't hinder the freedom of users to publish information, i.e. active freedom. At the same time, the existence of an account provides a marking for information filtering and is the basis for users to effectively obtain information, which to some extent safeguards the users' negative freedom.
 
