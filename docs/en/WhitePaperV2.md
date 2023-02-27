@@ -67,22 +67,28 @@ Further discussion of these two premises can be found in the documents listed in
 
 ## Message
 
-Messages are the most basic data structure in the system and the only data type for peer-to-peer interaction. Other data types involved in the system, such as accounts and communities, can be constructed based on messages. Messages consist of three components: Message Contents, References, and Signature.
+Messages are the most basic data structure in the system and the only data type for peer-to-peer interaction. Other data types involved in the system, such as accounts and communities, can be constructed based on messages. Messages consist of three components: Message Content, References, and Signature.
 
-Message Contents is the subject of the message and consists of a message type and multiple content fragments. Currently, there are 5 types of messages in the system.
+
+### Message Content
+The message content is the main body of the message, consisting of a message type and multiple content fragments. There are currently 5 message types in the system:
+
 * Info: The main message type used to publish information. The content can contain different format fragments such as text, image, audio, etc.
-* Profile: Used for users to set their own attributes. Subsequent settings for the same attribute can override previous settings, indicating an update of the attribute.
-* Community Define: Used to set new community rules, such as invitation restrictions, etc.
-* Invitation: Used to invite other accounts to join the community.
-* End: Used when the current account wants the system to ignore its subsequent messages for some reason (such as a private key leak).
+* Profile: It is used for users to set their own attributes. Subsequent settings for the same attribute can override previous settings.
+* Community: It is used to create new communities and set rules, such as invitation restrictions, etc.
+* Invitation: It is used to invite other accounts to join the community which the user belongs.
+* End: It is used when the current account wants the system to ignore its follow-up messages due to private key disclosure or other reasons.
 
-The reference list can contain signatures of multiple messages to determine the order of relationships between messages.
+### Reference List
+The signatures of multiple messages are allowed in the reference list to determine the ordered relationship between the messages.
 
-A message can put the signature of any known message into its reference list, calculate the hash after that, and add the signature to prove that the message must happen after the referenced message. If the current account has signed a message before, the system requires that the reference must necessarily include the last message signed by this account. In the process of using it, it is recommended to include at least one relatively new message in the message body to give the message a more accurate range of credibility.
+The message is allowed to put any known message signature into the reference list of this message, then calculate the hash and add the signature to prove that this message must be created after the referenced message. If the current account has already signed other messages, the system requires that the reference list must contain the signature of the last message signed by this account before. It is also recommended to include at least one latest message from any account in the reference list, in order to give the current message a more accurate verifiable range in terms of timing.
 
-For messages from the same source, it should be ensured that through referencing, all messages form a total order relationship, so that any two messages signed by the same account have a determined order. Messages from different sources can use references to each other to form one or more partial order relationships, which can be represented by a directed acyclic graph (DAG).
+All messages from the same source can be guaranteed to form a total order relationship by reference, that is, any two messages signed by the same account have a definite sequence. Messages from different sources can use mutual references to form one or more partial order relationships, which can be represented by a directed acyclic graph (DAG).
 
-The existence of signatures first can authenticate the identity of the message source and determine the completeness of the message content. Message signatures can also replace hash values and be placed in the reference list of subsequent messages to indicate a ordered relationship.
+### Signature
+
+The existence of the signature can authenticate the source of the message and determine the integrity of the message content. At the same time, message signatures can also be put into the reference list of subsequent messages, indicating an ordered relationship between messages.
 
 ![msgs](../res/MsgLink.jpeg)
 
