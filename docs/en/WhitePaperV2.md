@@ -130,25 +130,19 @@ For message publishers, being invited to join more communities indicates wider r
 
 ## Network Propagation
 
-A social system should have two basic functions, namely **free release of information** and **effective acquisition of information**. In traditional centralized services, the release and acquisition of messages are based on the user identity, but in decentralized social systems, it is slightly different. An account adds a corresponding signature to each message to become the basic unit of information release. The node is taken as the basic unit of information acquisition and forms a network through mutual connections, realizing the natural spread of information.
+A social system should have two fundamental functions, namely **freely disseminate information** and **effectively obtain information**. In traditional centralized services, the dissemination and acquisition of information are based on the same user account, but in decentralized social systems, it is slightly different. The account adds a corresponding signature to each message, which becomes the basic unit of publishing information. Nodes are used as the basic unit for obtaining information, and form a network through mutual connections to realize the natural dissemination of information.
 
-Nodes and accounts do not have any mandatory binding relationships, and information acquirers can use or build nodes without any accounts. The role of nodes is to freely choose how to handle the received information, such as accepting (saving), rejecting (blocking), or forwarding. Each node can save any part of the message, not the full amount. The transmission process supports the existence of platform-based nodes, which can store more messages and provide services such as message queries and searches for users. However, unlike centralized third-party platforms, messages belong to the publishing account, so you can freely use any third-party platform to obtain the same information. Of course, any node also has the freedom to block specific messages according to its own will.
+There is no mandatory binding relationship between nodes and accounts, and information acquirers can use or build nodes without any account. The role of the node is to freely choose how to process the received information, such as receiving, saving, rejecting or forwarding. Each node can save any message instead of the whole amount. The propagation process supports the existence of platform nodes, which can store more messages and provide users with services such as message query and search. However, unlike traditional centralized third-party platforms, all messages in this system belong to the publisher and are completely public, so through any third-party platform can obtain the exact same information. Of course, any node also has the freedom to block specific messages according to its own will.
 
+The system recommends that nodes refer to the following factors when judging whether to receive a message:
+1. Whether the publisher account is blocked.
+2. The time represented by the message citation is no later than a specified period.
 
-Typically, whether a node receives a message depends on the following two factors:
+The system recommends that nodes refer to the following factors when judging whether to forward a message:
+1. The message content itself, is similar to the behavioral impact of likes and comments on traditional third-party platforms.
+2. The forwarding rules of the node itself, such as whether the current node tends to forward messages that have not been widely diffused or messages in a specific field.
 
-1. Whether the message signer is blocked.
-2. The time represented by the message reference, which tends to be closer in time.
-
-A node whether or not forwards a message depends on:
-
-1. An impact on the message content similar to the behavior of liking and commenting on a traditional third-party platform.
-2. Its own forwarding rules, which tend to be messages that have not been widely spread.
-
-It should be noted that the process of message transmission is constantly changing, and every node in the system may transmit, store, or delete any message at any time.
-
-
-
+It should be noted that the message propagation process is continuously changing, and each node in the system may propagate, store or delete any message at any time.
 
 ## Rewards and Incentives
 
