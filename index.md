@@ -5,9 +5,9 @@ layout: default
 
 **Abstract:** We believe that a social network that is closest to the natural state should have two fundamental functions. Any participant can **freely disseminate information**, and also be able to **effectively obtain information**.
 
-The existence of third-party platforms provides great help for the realization of the above two functions. Through identity authentication methods such as phone number or email address, the platform can effectively limit the creation of virtual identities to reduce the spread of redundant information; use recommendation algorithms and associations between users to improve the efficiency of users in obtaining target information. However, the impact of the third-party platform itself on information dissemination is becoming increasingly serious. Restricting user permissions, blocking speech, and using the recommendation mechanism to expand the scope of specific topics. We do not deny the positive meaning of public opinion guidance in certain specific events, but just want to express our serious concern about **the unnatural dissemination of information**.
+The existence of centralized social service platforms provides great help for the realization of the above two functions. Through identity authentication methods such as phone number or email address, the platform can effectively limit the creation of virtual identities to reduce the spread of redundant information; use recommendation algorithms and associations between users to improve the efficiency of users in obtaining target information. However, the impact of the platform itself on information dissemination is becoming increasingly serious. Restricting user permissions, blocking speech, and using the recommendation mechanism to expand the scope of specific topics. We do not deny the positive meaning of public opinion guidance in certain specific events, but just want to express our serious concern about **the unnatural dissemination of information**.
 
-This paper proposes a new solution, building a social network service (SNS) system based on peer-to-peer (P2P) methods. All information in the system is determined by the signature, called a message. Through references between messages, messages signed by same key can form a total order relationship, and all messages can form a partial order relationship. Accounts are then defined on the basis of homologous total sequence messages. Any account can freely create a community, define its rules, and invite other accounts to join its own community based on self-identity. In any community, accounts and information rows can be filtered according to the invitation association relationship to achieve effective information acquisition.
+This paper proposes a new solution, building a social network service (SNS) system based on peer-to-peer (P2P) methods. All information in the system is identified by signature, called a message. Through references between messages, messages signed by same key can form a total order relationship, and all messages can form a partial order relationship. Accounts are then defined on the basis of homologous total sequence messages. Any account can freely create a community, define its rules, and invite other accounts to join its own community based on self-identity. In any community, accounts and information rows can be filtered according to the invitation association relationship to achieve effective information acquisition.
 
 [PDU - A decentralized social networking service](./docs/en/WhitePaperV2.html)
 
@@ -15,9 +15,9 @@ This paper proposes a new solution, building a social network service (SNS) syst
 
 **摘要：** 我们认为一个最接近自然状态的社交网络应当具备两个基础功能，任何参与者都能够**自由的传播信息**，同时也能够**有效的获取信息**。
 
-众多现有第三方平台的存在为实现以上两个功能提供了极大的帮助。通过手机号、邮箱等身份认证方式，平台可有效的限制虚拟身份创建以减少冗余信息的传播；利用推荐算法及用户之间的关联提高使用者获取目标信息的效率。但同时，第三方平台本身对于信息传播的影响也越发严重，限制用户权限，屏蔽言论，利用推荐机制扩大特定话题的传播范围。我们并不否定舆论的引导在某些特定事件上存在的积极意义，只想表达对于**信息非自然传播**的严重担忧。
+众多中心化社交服务平台的存在为实现以上两个功能提供了极大的帮助。通过手机号、邮箱等身份认证方式，平台可有效的限制虚拟身份创建以减少冗余信息的传播；利用推荐算法及用户之间的关联可提高使用者获取目标信息的效率。但同时，平台本身对于信息传播的影响也越发严重，如限制用户权限，屏蔽言论，利用推荐机制扩大特定话题的传播范围。我们并不否定舆论的引导在某些特定事件上存在的积极意义，只想表达对于**信息非自然传播**的严重担忧。
 
-本文提出一种新的解决方案，基于点对点(P2P)的方式构建社交网络服务(SNS)。系统中所有信息均由签名确定其来源，称为消息。通过消息间的引用，同源消息可构成全序关系，所有消息可构成偏序关系。再以同源全序消息为基础定义账户。任何账户都可以自由的创建社区，定义其规则，并基于自我认同邀请其他账户加入自身所属社区。在任何社区中均可根据邀请关联关系对账户和信息行筛选，以实现信息的有效获取。
+本文提出一种新的解决方案，基于点对点(P2P)的方式构建社交网络服务(SNS)。系统中所有信息均由签名确定其来源，称为消息。通过消息间的引用，同源消息可构成全序关系，所有消息可构成偏序关系。再以同源全序消息为基础定义账户。任何账户都可以自由的创建社区，定义其规则，并基于身份的自我认同邀请其他账户加入自身所属社区。使用者在任何社区中均可根据邀请关联关系对账户和信息行筛选，以实现信息的有效获取。
 
 [去中心化的SNS / A decentralized social networking service](./docs/zh/WhitePaperV2.html)
 
