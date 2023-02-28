@@ -29,7 +29,7 @@ This paper proposes a new solution, building a social network service (SNS) syst
   * [Rules](#rules)
   * [Explanation](#explanation)
 - [Network Propagation](#network-propagation)
-- [Rewards and Incentives](#rewards-and-incentives)
+- [Rewards & Punishments](#rewards--punishments)
 - [Privacy](#privacy)
 - [Summary](#summary)
 - [Appendix](#appendix)
@@ -144,7 +144,7 @@ The system recommends that nodes refer to the following factors when judging whe
 
 It should be noted that the message propagation process is continuously changing, and each node in the system may propagate, store or delete any message at any time.
 
-## Rewards and Incentives
+## Rewards & Punishments
 
 We believe that a sustainable system should include two essential elements: **necessary consensus rules** and **reasonable interest drive**. The agreement of all participants on the rules is the foundation of the system, or any system is composed of individuals who agree on some of the same rules. Reasonable interest drive is the reason for the behavior of system participants, which will not change, and the rules must follow the participants' interest drive in order to be sustainable. These two points are not specific to decentralized systems. By defining the concepts of **message**, **account**, and **community**, we have provided enough rules for building a decentralized information dissemination system. In this section, we further explain why, based on these rules, the system can meet the interest drive of participants and ensure the continuous operation of the system.
 
@@ -157,7 +157,7 @@ It should be noted that there is a potentially overlooked malicious behavior in 
 3. When publishing messages, it is recommended to reference messages published by multiple credible heterogeneous accounts to avoid affecting oneself.
 4. Treat received messages with contradictory references as containing unknown references.
 
-You can see the difference between a message that is liked by many people and another message that is liked by very few people in the process of spreading. We can also see that the community as a user screening tool has an impact on message dissemination, which is not direct and compulsory, but very large. In conclusion, unlike traditional centralized social systems, we give the power of information screening to each system participant and their relationship with each other. Each system participant can have their own choice, instead of only receiving a centralized judgment from a service provider.
+We can also foresee the impact of the existence of the community as a user screening tool on the dissemination of news. This impact is not direct and mandatory, but it is very huge. In short, unlike the traditional centralized social system, we give the right to screen and judge information to the participation of each system and the relationship between them. Each system participant can have his own choice,instead of only receiving a centralized judgment from a service provider.
 
 ## Privacy
 
