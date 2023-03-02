@@ -8,6 +8,8 @@ A decentralized social networking service
 * github: [github.com/pdupub/documentation](https://github.com/pdupub/documentation/blob/master/zh-CN/WhitePaperV2.md)
 * email: pdupub@gmail.com
 * wechat: pengpengt00
+* telegram: [@PDUPUB](https://t.me/pdupub)
+* telegram group: [@PDUGroup](https://t.me/pdugroup)
 * twitter: [@PDUPUB](https://twitter.com/pdupub)
 
 [![License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)](LICENSE)

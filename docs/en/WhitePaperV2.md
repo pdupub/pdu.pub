@@ -6,6 +6,8 @@ layout: default
 
 * github: [github.com/pdupub/documentation](https://github.com/pdupub/documentation/blob/master/zh-CN/WhitePaperV2.md)
 * email: pdupub@gmail.com
+* telegram: [@PDUPUB](https://t.me/pdupub)
+* telegram group: [@PDUGroup](https://t.me/pdugroup)
 * wechat: pengpengt00
 * twitter: [@PDUPUB](https://twitter.com/pdupub)
 
