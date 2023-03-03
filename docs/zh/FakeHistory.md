@@ -7,7 +7,7 @@ layout: default
 >1. 源生的信息传播是基于点对点的。
 >2. 阻碍信息正常传播的根本在于系统中创建新节点的成本不一致。
 >3. 时间及节点间相互关系是为创建新节点增加成本的正常方式。 
->* 有兴趣了解更多 >> [PDU基于去中心化账户系统的社交网络](https://github.com/pdupub/Documentation/blob/master/zh-CN/WhitePaper.md)*
+>* 有兴趣了解更多 >> [PDU基于去中心化账户系统的社交网络](https://pdu.pub)*
 >* 欢迎 ✨Star✨ [https://github.com/pdupub](https://github.com/pdupub)*
 
 八卦国是一个神奇的国家，交流八卦是他们的生活态度，这里所讲述的就是他们的故事。

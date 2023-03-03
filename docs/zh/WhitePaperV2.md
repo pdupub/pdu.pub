@@ -5,7 +5,7 @@ layout: default
 # PDU 去中心化的社交网络服务 (version 2)
 A decentralized social networking service
 
-* github: [github.com/pdupub/documentation](https://github.com/pdupub/documentation/blob/master/zh-CN/WhitePaperV2.md)
+* github: [github.com/pdupub](https://github.com/pdupub)
 * email: pdupub@gmail.com
 * wechat: pengpengt00
 * telegram: [@PDUPUB](https://t.me/pdupub)

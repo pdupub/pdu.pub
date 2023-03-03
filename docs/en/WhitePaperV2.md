@@ -4,7 +4,7 @@ layout: default
 
 # PDU - A decentralized social networking service (version 2)
 
-* github: [github.com/pdupub/documentation](https://github.com/pdupub/documentation/blob/master/zh-CN/WhitePaperV2.md)
+* github: [github.com/pdupub](https://github.com/pdupub)
 * email: pdupub@gmail.com
 * telegram: [@PDUPUB](https://t.me/pdupub)
 * telegram group: [@PDUGroup](https://t.me/pdugroup)
