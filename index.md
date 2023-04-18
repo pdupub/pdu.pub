@@ -21,24 +21,13 @@ This paper proposes a new solution, building a social network service (SNS) syst
 
 [去中心化的SNS / A decentralized social networking service](./docs/zh/WhitePaperV2.html)
 
+# PDU之禅 Relase 0.3.1 
+* 事件通过有向关联确定偏序关系。
+* 全序事件集合可被视为单一个体。
+* 群体的构成源于个体的自我认知。
+* 系统世界决定于个体的主观感知。
 
-# Zen release 0.3
-* Events determine partial order relationships through directed associations.
-* Homologous fully sequenced events can constitute a single individual.
-* The composition of groups arises from the self-identification of individuals.
-* The system world is determined by the subjective choices of individuals.
-
-[older release](./docs/en/Zen.html)
-
-# PDU之禅 Relase 0.3 
-* 事件通过有向关联确定偏序关系.
-* 同源的全序事件能构成单一个体.
-* 群体的构成源于个体的自我认同.
-* 系统世界决定于个体的主观选择.
-
-这个版本与之前有所区别，依然保留了关系的有向链接，但去掉了对于时序的强制。
-
-[历史版本](./docs/zh/Zen.html)
+[历史版本](./docs/zh/Zen.html) / [Zen of PDU](./docs/en/Zen.html)
 
 # [去中心化&PDU笔记](./docs/zh/Draft.md)
 
