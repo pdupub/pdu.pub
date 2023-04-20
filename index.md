@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-# P.D.U iOS beta app is available / iOS客户端测试版
+# [P.D.U iOS beta App is Available](https://testflight.apple.com/join/FqQGxhbn)
 
 For users that want to try the latest version, please click this link from your iOS device to install: [https://testflight.apple.com/join/FqQGxhbn](https://testflight.apple.com/join/FqQGxhbn)
 
