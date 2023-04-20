@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+# P.D.U iOS beta app is available / iOS客户端测试版
+
+For users that want to try the latest version, please click this link from your iOS device to install: [https://testflight.apple.com/join/FqQGxhbn](https://testflight.apple.com/join/FqQGxhbn)
+
 # [PDU - A decentralized social networking service](./docs/en/WhitePaperV2.html)
 
 **Abstract:** We believe that a social network that is closest to the natural state should have two fundamental functions. Any participant can **freely disseminate information**, and also be able to **effectively obtain information**.

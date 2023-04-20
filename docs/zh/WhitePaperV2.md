@@ -5,6 +5,7 @@ layout: default
 # PDU 去中心化的社交网络服务 (version 2)
 A decentralized social networking service
 
+* App beta: [https://testflight.apple.com/join/FqQGxhbn](https://testflight.apple.com/join/FqQGxhbn)
 * github: [github.com/pdupub](https://github.com/pdupub)
 * email: pdupub@gmail.com
 * wechat: pengpengt00

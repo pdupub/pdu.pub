@@ -4,6 +4,7 @@ layout: default
 
 # PDU - A decentralized social networking service (version 2)
 
+* App beta: [https://testflight.apple.com/join/FqQGxhbn](https://testflight.apple.com/join/FqQGxhbn)
 * github: [github.com/pdupub](https://github.com/pdupub)
 * email: pdupub@gmail.com
 * telegram: [@PDUPUB](https://t.me/pdupub)
