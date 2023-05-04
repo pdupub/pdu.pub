@@ -186,8 +186,8 @@ A decentralized social networking service
 
 2. PDU的实现
 
-[go-pdu](https://github.com/pdupub/go-pdu)
-[iOS App beta](https://testflight.apple.com/join/FqQGxhbn)
+* [go-pdu](https://github.com/pdupub/go-pdu)
+* [iOS App beta](https://testflight.apple.com/join/FqQGxhbn)
 
 
 [back](../../)
