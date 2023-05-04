@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+# [PDU 去中心化网络社交服务](./docs/zh/WhitePaperV3.html)
+
+**摘要：** 自然状态的社交网络应当具备两个基础功能，参与者能够自由的发布信息，同时也能够有效的获取信息。去中心化系统及数字签名已经能够实现信息的自由发布，但如果参与者无法对发布者身份进行筛选，则冗余信息会阻塞传播过程使得系统不可用。本文提出一种在不需要中心化身份验证的情况下实现发布者身份的定义及筛选的方案。所有消息均可通过引用其他消息的签名来表述与之前后关系，再由数字签名将关系固定在此消息之上。通过这种关联，系统中的消息构成多个全序和偏序关系。我们以全序的消息为基础来定义账户，账户拥有者可以基于身份的自我认同来建立并扩展自身所属族群。参与者在系统中可以根据族群及认定关系对于陌生身份进行筛选，并基于此实现信息的有效获取。
+
 # [P.D.U iOS beta App is Available](https://testflight.apple.com/join/FqQGxhbn)
 
 For users that want to try the latest version, please click this link from your iOS device to install: [https://testflight.apple.com/join/FqQGxhbn](https://testflight.apple.com/join/FqQGxhbn)
@@ -13,11 +17,7 @@ This paper proposes a new solution, building a social network service (SNS) syst
 
 [PDU - A decentralized social networking service](./docs/en/WhitePaperV2.html)
 
-# [PDU 去中心化网络社交服务](./docs/zh/WhitePaperV2.html)
 
-**摘要：** 我们认为一个最接近自然状态的社交网络应当具备两个基础功能，任何参与者都能够**自由的传播信息**，同时也能够**有效的获取信息**。
-
-本文提出一种新的解决方案，基于点对点(P2P)的方式构建社交网络服务(SNS)。系统中所有信息均由签名确定其来源，称为消息。通过消息间的引用，同源消息可构成全序关系，所有消息可构成偏序关系。再以同源全序消息为基础定义账户。任何账户都可以自由的创建社区，定义其规则，并基于身份的自我认同邀请其他账户加入自身所属社区。使用者在任何社区中均可根据邀请关联关系对账户和信息行筛选，以实现信息的有效获取。
 
 [去中心化的SNS / A decentralized social networking service](./docs/zh/WhitePaperV2.html)
 
