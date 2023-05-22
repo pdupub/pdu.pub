@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Privacy Policy
+# Privacy Policy of ParaDigi Universe
 
 We highly value your privacy and the protection of your personal information. This Privacy Policy is intended to explain how we collect, use, and protect your information. Please read this Privacy Policy carefully and make sure you understand and agree to it before using our services.
 
