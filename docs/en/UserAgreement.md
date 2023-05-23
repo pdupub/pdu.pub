@@ -1,10 +1,21 @@
 ---
 layout: default
 ---
-# User Policy
+# User Agreement
 
 P.D.U purpose is to serve the public conversation. Violence, harassment and other similar types of behavior discourage people from expressing themselves, and ultimately diminish the value of global public conversation. Our rules are to ensure all people can participate in the public conversation freely and safely.
- 
+
+## Access
+
+No one under 17 is allowed to use or access the Services. We may offer additional Services that require you to be older to use them, so please read all notices and any Additional Terms carefully when you access the Services.
+
+By using the Services, you state that:
+
+* You are at least 17 years old and over the minimum age required by the laws of your country of residence to access and use the Services;
+* You are not barred from using the Services under all applicable laws; and
+* You have not been permanently suspended or removed from the Services.
+
+If you are accepting these Terms on behalf of another legal entity, including a business or government entity, you represent that you have full legal authority to bind such entity to these Terms.
 
 ## Safety
 Violent Speech: You may not threaten, incite, glorify, or express desire for violence or harm. Learn more.
