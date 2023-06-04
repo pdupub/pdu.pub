@@ -13,8 +13,6 @@ A decentralized social networking service
 * telegram group: [@PDUGroup](https://t.me/pdugroup)
 * twitter: [@PDUPUB](https://twitter.com/pdupub)
 
-[![License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)](LICENSE)
-[![Chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/pdupub/Welcome)
 
 **摘要：** 我们认为一个最接近自然状态的社交网络应当具备两个基础功能，任何参与者都能够**自由的传播信息**，同时也能够**有效的获取信息**。
 

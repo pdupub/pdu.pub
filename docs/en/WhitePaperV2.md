@@ -12,8 +12,6 @@ layout: default
 * wechat: pengpengt00
 * twitter: [@PDUPUB](https://twitter.com/pdupub)
 
-[![License](https://img.shields.io/badge/license-GPL%20v3-blue.svg)](LICENSE)
-[![Chat](https://img.shields.io/badge/gitter-Docs%20chat-4AB495.svg)](https://gitter.im/pdupub/Welcome)
 
 **Abstract:** We believe that a social network that is closest to the natural state should have two fundamental functions. Any participant can **freely disseminate information**, and also be able to **effectively obtain information**.
 
