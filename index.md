@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+# [User Agreement](./docs/en/UserAgreement.md)
+
+P.D.U purpose is to serve the public conversation. Violence, harassment and other similar types of behavior discourage people from expressing themselves, and ultimately diminish the value of global public conversation. Our rules are to ensure all people can participate in the public conversation freely and safely. [more ...](./docs/en/UserAgreement.md)
+
+
+# [Privacy Policy](./docs/en/PrivacyPolicy.md)
+We highly value your privacy and the protection of your personal information. This Privacy Policy is intended to explain how we collect, use, and protect your information. Please read this Privacy Policy carefully and make sure you understand and agree to it before using our services. [more ...](./docs/en/PrivacyPolicy.md)
 
 
 # [P.D.U iOS beta App is Available](https://testflight.apple.com/join/FqQGxhbn)
