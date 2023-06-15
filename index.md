@@ -1,6 +1,13 @@
 ---
 layout: default
 ---
+
+# [P.D.U iOS App is on App Store](https://apps.apple.com/us/app/p-d-u/id6443928730)
+
+### Please download and give it a try. 
+
+### [https://apps.apple.com/us/app/p-d-u/id6443928730](https://apps.apple.com/us/app/p-d-u/id6443928730)
+
 # [User Agreement](./docs/en/UserAgreement.html)
 
 P.D.U purpose is to serve the public conversation. Violence, harassment and other similar types of behavior discourage people from expressing themselves, and ultimately diminish the value of global public conversation. Our rules are to ensure all people can participate in the public conversation freely and safely. [more ...](./docs/en/UserAgreement.html)

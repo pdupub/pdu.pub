@@ -5,7 +5,7 @@ layout: default
 # PDU：基于点对点的社交网络系统 
 A peer-to-peer social networking service
 
-* App beta: [https://testflight.apple.com/join/FqQGxhbn](https://testflight.apple.com/join/FqQGxhbn)
+* iOS App: [https://apps.apple.com/us/app/p-d-u/id6443928730](https://apps.apple.com/us/app/p-d-u/id6443928730)
 * github: [github.com/pdupub](https://github.com/pdupub)
 * email: pdupub@gmail.com
 * wechat: pengpengt00
