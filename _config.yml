@@ -3,3 +3,10 @@ baseurl:  # the subpath of your site, e.g. /blog
 title: ParaDigi Universe # the name of your site, e.g. ACME Corp.
 logo: 
 description: A P2P Social Networking Service.
+
+# documents on landing page
+appstore: https://apps.apple.com/us/app/p-d-u/id6443928730
+go-pdu: https://github.com/pdupub/go-pdu
+github: https://github.com/pdupub
+twitter: https://twitter.com/pdupub
+telegram: https://t.me/pdugroup
