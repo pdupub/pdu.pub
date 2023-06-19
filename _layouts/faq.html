@@ -35,6 +35,37 @@
             <div class="card card-lg">
               <div class="card-body">
                 <div class="space-y-4">
+
+                  {% for faq_hash in site.data.faq %}  
+                  {% assign faq_group = faq_hash[1] %}
+                  {% assign parent_index = forloop.index %}
+                  <div>
+                    <h2 class="mb-3">{{parent_index}}. {{ faq_group.title }}</h2>
+                    <div id="faq-1" class="accordion" role="tablist" aria-multiselectable="true">
+                        
+                        {% for faq in faq_group.faqs%}
+                        {% assign inner_index = forloop.index %}
+
+                        <div class="accordion-item">
+                          <div class="accordion-header" role="tab">
+                            <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#faq-{{ parent_index }}-{{ inner_index }}" aria-expanded="false">{{ faq.question }}</button>
+                          </div>
+                          <div id="faq-{{ parent_index }}-{{ inner_index }}" class="accordion-collapse collapse {% if inner_index == 1 %} show {% endif%}" role="tabpanel" data-bs-parent="#faq-{{ parent_index }}" >
+                            <div class="accordion-body pt-0">
+                              <div>
+                                <p>{{ faq.answer}}</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        {% endfor %}
+
+
+                      </div>
+                  </div>  
+                  {% endfor %}
+
+
                   <div>
                     <h2 class="mb-3">1. Introduction</h2>
                     <div id="faq-1" class="accordion" role="tablist" aria-multiselectable="true">
