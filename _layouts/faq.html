@@ -1,58 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>App Landing Page</title>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/js/tabler.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css">
-    <link rel="stylesheet" href="assets/css/main.css"
+    {% include head-custom.html %}
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="assets/images/logo_60.png" alt="App Icon" width="30" height="30" class="d-inline-block align-top navbar-rounded-img p-1">
-                P.D.U
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="http://baidu.com">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#map">Contact</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#navbar-third" data-bs-toggle="dropdown" data-bs-auto-close="outside" role="button" aria-expanded="false">
-                        <span class="nav-link-title">
-                          Third
-                        </span>
-                      </a>
-                      <div class="dropdown-menu">
-                        <a class="dropdown-item" href="./#">
-                          First
-                        </a>
-                        <a class="dropdown-item" href="./#">
-                          Second
-                        </a>
-                        <a class="dropdown-item" href="./#">
-                          Third
-                        </a>
-                      </div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    
+    {% include topnav.html %}
 
     <div class="page-wrapper">
         <!-- Page header -->
@@ -234,50 +187,7 @@
         </div>
       </div>
 
+    {% include footer-custom.html %}
 
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <h4 class="text-smaller">OUR PRODUCTS</h4>
-                    <p>Documentation</p>
-                    <p>Documentation</p>
-                    <p>Documentation</p>
-                </div>
-                <div class="col-md-3">
-                    <h4 class="text-smaller">SUPPORT</h4>
-                    <p>Documentation</p>
-                    <p>Documentation</p>
-                    <p>Documentation</p>
-                </div>
-                <div class="col-md-3">
-                    <h4 class="text-smaller">PDU</h4>
-                    <p>Documentation</p>
-                    <p>Documentation</p>
-                    <p>Documentation</p>
-                </div>
-                <div class="col-md-3">
-                    <h2>PDUPUB</h2>
-                    <p>pdupub is a P2P social network</p>
-
-                    <div >
-                        <a href="#" class="icon mr-2">
-                            <img src="assets/images/brand-twitter.png"  width="24" height="24" class="p1"/>
-                        </a>
-                        <a href="#" class="icon mr-2">
-                            <img src="assets/images/brand-github.png"  width="24" height="24" class="p1"/>
-                        </a>
-                        <a href="#" class="icon">
-                            <img src="assets/images/brand-telegram.png"  width="24" height="24" class="p1"/>
-                        </a>
-                    </div>
-                    
-                </div>
-            </div>
-            <hr class="mt-4 mb-2">
-            <p class="footer-text">&copy; 2023 App Name. All rights reserved.</p>
-        </div>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-</body>
+    </body>
 </html>
