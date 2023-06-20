@@ -92,6 +92,31 @@ milestone:
     current: false
 
 
+display_title: Embracing Our Uniqueness
+display_images:
+  - url: https://tabler.io/demo/static/photos/group-of-people-sightseeing-in-the-city.jpg
+  - url: https://tabler.io/demo/static/photos/color-palette-guide-sample-colors-catalog-.jpg
+  - url: https://tabler.io/demo/static/photos/stylish-workplace-with-computer-at-home.jpg
+  - url: https://tabler.io/demo/static/photos/pink-desk-in-the-home-office.jpg
+  - url: https://tabler.io/demo/static/photos/young-woman-sitting-on-the-sofa-and-working-on-her-laptop.jpg
+
+display_contents:
+  - title: step 1
+    description: hehe
+  - title: step 2
+    description: hehe
+  - title: step 3
+    description: hehe
+
+map_title: The Power of Decentralization
+map_contents:
+  - title: step 1
+    description: hehe
+  - title: step 2
+    description: hehe
+  - title: step 3
+    description: hehe
+
 photos:
   - url: https://tabler.io/demo/static/photos/book-on-the-grass.jpg
   - url: https://tabler.io/demo/static/photos/colorful-exotic-flowers-and-greenery.jpg
