@@ -110,12 +110,12 @@ display_contents:
 
 map_title: The Power of Decentralization
 map_contents:
-  - title: step 1
-    description: hehe
-  - title: step 2
-    description: hehe
-  - title: step 3
-    description: hehe
+  - title: Redefining Ownership
+    description: Decentralization challenges traditional notions of ownership by enabling shared ownership and peer-to-peer interactions, creating new models for value creation and exchange.
+  - title: Collaboration and Trust
+    description:  Decentralization fosters collaboration and trust among participants, as it eliminates the need for centralized authorities and promotes transparent and consensus-based decision-making.
+  - title: Resilience and Security
+    description: The decentralized nature of systems enhances resilience and security, as it reduces the risk of a single point of failure or vulnerability.
 
 photos:
   - url: https://tabler.io/demo/static/photos/book-on-the-grass.jpg
