@@ -10,3 +10,87 @@ features:
 
   - title: Open Source
     description: "<a href=\"http://github.com/pdupub/go-pdu\">ParaDigi Universe</a> is free and open-source software. We believe in your right to use, copy, study and change it as you see fit, and we benefit from contributions from the community."
+
+milestone:
+  - title: Start
+    date: 2018-10-07
+    description: Create organization <b>Parallel Digital Universe</b> on GitHub, abbreviated as PDU. Start developing go-pdu, the golang implementation of this project.
+    current: false
+
+  - title: go-pdu v0.0.1
+    description: The first version of go-pdu version 0.0.1 has been released.
+    current: false
+
+  - title: White Paper (version 1)
+    date: 2019-05-22
+    description: Completed the first version of the white paper for PDU
+    current: false
+
+  - title: go-pdu v0.1.0
+    date: 2021-09-02
+    description: go-pdu version 0.1.0 has been released.
+    current: false
+
+  - title: go-pdu v0.2.0
+    date: 2021-10-24
+    description: go-pdu version 0.2.0 has been released.
+    current: false
+
+  - title: White Paper (version 2)
+    date: 2022-05-15
+    description: Completed the second version of the white paper for PDU
+    current: false
+
+  - title: go-pdu v0.3.0
+    date: 2022-07-20
+    description: go-pdu version 0.3.0 has been released.
+    current: false
+
+  - title: iOS App P.D.U
+    date: 2023-01-29
+    description: Start to work on iOS App of PDU, P.D.U
+    current: false
+
+  - title: go-pdu v0.3.1
+    date: 2023-03-15
+    description: go-pdu version 0.3.1 has been released. This release is used as the backbone server of iOS App P.D.U right now.
+    current: false
+
+  - title: P.D.U on Apple Appstore
+    date: 2023-06-12
+    description: "<a href=\"https://apps.apple.com/us/app/p-d-u/id6443928730\">P.D.U</a> is on Apple Appstore right now, belong to the category of social networking. "
+    current: false
+
+  - title: Website update
+    date: 2023-06-21
+    description: ParaDigi Universe new website online
+    current: true
+
+  - title: Optimize
+    date: now ~ 2023-12
+    description: Improve the underlying network and optimize the client experience.
+    current: false
+
+  - title: Community & Users
+    date: now ~ 2023-12
+    description: Build a community and expand users
+    current: false
+
+  - title: Token issuance
+    date: 2024-01
+    description: In ParaDigi Universe, following the Delegated Proof of Stake (DPoS) consensus rules, a unified token issuance is conducted among the most prevalent Species.
+    current: false
+
+  - title: Airdrop
+    date: 2024-02
+    description: Airdrop newly issued cryptocurrency to users through P.D.U. 
+    current: false
+
+  - title: Business activities
+    date: 2024-02 ~
+    description: In ParaDigi Universe, any form of commercial activity based on the identity and currency system established in this decentralized system.
+    current: false
+
+
+
+
