@@ -133,46 +133,15 @@
 
     <div class="photos">
         <div class="photos-title">
-            Photos
+            <!-- Photos -->
         </div>
         <div class="container-xl">
             <div class="row row-cols-6 g-3">
+              {% for photo in site.data.home.photos %}
               <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/book-on-the-grass.jpg)"></div>
+                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url({{ photo.url }})"></div>
               </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/colorful-exotic-flowers-and-greenery.jpg)"></div>
-              </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/working-in-a-restaurant-macbook-cheese-cake-and-cup-of-coffee.jpg)"></div>
-              </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/home-office-laptop-organizer-and-cup-of-coffee.jpg)"></div>
-              </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/book-on-the-grass.jpg)"></div>
-              </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/colorful-exotic-flowers-and-greenery.jpg)"></div>
-              </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/working-in-a-restaurant-macbook-cheese-cake-and-cup-of-coffee.jpg)"></div>
-              </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/home-office-laptop-organizer-and-cup-of-coffee.jpg)"></div>
-              </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/book-on-the-grass.jpg)"></div>
-              </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/colorful-exotic-flowers-and-greenery.jpg)"></div>
-              </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/working-in-a-restaurant-macbook-cheese-cake-and-cup-of-coffee.jpg)"></div>
-              </div>
-              <div class="col">
-                <div class="img-responsive img-responsive-1x1 rounded border" style="background-image: url(https://tabler.io/demo/static/photos/home-office-laptop-organizer-and-cup-of-coffee.jpg)"></div>
-              </div>
+              {% endfor %}
             </div>
           </div>
     </div>
