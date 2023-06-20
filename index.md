@@ -1,4 +1,4 @@
 ---
-layout: landing
+layout: home
 title: Home
 ---
