@@ -44,7 +44,7 @@ Non-Consensual Nudity: You may not post or share intimate photos or videos of so
 
 Account Compromise: You may not use or attempt to use credentials, passwords, tokens, keys, cookies or other data to log into or otherwise access, add, delete or modify the private information or account features of any P.D.U account other than your own (or those you have been directly authorized to do so via P.D.U’s Teams authorization, OAuth authorization or similar mechanism). 
 
-User of P.D.U also need to abide by [ParaDigi privacy policy](./UserPolicy.md).
+User of P.D.U also need to abide by [ParaDigi privacy policy](./privacy_policy.html).
 
 ## Authenticity
 
