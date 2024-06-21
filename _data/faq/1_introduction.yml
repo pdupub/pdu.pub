@@ -1,11 +1,16 @@
 title: Introduction
 
 faqs:
-  # - question: 问个问题
-  #   answer: 回答
-    
-  # - question: 问个问题2
-  #   answer: 好吧2
 
-  # - question: 问个问题3
-  #   answer: 好吧3
+- question: What is ParaDigi Universe Social Network?
+  answer: ParaDigi Universe Social Network is a fully decentralized, peer-to-peer (P2P) social networking platform that allows users to publish and access information without relying on third-party services.
+
+- question: How does ParaDigi Universe ensure user identity verification?
+  answer: ParaDigi Universe uses a private key signature mechanism to establish trusted publisher identities. Each sequence of messages signed by the same private key forms a unique identity.
+
+- question: What makes ParaDigi Universe different from other social networks?
+  answer: Unlike centralized platforms, ParaDigi Universe operates without any third-party intermediaries, ensuring complete privacy and security of user data.
+
+- question: How does ParaDigi Universe handle content moderation?
+  answer: Content moderation in ParaDigi Universe is decentralized. Users can block or filter out malicious publishers based on their interactions and trust networks.
+

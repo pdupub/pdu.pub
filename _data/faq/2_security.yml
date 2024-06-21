@@ -1,0 +1,21 @@
+title: Security
+
+faqs:
+- question: How does ParaDigi Universe prevent Sybil attacks?
+  answer: ParaDigi Universe employs an identity-based reward and punishment mechanism that effectively filters out fake accounts and spam.
+
+- question: Can I filter out spam and unwanted content?
+  answer: Yes, ParaDigi Universe allows users to create a custom set of visible publisher identities based on interaction behaviors, effectively filtering out spam.
+
+- question: How does ParaDigi Universe protect my privacy?
+  answer: ParaDigi Universe supports anonymous public keys and encrypts peer-to-peer communications, ensuring that your real identity is not exposed.
+
+- question: How does ParaDigi Universe ensure data integrity?
+  answer: ParaDigi Universe uses a message chain structure that ensures all published information is immutable and cannot be tampered with.
+
+- question: What happens if a publisher tries to fork their message chain?
+  answer: If a publisher's message chain forks, it is considered malicious behavior, and the publisher will be penalized by discarding the conflicting messages and blocking the publisher.
+
+- question: How does ParaDigi Universe manage network nodes?
+  answer: Each node in the ParaDigi Universe network filters received messages based on customized sets of visible identities, ensuring efficient message dissemination.
+
