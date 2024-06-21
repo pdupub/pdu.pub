@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include head-custom.html %}
+</head>
+<body>
+    
+    {% include topnav.html %}
+
+        <div class="page-wrapper">
+            <div class="container-xl">
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-3">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Table of Contents</h3>
+                            </div>
+                            <div class="list-group list-group-transparent">
+                                <a href="#section1" class="list-group-item list-group-item-action">Section 1</a>
+                                <a href="#section2" class="list-group-item list-group-item-action">Section 2</a>
+                                <a href="#section3" class="list-group-item list-group-item-action">Section 3</a>
+                                <a href="#section4" class="list-group-item list-group-item-action">Section 4</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="col-9">
+                        <div id="section1" class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Section 1</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Content for section 1.</p>
+                            </div>
+                        </div>
+                        <div id="section2" class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Section 2</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Content for section 2.</p>
+                            </div>
+                        </div>
+                        <div id="section3" class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Section 3</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Content for section 3.</p>
+                            </div>
+                        </div>
+                        <div id="section4" class="card">
+                            <div class="card-header">
+                                <h3 class="card-title">Section 4</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Content for section 4.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% include footer-custom.html %}
+
+    </body>
+</html>
+
