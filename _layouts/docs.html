@@ -8,59 +8,40 @@
     {% include topnav.html %}
 
         <div class="page-wrapper">
+        
+        <!-- Page header -->
+        <div class="page-header d-print-none">
             <div class="container-xl">
-                <div class="row">
-                    <!-- Sidebar -->
-                    <div class="col-3">
-                        <div class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Table of Contents</h3>
-                            </div>
-                            <div class="list-group list-group-transparent">
-                                <a href="#section1" class="list-group-item list-group-item-action">Section 1</a>
-                                <a href="#section2" class="list-group-item list-group-item-action">Section 2</a>
-                                <a href="#section3" class="list-group-item list-group-item-action">Section 3</a>
-                                <a href="#section4" class="list-group-item list-group-item-action">Section 4</a>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Content -->
-                    <div class="col-9">
-                        <div id="section1" class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Section 1</h3>
-                            </div>
-                            <div class="card-body">
-                                <p>Content for section 1.</p>
-                            </div>
-                        </div>
-                        <div id="section2" class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Section 2</h3>
-                            </div>
-                            <div class="card-body">
-                                <p>Content for section 2.</p>
-                            </div>
-                        </div>
-                        <div id="section3" class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Section 3</h3>
-                            </div>
-                            <div class="card-body">
-                                <p>Content for section 3.</p>
-                            </div>
-                        </div>
-                        <div id="section4" class="card">
-                            <div class="card-header">
-                                <h3 class="card-title">Section 4</h3>
-                            </div>
-                            <div class="card-body">
-                                <p>Content for section 4.</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row g-2 align-items-center">
+                <div class="col">
+                <h2 class="page-title">
+                    Documentation
+                </h2>
+                </div>
+                <!-- Page title actions -->
+                <div class="col-auto ms-auto d-print-none">
+                <div class="d-flex">
+                    <ol class="breadcrumb breadcrumb-arrows" aria-label="breadcrumbs">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#">FDocumentation</a></li>
+                    </ol>
+                </div>
                 </div>
             </div>
+            </div>
+        </div>
+
+        <!-- Page body -->
+        <div class="page-body">
+            <div class="container-xl">
+              <div class="card card-lg">
+                <div class="card-body">
+                    {{ content }}
+                </div>
+              </div>
+            </div>
+        </div>
+
         </div>
         {% include footer-custom.html %}
 
