@@ -5,7 +5,7 @@ features:
     description: ParaDigi Universe is absolutely decentralized, every participant is a part of the system, and the whole system is composed of every participant.
 
   - title: Public & Immutable
-    description: We believe "<b>All events leave traces in this world.</b>" We also believe "<b>What's done is done, there's no going back.</b>"
+    description: We believe "<b>All events leave traces in this world.</b>" </br> We also believe "<b>What's done is done, there's no going back.</b>"
 
   - title: Open Source
     description: "<a href=\"http://github.com/pdupub/go-pdu\">ParaDigi Universe</a> is free and open-source software. We believe in your right to use, copy, study and change it as you see fit, and we benefit from contributions from the community."
