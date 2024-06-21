@@ -3,7 +3,7 @@ layout: default
 title: White Paper
 ---
 
-# PDU Protocol：A peer-to-peer social network service
+# PDU Protocol：A Peer-to-Peer Social Network Service
 
 * iOS App: [https://apps.apple.com/us/app/p-d-u/id6443928730](https://apps.apple.com/us/app/p-d-u/id6443928730)
 * github: [github.com/pdupub](https://github.com/pdupub)
