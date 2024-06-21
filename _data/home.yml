@@ -2,7 +2,7 @@ title: See the World as It Truly Is.
 sub_title: Live in a decentralized world online just like in real life! With ParaDigi Universe, you can share freely and find awesome people without hassle. No need for third-party logins, and say goodbye to annoying spam. Dive into the future of social networking :-)
 features:
   - title: Decentralized
-    description: ParaDigi Universe is absolutely decentralized, every participant is a part of the system, and the whole system is composed of every participant.
+    description: ParaDigi Universe is built on an innovative peer-to-peer (P2P) protocol, offering a completely autonomous, secure, and third-party-free social experience. 
 
   - title: Public & Immutable
     description: We believe "<b>All events leave traces in this world.</b>" </br> We also believe "<b>What's done is done, there's no going back.</b>"
@@ -86,12 +86,21 @@ display_images:
   - url: https://tabler.io/demo/static/photos/young-woman-sitting-on-the-sofa-and-working-on-her-laptop.jpg
 
 display_contents:
-  - title: Autonomous Identity
-    description: An autonomous identity exists, independent of any external influence or association. In ParaDigi Universe,  user's identity is defined only by their actions. Behind each ID, there could be a man, an artificial intelligence, or even a puppy.
-  - title: A World Without Secrets and Deception
-    description: Secrecy means nothing for you to understand and really know a person or the world. All information in ParaDigi Universe is open and transparent. Let's free from the burden of secrecy.
-  - title: Shaping Individual Realities
-    description: Everyone's worldview is subjective, shaped solely by the information they encounter. Embracing the power of information, we acknowledge diverse perspectives and unique realities.
+- title: Fully Decentralized  
+  description: No reliance on any third-party services, ensuring your data and privacy are inviolable.
+
+- title: Innovative Identity Verification  
+  description: Ensures every user’s identity is authentic and credible through private key signature mechanisms.
+
+- title: Anti-Sybil Attack  
+  description: Unique reward and punishment mechanisms effectively prevent fake accounts and spam.
+
+- title: Personalized Visible Identity Set  
+  description: Automatically generates a trust network based on interaction behavior, making your social circle more credible.
+
+- title: Data Integrity  
+  description: Message chain structure ensures all posted information is immutable, ensuring data integrity and security.
+
 
 map_title: The Power of Decentralization
 map_contents:
