@@ -64,32 +64,18 @@ milestone:
   - title: Website update
     date: 2023-06-21
     description: ParaDigi Universe new website online
-    current: true
+    current: false
 
   - title: Optimize
-    date: now ~ 2023-12
+    date: now
     description: Improve the underlying network and optimize the client experience.
-    current: false
-
-  - title: Community & Users
-    date: now ~ 2023-12
-    description: Build a community and expand users
-    current: false
-
-  - title: Token issuance
-    date: 2024-01
-    description: In ParaDigi Universe, following the Delegated Proof of Stake (DPoS) consensus rules, a unified token issuance is conducted among the most prevalent Species.
-    current: false
+    current: true
 
   - title: Airdrop
-    date: 2024-02
+    date: 2024-09
     description: Airdrop newly issued cryptocurrency to users through P.D.U. 
     current: false
 
-  - title: Business activities
-    date: 2024-02 ~
-    description: In ParaDigi Universe, any form of commercial activity based on the identity and currency system established in this decentralized system.
-    current: false
 
 
 display_title: Embracing Our Uniqueness
