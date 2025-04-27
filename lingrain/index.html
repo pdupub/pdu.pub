@@ -9,6 +9,7 @@
     body {
       background: linear-gradient(to bottom, #000000, #1a1a1a);
       overflow-x: hidden;
+      scroll-behavior: smooth;
     }
     .rain-drop {
       position: absolute;
@@ -28,19 +29,21 @@
 
   <!-- Light Rain Effect -->
   <div id="rain" class="pointer-events-none fixed inset-0 z-0"></div>
+
   <!-- Sticky Navigation Bar -->
-  <nav class="fixed top-0 w-full bg-black bg-opacity-70 backdrop-blur-md z-50 shadow-md">
-    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+  <nav class="fixed top-0 w-full bg-gray-700 bg-opacity-10 border-b border-gray-900 backdrop-blur-md z-50">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
       <div class="text-lg font-bold text-white">LingRain</div>
       <div class="flex gap-6 text-sm">
-        <a href="#learning" class="hover:text-gray-300">自然学习</a>
-        <a href="#immersion" class="hover:text-gray-300">沉浸体验</a>
-        <a href="#mindset" class="hover:text-gray-300">放松心态</a>
+        <a href="#learning" class="text-gray-300 hover:text-white">自然学习</a>
+        <a href="#immersion" class="text-gray-300 hover:text-white">沉浸体验</a>
+        <a href="#mindset" class="text-gray-300 hover:text-white">放松心态</a>
       </div>
     </div>
   </nav>
 
-  <div class="pt-24"> <!-- 给页面顶部留出空间 -->
+  <div class="pt-24">
+    <!-- 保持后续内容不变 -->
   <!-- Banner Section -->
   <section  id="learning" class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative z-10">
     <h1 class="text-5xl md:text-6xl font-bold mb-4">LingRain</h1>
