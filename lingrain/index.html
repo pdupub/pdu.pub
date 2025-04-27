@@ -28,9 +28,21 @@
 
   <!-- Light Rain Effect -->
   <div id="rain" class="pointer-events-none fixed inset-0 z-0"></div>
+  <!-- Sticky Navigation Bar -->
+  <nav class="fixed top-0 w-full bg-black bg-opacity-70 backdrop-blur-md z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <div class="text-lg font-bold text-white">LingRain</div>
+      <div class="flex gap-6 text-sm">
+        <a href="#learning" class="hover:text-gray-300">自然学习</a>
+        <a href="#immersion" class="hover:text-gray-300">沉浸体验</a>
+        <a href="#mindset" class="hover:text-gray-300">放松心态</a>
+      </div>
+    </div>
+  </nav>
 
+  <div class="pt-24"> <!-- 给页面顶部留出空间 -->
   <!-- Banner Section -->
-  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative z-10">
+  <section  id="learning" class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative z-10">
     <h1 class="text-5xl md:text-6xl font-bold mb-4">LingRain</h1>
     <p class="text-xl md:text-2xl mb-8">在轻柔的语言之雨中，放松、沉浸、自然习得。</p>
     <div class="flex gap-4 flex-wrap justify-center">
@@ -41,7 +53,7 @@
 
   <!-- 感受区 Section -->
   <section class="py-24 px-6 bg-gray-900">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div  id="immersion" class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <div>
         <h2 class="text-4xl md:text-5xl font-bold mb-6">像孩子一样学习</h2>
         <p class="text-lg">无须死记硬背，无需焦虑追赶。LingRain创造一个自然、柔和的听力环境，让语言如细雨般滋润心田。</p>
@@ -54,7 +66,7 @@
 
   <!-- 方法区 Section -->
   <section class="py-24 px-6">
-    <div class="max-w-5xl mx-auto text-center">
+    <div  id="mindset" class="max-w-5xl mx-auto text-center">
       <h2 class="text-4xl md:text-5xl font-bold mb-6">沉浸式听力练习</h2>
       <p class="text-lg mb-6">在LingRain，每一次聆听都是一场无声的冥想。你无需翻译，无需理解，只需沐浴在原汁原味的语言之中，像呼吸空气一样自然。</p>
       <img src="https://dummyimage.com/600x300/111/fff&text=沉浸体验" alt="沉浸体验" class="mx-auto mt-8 rounded-lg shadow-md">
@@ -93,7 +105,7 @@
       </div>
     </div>
   </section>
-
+</div>
   <!-- Footer Section -->
   <footer class="bg-black text-gray-400 text-sm py-10 px-6">
     <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
