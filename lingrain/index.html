@@ -5,13 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LingRain - 听力的雨林</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      overflow-x: hidden;
+    }
+    .rain-drop {
+      position: absolute;
+      width: 2px;
+      height: 10px;
+      background: white;
+      opacity: 0.3;
+      animation: fall 5s linear infinite;
+    }
+    @keyframes fall {
+      0% {transform: translateY(-10vh);}
+      100% {transform: translateY(110vh);}
+    }
+  </style>
 </head>
-<body class="bg-black text-white font-sans">
+<body class="text-white font-sans relative">
+
+  <!-- Light Rain Effect -->
+  <div id="rain" class="pointer-events-none fixed inset-0 z-0"></div>
+
   <!-- Banner Section -->
-  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6">
-    <h1 class="text-5xl font-bold mb-4">LingRain</h1>
-    <p class="text-xl mb-8">在轻柔的语言之雨中，放松、沉浸、自然习得。</p>
-    <div class="flex gap-4">
+  <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative z-10">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">LingRain</h1>
+    <p class="text-xl md:text-2xl mb-8">在轻柔的语言之雨中，放松、沉浸、自然习得。</p>
+    <div class="flex gap-4 flex-wrap justify-center">
       <button class="bg-white text-black px-6 py-3 rounded-full font-semibold">开始体验</button>
       <button class="border border-white px-6 py-3 rounded-full font-semibold">了解更多</button>
     </div>
@@ -19,32 +41,43 @@
 
   <!-- 感受区 Section -->
   <section class="py-24 px-6 bg-gray-900">
-    <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
       <div>
-        <h2 class="text-4xl font-bold mb-6">像孩子一样学习</h2>
+        <h2 class="text-4xl md:text-5xl font-bold mb-6">像孩子一样学习</h2>
         <p class="text-lg">无须死记硬背，无需焦虑追赶。LingRain创造一个自然、柔和的听力环境，让语言如细雨般滋润心田。</p>
       </div>
       <div>
-        <img src="https://dummyimage.com/500x300/222/fff&text=柔和自然" alt="自然学习" class="rounded-lg">
+        <img src="https://dummyimage.com/500x300/222/fff&text=自然学习" alt="自然学习" class="rounded-lg shadow-lg">
       </div>
     </div>
   </section>
 
   <!-- 方法区 Section -->
   <section class="py-24 px-6">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-6">沉浸式听力练习</h2>
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">沉浸式听力练习</h2>
       <p class="text-lg mb-6">在LingRain，每一次聆听都是一场无声的冥想。你无需翻译，无需理解，只需沐浴在原汁原味的语言之中，像呼吸空气一样自然。</p>
-      <img src="https://dummyimage.com/600x300/111/fff&text=沉浸式体验" alt="沉浸式体验" class="mx-auto mt-8">
+      <img src="https://dummyimage.com/600x300/111/fff&text=沉浸体验" alt="沉浸体验" class="mx-auto mt-8 rounded-lg shadow-md">
     </div>
   </section>
 
   <!-- 心态区 Section -->
   <section class="py-24 px-6 bg-gray-900">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-6">忘记学习，享受聆听</h2>
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">忘记学习，享受聆听</h2>
       <p class="text-lg mb-6">LingRain相信：焦虑是学习最大的敌人。慢下来，听一场细雨，习得一门语言。</p>
-      <img src="https://dummyimage.com/500x300/333/fff&text=放松聆听" alt="放松聆听" class="mx-auto mt-8">
+      <img src="https://dummyimage.com/500x300/333/fff&text=放松聆听" alt="放松聆听" class="mx-auto mt-8 rounded-lg shadow-md">
+    </div>
+  </section>
+
+  <!-- iPhone Mockup Section -->
+  <section class="py-24 px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl md:text-5xl font-bold mb-6">真实体验</h2>
+      <p class="text-lg mb-6">直观界面，纯净设计，为你的每一次聆听护航。</p>
+      <div class="flex justify-center">
+        <img src="https://dummyimage.com/250x500/555/aaa&text=App界面示意" alt="应用界面" class="rounded-2xl shadow-2xl">
+      </div>
     </div>
   </section>
 
@@ -52,14 +85,27 @@
   <section class="min-h-screen flex flex-col items-center justify-center text-center px-6 relative overflow-hidden">
     <div class="absolute inset-0 bg-gradient-to-b from-gray-900 to-black opacity-60"></div>
     <div class="relative z-10">
-      <h2 class="text-5xl font-bold mb-6">用聆听，遇见新的自己</h2>
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">用聆听，遇见新的自己</h2>
       <p class="text-xl mb-8">让每一天的聆听，成为成长的一部分。</p>
-      <div class="flex gap-4 justify-center">
+      <div class="flex gap-4 flex-wrap justify-center">
         <button class="bg-white text-black px-6 py-3 rounded-full font-semibold">立即下载</button>
         <button class="border border-white px-6 py-3 rounded-full font-semibold">探索更多</button>
       </div>
     </div>
   </section>
+
+  <script>
+    // 动态生成小雨粒子效果
+    const rain = document.getElementById('rain');
+    for (let i = 0; i < 80; i++) {
+      const drop = document.createElement('div');
+      drop.className = 'rain-drop';
+      drop.style.left = Math.random() * 100 + 'vw';
+      drop.style.animationDuration = (2 + Math.random() * 3) + 's';
+      drop.style.opacity = 0.2 + Math.random() * 0.4;
+      rain.appendChild(drop);
+    }
+  </script>
 
 </body>
 </html>
