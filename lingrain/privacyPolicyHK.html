@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LingRain - 聽力的雨林</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: linear-gradient(to bottom, #000000, #1a1a1a);
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    .rain-drop {
+      position: absolute;
+      width: 2px;
+      height: 10px;
+      background: white;
+      opacity: 0.3;
+      animation: fall 5s linear infinite;
+    }
+    @keyframes fall {
+      0% {transform: translateY(-10vh);}
+      100% {transform: translateY(110vh);}
+    }
+  </style>
+</head>
+<body class="text-white font-sans relative">
+
+  <!-- Light Rain Effect -->
+  <div id="rain" class="pointer-events-none fixed inset-0 z-0"></div>
+
+  <!-- Sticky Navigation Bar -->
+  <nav class="fixed top-0 w-full bg-gray-900 bg-opacity-80 border-b border-gray-700 backdrop-blur-md z-50">
+    <div class="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
+      <div class="text-lg font-bold text-white"><a href="/lingrain/">LingRain</a></div>
+      <div class="flex gap-6 text-sm">
+        <a href="#privacy" class="text-gray-300 hover:text-white">隱私政策</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="pt-24 px-6 max-w-4xl mx-auto">
+    <section id="privacy" class="py-16">
+      <h1 class="text-4xl font-bold mb-8">隱私政策（Privacy Policy）</h1>
+      <p class="mb-6">生效日期：2025年4月27日</p>
+      <p class="mb-8">感謝您使用聽語（LingRain）應用。本隱私政策旨在幫助您了解我們如何收集、使用、儲存和保護您的資訊。</p>
+
+      <h2 class="text-2xl font-semibold mb-4">1. 資訊收集</h2>
+      <p class="mb-4">聽語（LingRain）致力於尊重您的隱私。我們不會主動收集任何可以識別您個人身份的資訊。</p>
+      <p class="mb-4">應用內部僅記錄與學習相關的匿名使用數據，例如：</p>
+      <ul class="list-disc list-inside mb-6">
+        <li>播放音訊的次數與時間</li>
+        <li>課程學習進度</li>
+        <li>自訂設定（如播放偏好、通知時段）</li>
+      </ul>
+      <p class="mb-8">這些數據僅保存在您的裝置本地，用於優化您的使用體驗。</p>
+
+      <h2 class="text-2xl font-semibold mb-4">2. 第三方服務</h2>
+      <p class="mb-8">聽語（LingRain）不會接入或使用任何第三方廣告服務或分析平台。您的所有學習數據和個人偏好，均不會上傳到伺服器或第三方系統。</p>
+      <p class="mb-8">如未來接入廣告服務或分析平台，我們將提前在應用內明確告知，並依據相關隱私政策進行更新。</p>
+
+      <h2 class="text-2xl font-semibold mb-4">3. 本地通知</h2>
+      <p class="mb-8">應用可選地使用本地通知功能，溫柔地提醒您繼續聆聽學習。通知的發送時間可由您在設定中自由調整。所有通知均透過裝置本地生成，未透過網路傳送。</p>
+
+      <h2 class="text-2xl font-semibold mb-4">4. 權限請求</h2>
+      <p class="mb-4">為了提供完整的功能體驗，聽語（LingRain）可能請求以下權限：</p>
+      <ul class="list-disc list-inside mb-6">
+        <li>通知權限：用於發送學習提醒。</li>
+        <li>照片訪問權限（僅在更換頭像時請求，且僅用於選擇頭像圖片，應用不會訪問其他照片內容）。</li>
+      </ul>
+      <p class="mb-8">應用僅在您授權後使用這些權限，且僅用於明確的功能目的。</p>
+
+      <h2 class="text-2xl font-semibold mb-4">5. 數據安全</h2>
+      <p class="mb-8">您的數據僅保存在您的裝置上，不會被上傳或分享。我們會持續關注安全性最佳實踐，盡最大努力保護您的資訊不被未授權訪問。</p>
+
+      <h2 class="text-2xl font-semibold mb-4">6. 您的選擇權</h2>
+      <p class="mb-8">您可以隨時在裝置的系統設定中撤回應用的通知權限或照片訪問權限。刪除應用時，所有本地保存的數據也將一併清除。</p>
+
+      <h2 class="text-2xl font-semibold mb-4">7. 聯繫我們</h2>
+      <p class="mb-8">如果您對本隱私政策有任何疑問、建議或需要幫助，請通過以下方式聯繫我們：</p>
+      <ul class="list-disc list-inside">
+        <li>郵箱：liupeng@pdu.pub</li>
+      </ul>
+    </section>
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-black text-gray-400 text-sm py-10 px-6">
+    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between">
+      <div class="flex items-center space-x-3 mb-4 md:mb-0">
+        <img src="/assets/images/LingRain.png" alt="LingRain Logo" class="h-8 w-8">
+        <span class="text-white font-semibold"> LingRain </span> © 2025
+      </div>
+      <div class="flex flex-wrap gap-6 text-center md:text-right">
+        <a href="privacyPolicyHK.html" class="hover:text-white transition">隱私政策</a>
+        <a href="termsofUserHK.html" class="hover:text-white transition">使用條款</a>
+        <a href="https://github.com/pdupub" class="hover:text-white transition">Github</a>
+      </div>
+    </div>
+    <div class="mt-6 text-center text-gray-500 text-xs">
+      Made with ❤️ by LingRain Team
+    </div>
+    <div class="mt-4 flex justify-center gap-4">
+      <a href="#" class="hover:text-white transition">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M24 4.557a9.816 9.816 0 01-2.828.775 4.932 4.932 0 002.165-2.723c-.951.555-2.005.959-3.127 1.184a4.916 4.916 0 00-8.384 4.482A13.94 13.94 0 011.671 3.15 4.916 4.916 0 003.195 9.722 4.897 4.897 0 01.96 9.106v.062a4.916 4.916 0 003.946 4.827 4.902 4.902 0 01-2.212.084 4.917 4.917 0 004.588 3.417A9.867 9.867 0 010 19.54a13.945 13.945 0 007.548 2.212c9.056 0 14.009-7.503 14.009-14.009 0-.213-.005-.425-.014-.636A10.012 10.012 0 0024 4.557z"/>
+        </svg>
+      </a>
+      <a href="#" class="hover:text-white transition">
+        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M12 0C5.37 0 0 5.37 0 12c0 5.303 3.438 9.8 8.207 11.385.6.11.793-.26.793-.577v-2.17c-3.338.726-4.033-1.416-4.033-1.416-.546-1.386-1.333-1.756-1.333-1.756-1.09-.745.083-.729.083-.729 1.205.085 1.84 1.236 1.84 1.236 1.07 1.834 2.807 1.304 3.492.997.108-.775.42-1.305.763-1.605-2.665-.304-5.466-1.332-5.466-5.932 0-1.31.468-2.382 1.236-3.222-.123-.303-.536-1.523.117-3.176 0 0 1.008-.322 3.3 1.23a11.5 11.5 0 013.003-.404c1.018.005 2.045.138 3.003.404 2.29-1.552 3.297-1.23 3.297-1.23.653 1.653.24 2.873.117 3.176.77.84 1.236 1.912 1.236 3.222 0 4.61-2.803 5.624-5.475 5.921.43.372.823 1.102.823 2.222v3.293c0 .32.192.694.8.576C20.565 21.796 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+        </svg>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
