@@ -1,0 +1,24 @@
+---
+import "../styles/global.css";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>{title} | ParaDigi Universe</title>
+  </head>
+  <body>
+    <header class="nav">
+      <a href="/">ParaDigi Universe</a>
+      <nav>
+        <a href="/docs">Docs</a>
+        <a href="/blog">Blog</a>
+      </nav>
+    </header>
+
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>
