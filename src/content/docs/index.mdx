@@ -1,0 +1,31 @@
+---
+title: Peng's Notebook
+description: Diary & Philosophical Path of MiniMeta.
+template: splash # Remove or comment out this line to display the site sidebar on this page.
+hero:
+  tagline: Diary & Philosophical Path of Minimal Metaphysics
+  image:
+    file: ../../assets/raccoon.png
+  actions:
+    - text: 极简形而上学
+      link: /minimeta/chapter_0/
+      icon: right-arrow
+    - text: Learn more about ParaDigi Universe
+      link: https://pdu.pub
+      icon: external
+      variant: minimal
+---
+
+import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
+import AnchorHeading from '@astrojs/starlight/components/AnchorHeading.astro';
+
+
+<CardGrid stagger>
+
+	<Card title="PDU协议：点对点的社交网络服务" icon="document">
+    任何信息传播系统都应同时实现两个目标：自由地发布信息与有效地获取信息。当今的中心化社交平台为了实现后者而牺牲了前者，通过审查和封禁来过滤信息，同时要求用户提交现实身份信息以创建账户。本文提出了一种完全点对点的社交网络系统，不依赖任何第三方服务，也不试图从系统层面消除所谓的垃圾信息或恶意账户。
+    
+    [白皮书](/whitepapers/whitepaperv5/)
+	</Card>
+</CardGrid>
+
