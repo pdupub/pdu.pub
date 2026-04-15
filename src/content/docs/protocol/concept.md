@@ -4,18 +4,19 @@ sidebar:
   order: 1
 ---
 
-The PDU Protocol aims to achieve two fundamental goals of any information dissemination system: **Free Publication** and **Effective Acquisition**.
+ParaDigi Universe aims to satisfy the two fundamental goals of any information system: **free publication** and **effective acquisition**.
 
 ### The Tension of Centralization
-Current centralized platforms sacrifice free publication for effective acquisition through censorship and account binding to real-world identities. PDU rejects this by introducing a completely peer-to-peer system that doesn't attempt to eliminate "spam" at the system level but empowers recipients to filter it.
+Centralized platforms typically improve discovery by limiting what may appear at all. They censor content, suspend accounts, or bind participation to real-world identity. ParaDigi Universe rejects that trade-off. It keeps publication open and shifts filtering to each participant's local view.
 
 ### Identity is an Ordered Set of Events
-In PDU, identity is not a registration on a server. Instead:
-- Identity is defined by the **full sequence of messages** signed by the same private key.
-- Maintaining the **total order** of this chain is the publisher's sole responsibility.
-- Any fork in the message chain leads to the identity being ignored by the network, ensuring consistency without a global consensus.
+In ParaDigi Universe, identity is not a registration on a server. Instead:
 
-*(Note: I recommend a transparent SVG showing a linear chain of blocks labeled 'Message N', 'Message N+1' with signature links.)*
+- identity is the **full sequence of messages** signed by the same private key
+- maintaining the **total order** of that sequence is the publisher's responsibility
+- if the sequence forks, participants can ignore the identity from the fork point onward without requiring global consensus
+
+The protocol depends on continuity, not permission. A meaningful identity is earned through consistent ordered behavior in public.
 
 ### Philosophical Foundation
-These design decisions are rooted in the understanding that "Existence has no inherent meaning; it exists because it persists." The system mimics natural selection—valuable information spreads because it is accepted, while spam shrinks as it is blocked by individual "Horizons."
+These decisions follow a broader philosophical claim: there is no universal observer and therefore no natural basis for a universal social view. Valuable information spreads because participants accept it. Low-quality information contracts because consumers keep it outside their visible identity set.

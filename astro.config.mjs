@@ -10,16 +10,16 @@ export default defineConfig({
   	// output: 'static',
 	integrations: [
 		starlight({
-			title: 'ParaDigi University',
-			description: 'Philosophical Path of MiniMeta',
+			title: 'ParaDigi Universe',
+			description: 'A peer-to-peer social network shaped by ordered identity, local trust, and public transparency.',
 
 			components: {},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/pdupub' }],
 
 			sidebar: [
 				{
-					label: 'Introduction',
-					link: '/content/docs/index',
+					label: 'Home',
+					link: '/',
 				},
 				{
 					label: 'Philosophy',
@@ -32,6 +32,7 @@ export default defineConfig({
 				{
 					label: 'Whitepapers',
 					items: [
+						{ label: 'Whitepaper Overview', link: '/whitepapers/' },
 						{ label: 'Whitepaper V5', link: '/whitepapers/v5' },
 					],
 				},

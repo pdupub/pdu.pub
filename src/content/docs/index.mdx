@@ -1,34 +1,192 @@
 ---
-title: ParaDigi University
-description: A peer-to-peer social network service built on a minimalist metaphysical framework.
+title: ParaDigi Universe
+description: A peer-to-peer social network where identity is ordered history, discovery is local, and information stays public by design.
 template: splash
 hero:
-  tagline: "Redefining digital identity and time through a PDU: A decentralized social system where identity is a collection of ordered events."
+  tagline: "A peer-to-peer social network where identity is an ordered history, trust is local, and no one owns the global view."
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/constellation-flow.svg
   actions:
-    - text: Read the Whitepaper
-      link: /protocol/concept/
+    - text: Explore the Whitepaper
+      link: /whitepapers/
       icon: right-arrow
       variant: primary
-    - text: Philosophy Foundations
-      link: /philosophy/introduction/
+    - text: Read the Protocol
+      link: /protocol/concept/
       icon: external
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
 
+<style>{`
+	:root {
+		--sl-color-accent-low: #0f2432;
+		--sl-color-accent: #4aa4c8;
+		--sl-color-accent-high: #dff7ff;
+	}
+
+	:global(.hero) {
+		background:
+			radial-gradient(circle at top left, rgba(74, 164, 200, 0.18), transparent 30%),
+			radial-gradient(circle at top right, rgba(122, 241, 204, 0.18), transparent 30%),
+			linear-gradient(180deg, rgba(7, 17, 26, 0.96), rgba(7, 17, 26, 0.82));
+		border-bottom: 1px solid rgba(223, 247, 255, 0.1);
+	}
+
+	.story-block {
+		margin: 4rem 0;
+		padding: 2rem 0;
+	}
+
+	.story-kicker {
+		color: var(--sl-color-accent);
+		font-size: 0.85rem;
+		font-weight: 700;
+		letter-spacing: 0.12em;
+		text-transform: uppercase;
+	}
+
+	.story-grid {
+		display: grid;
+		gap: 1.5rem;
+		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+		margin-top: 2rem;
+	}
+
+	.story-panel {
+		background: linear-gradient(180deg, rgba(15, 36, 50, 0.65), rgba(8, 16, 24, 0.9));
+		border: 1px solid rgba(223, 247, 255, 0.12);
+		border-radius: 1.25rem;
+		padding: 1.35rem;
+	}
+
+	.story-panel strong {
+		display: block;
+		margin-bottom: 0.6rem;
+		font-size: 1.05rem;
+	}
+
+	.feature-band {
+		margin: 4rem 0;
+		padding: 2rem;
+		border: 1px solid rgba(223, 247, 255, 0.12);
+		border-radius: 1.5rem;
+		background:
+			linear-gradient(135deg, rgba(17, 62, 78, 0.45), rgba(11, 19, 28, 0.92)),
+			url('/abstract/time-lattice.svg') center/cover no-repeat;
+	}
+
+	.feature-band h2,
+	.feature-band p {
+		max-width: 42rem;
+	}
+
+	.signal-list {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		margin-top: 1.5rem;
+	}
+
+	.signal-list div {
+		background: rgba(7, 17, 26, 0.72);
+		border: 1px solid rgba(223, 247, 255, 0.12);
+		border-radius: 1rem;
+		padding: 1rem;
+	}
+`}</style>
+
+## Publish Freely. Filter Locally.
+
+ParaDigi Universe starts from a simple constraint: a social network must support both free publication and effective information discovery. Centralized platforms achieve discovery by deciding what may exist. ParaDigi Universe takes the opposite path. It allows publication without a central gatekeeper, then lets every participant build a local view of the network using their own trust rules.
+
+That shift changes everything. Identity is not an account in a database. It is an ordered sequence of signed events. Visibility is not assigned by a platform. It emerges from the relationships that each participant chooses to honor.
+
+<div class="story-grid">
+	<div class="story-panel">
+		<strong>Identity is history</strong>
+		A publisher becomes real through a consistent chain of messages, not through registration or institutional approval.
+	</div>
+	<div class="story-panel">
+		<strong>Trust is personal</strong>
+		Every consumer decides which identities become visible, using local rules that never need global enforcement.
+	</div>
+	<div class="story-panel">
+		<strong>Quality is emergent</strong>
+		Strong information travels farther because more people accept it. Weak information contracts without system-wide censorship.
+	</div>
+</div>
+
+## No Global View
+
+<div class="story-block">
+	<p class="story-kicker">A social graph without a god view</p>
+	<h2>Every participant sees a universe shaped by their own trust horizon.</h2>
+	<p>
+		The protocol does not define a universal feed, a global blocklist, or a canonical ranking of truth. Consumers begin with identities they trust, then extend visibility through positive interactions. Blocking works as a local path cut, not as a system judgment. What exists for one participant may remain invisible to another.
+	</p>
+	<p>
+		This makes spam a containment problem instead of a platform problem. The network does not need to eliminate unwanted speech at the system level. It only needs to make it easy for each person to keep low-quality information outside their horizon.
+	</p>
+</div>
+
 <CardGrid stagger>
-	<Card title="Ordered Events as Identity" icon="pencil">
-		Identity is defined by a total-order chain of messages signed by the same private key.
+	<Card title="Ordered Publisher Identity" icon="pencil">
+		Every post, reply, repost, like, and block becomes part of one signed sequence. If that sequence forks, the identity loses credibility from the fork point forward.
 	</Card>
-	<Card title="Epistemological Horizon" icon="add-document">
-		Users build their own "Horizon" of visible publishers through custom rules, without a "God's eye" consensus.
+	<Card title="Invisible Consumers" icon="eye">
+		Consumers leave no filtering footprint in the protocol. Their rule sets are local, private, and free to diverge.
 	</Card>
-	<Card title="Zero Centralization" icon="setting">
-		No third-party services, no global censorship. Information filtering is a statistical result of independent behaviors.
+	<Card title="Trust Propagation" icon="seti">
+		Visibility expands through interactions from already trusted identities, usually within a deliberately shallow graph.
 	</Card>
-	<Card title="Time as Cost" icon="moon">
-		Drawing from metaphysics, time is the universal cost for identity creation in a decentralized world.
+	<Card title="Time as Cost" icon="clock">
+		New identities can be created cheaply, but meaningful ones can only be earned over time through consistent public behavior.
 	</Card>
 </CardGrid>
+
+<div class="feature-band">
+	<p class="story-kicker">Why it matters</p>
+	<h2>Time replaces artificial gatekeeping.</h2>
+	<p>
+		ParaDigi Universe does not rely on real-name verification, token staking, invitation scarcity, or central moderation as the foundation of identity quality. The cost is continuity. A publisher must maintain an ordered public history that others can inspect and evaluate.
+	</p>
+	<div class="signal-list">
+		<div>
+			<strong>Public by design</strong>
+			Messages are public protocol objects. Private communication belongs in encrypted tools outside the protocol.
+		</div>
+		<div>
+			<strong>No mandatory platform</strong>
+			Search, analytics, messaging, and discovery services can exist, but none of them control the network.
+		</div>
+		<div>
+			<strong>Human and AI parity</strong>
+			The protocol judges ordered behavior, not species, institution, or legal identity.
+		</div>
+	</div>
+</div>
+
+## From Philosophy to Protocol
+
+The whitepaper is not only a network design document. It is also a statement about existence, time, and observation in distributed systems. If there is no universal observer, there should be no universal social view. If identity is a sequence of events, then continuity matters more than registration. If all messages are public, information transparency becomes structural rather than optional.
+
+This is the core promise of ParaDigi Universe: a social layer where publication remains open, filtering remains personal, and influence emerges from durable public history instead of platform authority.
+
+<div class="story-grid">
+	<div class="story-panel">
+		<strong>Start with the overview</strong>
+		Read the concise whitepaper guide before diving into the full text.
+		<p><a href="/whitepapers/">Open the overview</a></p>
+	</div>
+	<div class="story-panel">
+		<strong>Understand the protocol</strong>
+		See how messages, identities, roles, and horizons connect in practice.
+		<p><a href="/protocol/concept/">Browse protocol pages</a></p>
+	</div>
+	<div class="story-panel">
+		<strong>Read the foundations</strong>
+		Explore why time, existence, and observation matter to decentralized social systems.
+		<p><a href="/philosophy/introduction/">Visit philosophy pages</a></p>
+	</div>
+</div>

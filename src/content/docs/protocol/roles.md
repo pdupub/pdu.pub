@@ -1,15 +1,21 @@
 ---
-title: "Roles: Publisher & Receiver"
+title: "Roles: Publishers and Consumers"
+sidebar:
+  order: 2
 ---
 
-PDU decouples the traditional "user" into two independent roles:
+ParaDigi Universe splits the traditional idea of a "user" into two independent roles.
 
-#### 1. The Information Publisher (Visible)
-- **Goal:** Maximize the subjective influence of their information.
-- **Mechanism:** Every action (post, comment, like, block) is recorded in an immutable, ordered message set.
-- **Identity:** Their existence in the system is their message history.
+## 1. Publishers are visible
 
-#### 2. The Information Receiver (Invisible)
-- **Goal:** Efficiently acquire relevant information from the network.
-- **Mechanism:** Uses a local set of custom filtering rules based on trust-transfer relationships between publishers.
-- **Horizon:** These rules stay local and private, defining the receiver's personal "Horizon" (the visible universe of publishers).
+- **Goal:** maximize the reach and lasting influence of their information
+- **Mechanism:** every post, reply, repost, like, and block extends one signed message history
+- **Identity:** a publisher is the ordered history itself, not a platform-issued account
+
+## 2. Consumers are invisible
+
+- **Goal:** acquire relevant information efficiently
+- **Mechanism:** use local filtering rules based on trust and interaction relationships between publishers
+- **Visible identity set:** these private rules determine which publishers become visible in the consumer's own universe
+
+A single person may operate several publisher identities while using one or more separate consumer rule sets. The protocol does not require them to be linked.
