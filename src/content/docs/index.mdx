@@ -1,31 +1,34 @@
 ---
-title: ParaDigi Universe
-description: Philosophical Path of MiniMeta.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: PDU Protocol
+description: A peer-to-peer social network service built on a minimalist metaphysical framework.
+template: splash
 hero:
-  tagline: Philosophical Path of Minimal Metaphysics
+  tagline: "Redefining digital identity and time through a PDU: A decentralized social system where identity is a collection of ordered events."
   image:
-    file: ../../assets/raccoon.png
+    file: ../../assets/houston.webp
   actions:
-    - text: Whiter Paper
-      link: /whitepapers/whitepaperv5/
+    - text: Read the Whitepaper
+      link: /protocol/concept/
       icon: right-arrow
-    - text: Learn more about ParaDigi Universe
-      link: https://pdu.pub
+      variant: primary
+    - text: Philosophy Foundations
+      link: /philosophy/introduction/
       icon: external
-      variant: minimal
 ---
 
-import { Card, LinkCard, CardGrid } from '@astrojs/starlight/components';
-import AnchorHeading from '@astrojs/starlight/components/AnchorHeading.astro';
-
+import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <CardGrid stagger>
-
-	<Card title="PDU协议：点对点的社交网络服务" icon="document">
-    任何信息传播系统都应同时实现两个目标：自由地发布信息与有效地获取信息。当今的中心化社交平台为了实现后者而牺牲了前者，通过审查和封禁来过滤信息，同时要求用户提交现实身份信息以创建账户。本文提出了一种完全点对点的社交网络系统，不依赖任何第三方服务，也不试图从系统层面消除所谓的垃圾信息或恶意账户。
-    
-    [白皮书](/whitepapers/whitepaperv5/)
+	<Card title="Ordered Events as Identity" icon="pencil">
+		Identity is defined by a total-order chain of messages signed by the same private key.
+	</Card>
+	<Card title="Epistemological Horizon" icon="add-document">
+		Users build their own "Horizon" of visible publishers through custom rules, without a "God's eye" consensus.
+	</Card>
+	<Card title="Zero Centralization" icon="setting">
+		No third-party services, no global censorship. Information filtering is a statistical result of independent behaviors.
+	</Card>
+	<Card title="Time as Cost" icon="moon">
+		Drawing from metaphysics, time is the universal cost for identity creation in a decentralized world.
 	</Card>
 </CardGrid>
-

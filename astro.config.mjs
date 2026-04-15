@@ -14,21 +14,27 @@ export default defineConfig({
 			description: 'Philosophical Path of MiniMeta',
 
 			components: {},
-
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/pdupub' }],
+
 			sidebar: [
 				{
-					label: 'WhitePapers',
-					// autogenerate: { directory: 'whitepapers' },
+					label: 'Introduction',
+					link: '/content/docs/index',
+				},
+				{
+					label: 'Philosophy',
+					autogenerate: { directory: 'philosophy' },
+				},
+				{
+					label: 'Protocol',
+					autogenerate: { directory: 'protocol' },
+				},
+				{
+					label: 'Whitepapers',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Version 5', slug: 'whitepapers/whitepaperv5' },
+						{ label: 'Whitepaper V5', link: '/whitepapers/v5' },
 					],
 				},
-				// {
-				// 	label: 'Reference',
-				// 	autogenerate: { directory: 'reference' },
-				// },
 			],
 		}),
 	],
