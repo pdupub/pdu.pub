@@ -12,7 +12,7 @@ const docs = await getCollection("docs");
   <ul>
     {docs.map((doc) => (
       <li>
-        <a href={`/docs/${doc.slug}`}>{doc.data.title}</a>
+        <a href={`/docs/${doc.id}`}>{doc.data.title}</a>
       </li>
     ))}
   </ul>
