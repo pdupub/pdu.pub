@@ -1,7 +1,7 @@
 ---
 title: Minimal Metaphysics
 sidebar:
-  order: 4
+  order: 7
 ---
 
 ## Preface: Starting Point and Methodology

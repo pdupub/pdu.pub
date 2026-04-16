@@ -94,6 +94,77 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		border-radius: 1rem;
 		padding: 1rem;
 	}
+
+	.system-map {
+		margin: 4rem 0;
+		padding: 2rem;
+		border-radius: 1.5rem;
+		border: 1px solid rgba(223, 247, 255, 0.12);
+		background: linear-gradient(180deg, rgba(9, 24, 35, 0.95), rgba(8, 16, 24, 0.82));
+	}
+
+	.system-map-grid {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		margin-top: 1.5rem;
+	}
+
+	.system-step {
+		position: relative;
+		padding: 1.2rem;
+		border-radius: 1rem;
+		background: rgba(13, 34, 46, 0.72);
+		border: 1px solid rgba(223, 247, 255, 0.1);
+	}
+
+	.system-step span {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 2rem;
+		height: 2rem;
+		margin-bottom: 0.9rem;
+		border-radius: 999px;
+		background: rgba(74, 164, 200, 0.18);
+		color: var(--sl-color-accent-high);
+		font-weight: 700;
+	}
+
+	.principle-grid {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		margin: 2rem 0 0;
+	}
+
+	.principle-card {
+		padding: 1.2rem;
+		border-radius: 1rem;
+		background:
+			linear-gradient(180deg, rgba(15, 36, 50, 0.72), rgba(7, 17, 26, 0.95));
+		border: 1px solid rgba(223, 247, 255, 0.12);
+	}
+
+	.principle-card strong {
+		display: block;
+		margin-bottom: 0.55rem;
+		font-size: 1rem;
+	}
+
+	.path-grid {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+		margin-top: 1.5rem;
+	}
+
+	.path-card {
+		padding: 1.2rem;
+		border-radius: 1rem;
+		background: rgba(10, 22, 32, 0.88);
+		border: 1px solid rgba(223, 247, 255, 0.1);
+	}
 `}</style>
 
 ## Publish Freely. Filter Locally.
@@ -145,6 +216,33 @@ That shift changes everything. Identity is not an account in a database. It is a
 	</Card>
 </CardGrid>
 
+<div class="system-map">
+	<p class="story-kicker">System logic</p>
+	<h2>The whitepaper's argument unfolds in four practical moves.</h2>
+	<div class="system-map-grid">
+		<div class="system-step">
+			<span>1</span>
+			<strong>Publication stays open</strong>
+			Anyone can create a new publisher identity and write public protocol messages without asking for permission from a host platform.
+		</div>
+		<div class="system-step">
+			<span>2</span>
+			<strong>Identity becomes sequence</strong>
+			Meaning accumulates through a durable signed history, not through a one-time registration ceremony.
+		</div>
+		<div class="system-step">
+			<span>3</span>
+			<strong>Filtering stays local</strong>
+			Consumers form their own visible universe through trust paths, horizon limits, and private rules.
+		</div>
+		<div class="system-step">
+			<span>4</span>
+			<strong>Influence emerges statistically</strong>
+			Information spreads farther when more local horizons independently accept it, not when a platform blesses it globally.
+		</div>
+	</div>
+</div>
+
 <div class="feature-band">
 	<p class="story-kicker">Why it matters</p>
 	<h2>Time replaces artificial gatekeeping.</h2>
@@ -167,11 +265,54 @@ That shift changes everything. Identity is not an account in a database. It is a
 	</div>
 </div>
 
+## What The Whitepaper Defends
+
+The project is not trying to rebuild today's platform stack with distributed infrastructure underneath. It is making a stronger claim: a decentralized social system should be designed around the limits of observation, not around the habits of centralized software.
+
+<div class="principle-grid">
+	<div class="principle-card">
+		<strong>No universal observer</strong>
+		If no participant can see the whole network at once, the protocol should not pretend that one canonical view exists.
+	</div>
+	<div class="principle-card">
+		<strong>No free durable identity</strong>
+		New keys are cheap. Meaningful public continuity is expensive because it can only be built across time.
+	</div>
+	<div class="principle-card">
+		<strong>No mandatory platform sovereignty</strong>
+		Services may help with search, analytics, and discovery, but the network should remain larger than any one operator.
+	</div>
+	<div class="principle-card">
+		<strong>No hidden filtering monopoly</strong>
+		What becomes visible should depend on local judgment, not on one global recommendation engine.
+	</div>
+</div>
+
 ## From Philosophy to Protocol
 
 The whitepaper is not only a network design document. It is also a statement about existence, time, and observation in distributed systems. If there is no universal observer, there should be no universal social view. If identity is a sequence of events, then continuity matters more than registration. If all messages are public, information transparency becomes structural rather than optional.
 
 This is the core promise of ParaDigi Universe: a social layer where publication remains open, filtering remains personal, and influence emerges from durable public history instead of platform authority.
+
+## Choose Your Path
+
+<div class="path-grid">
+	<div class="path-card">
+		<strong>Read the argument</strong>
+		Start from the concise whitepaper overview if you want the shortest route into the project's claims and architecture.
+		<p><a href="/whitepapers/">Open the overview</a></p>
+	</div>
+	<div class="path-card">
+		<strong>Inspect the mechanism</strong>
+		Go straight to the protocol pages if you want message types, role boundaries, and visibility rules.
+		<p><a href="/protocol/concept/">Browse protocol pages</a></p>
+	</div>
+	<div class="path-card">
+		<strong>Study the foundations</strong>
+		Follow the philosophy section if you want the deeper reasoning behind time, horizon, individuality, and judgment.
+		<p><a href="/philosophy/introduction/">Visit philosophy pages</a></p>
+	</div>
+</div>
 
 <div class="story-grid">
 	<div class="story-panel">
