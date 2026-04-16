@@ -22,19 +22,19 @@ export default defineConfig({
 					link: '/',
 				},
 				{
-					label: 'Philosophy',
-					autogenerate: { directory: 'philosophy' },
+					label: 'Whitepapers',
+					items: [
+						{ label: 'Whitepaper Overview', link: '/whitepapers/' },
+						{ label: 'Whitepaper V5', link: '/whitepapers/v5' },
+					],
 				},
 				{
 					label: 'Protocol',
 					autogenerate: { directory: 'protocol' },
 				},
 				{
-					label: 'Whitepapers',
-					items: [
-						{ label: 'Whitepaper Overview', link: '/whitepapers/' },
-						{ label: 'Whitepaper V5', link: '/whitepapers/v5' },
-					],
+					label: 'Philosophy',
+					autogenerate: { directory: 'philosophy' },
 				},
 			],
 		}),
