@@ -24,8 +24,10 @@ export default defineConfig({
 				{
 					label: 'Whitepapers',
 					items: [
-						{ label: 'Whitepaper Overview', link: '/whitepapers/' },
-						{ label: 'Whitepaper V5', link: '/whitepapers/v5' },
+						{ label: 'Overview', link: '/whitepapers/' },
+						{ label: 'PDU Protocol', link: '/whitepapers/v5' },
+						{ label: 'Slide of PDU', slug: 'whitepapers/slide',},
+
 					],
 				},
 				{

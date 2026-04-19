@@ -1,5 +1,5 @@
 ---
-title: Whitepaper Overview
+title: Whitepaper
 description: A concise guide to the ideas behind ParaDigi Universe before reading the full whitepaper.
 sidebar:
   order: 1
