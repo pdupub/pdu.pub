@@ -1,0 +1,64 @@
+---
+const total = 15;
+---
+
+<div class="slide-viewer">
+
+  <img id="img" src="/whitepapers/slide/01.jpg" />
+  <div class="toolbar">
+    <button id="prev">←</button>
+    <span id="indicator">01 / 15</span>
+    <button id="next">→</button>
+  </div>
+
+</div>
+
+<style>
+  .slide-viewer {
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+  }
+
+  .toolbar {
+    margin-bottom: 10px;
+  }
+</style>
+
+<script>
+  const total = 15;
+  let current = 1;
+
+  const img = document.getElementById("img");
+  const indicator = document.getElementById("indicator");
+  const prev = document.getElementById("prev");
+  const next = document.getElementById("next");
+
+  function pad(n) {
+    return String(n).padStart(2, "0");
+  }
+
+  function render() {
+    img.src = `/whitepapers/slide/${pad(current)}.jpg`;
+    indicator.textContent = `${pad(current)} / ${pad(total)}`;
+
+    prev.disabled = current === 1;
+    next.disabled = current === total;
+  }
+
+  prev.onclick = () => {
+    if (current > 1) current--;
+    render();
+  };
+
+  next.onclick = () => {
+    if (current < total) current++;
+    render();
+  };
+
+  render();
+</script>
