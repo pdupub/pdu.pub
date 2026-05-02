@@ -35,6 +35,10 @@ export default defineConfig({
 					autogenerate: { directory: 'protocol' },
 				},
 				{
+					label: 'Matrix',
+					autogenerate: { directory: 'matrix' },
+				},
+				{
 					label: 'Philosophy',
 					autogenerate: { directory: 'philosophy' },
 				},

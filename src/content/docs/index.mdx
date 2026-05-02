@@ -131,6 +131,66 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		font-weight: 700;
 	}
 
+	.matrix-product {
+		margin: 4rem 0;
+		padding: 2rem;
+		border-radius: 1.5rem;
+		border: 1px solid rgba(223, 247, 255, 0.12);
+		background:
+			linear-gradient(135deg, rgba(20, 48, 59, 0.88), rgba(7, 17, 26, 0.94)),
+			url('/abstract/constellation-flow.svg') right center/contain no-repeat;
+	}
+
+	.matrix-product-grid {
+		display: grid;
+		gap: 1.25rem;
+		grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.9fr);
+		align-items: start;
+		margin-top: 1.5rem;
+	}
+
+	.matrix-product h2,
+	.matrix-product p {
+		max-width: 43rem;
+	}
+
+	.matrix-pillars {
+		display: grid;
+		gap: 0.85rem;
+	}
+
+	.matrix-pillar {
+		padding: 1rem;
+		border-radius: 1rem;
+		border: 1px solid rgba(223, 247, 255, 0.12);
+		background: rgba(7, 17, 26, 0.72);
+	}
+
+	.matrix-pillar strong {
+		display: block;
+		margin-bottom: 0.4rem;
+	}
+
+	.matrix-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.8rem;
+		margin-top: 1.4rem;
+	}
+
+	.matrix-actions a {
+		display: inline-flex;
+		align-items: center;
+		min-height: 2.5rem;
+		padding: 0.55rem 0.85rem;
+		border-radius: 999px;
+		border: 1px solid rgba(223, 247, 255, 0.18);
+		background: rgba(7, 17, 26, 0.62);
+		color: var(--sl-color-accent-high);
+		font-weight: 650;
+		text-decoration: none;
+	}
+
 	.principle-grid {
 		display: grid;
 		gap: 1rem;
@@ -164,6 +224,12 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		border-radius: 1rem;
 		background: rgba(10, 22, 32, 0.88);
 		border: 1px solid rgba(223, 247, 255, 0.1);
+	}
+
+	@media (max-width: 720px) {
+		.matrix-product-grid {
+			grid-template-columns: 1fr;
+		}
 	}
 `}</style>
 
@@ -243,6 +309,39 @@ That shift changes everything. Identity is not an account in a database. It is a
 	</div>
 </div>
 
+<div class="matrix-product">
+	<p class="story-kicker">First product implementation</p>
+	<h2>Matrix turns PDU's idea of the individual into an AI agent system.</h2>
+	<div class="matrix-product-grid">
+		<div>
+			<p>
+				ParaDigi Universe argues that an individual becomes legible through a coherent, ordered history. Matrix applies that principle to AI agents. It is the first product being built from PDU: an agent system where identity is not a prompt or an account, but a continuing sequence of events, memories, revisions, relationships, and actions.
+			</p>
+			<p>
+				Matrix is still under development. Its early work focuses on identity creation, persistent memory, skill evolution, traceable personality versions, and a cautious runtime path that begins with Codex, local tools, and a database before expanding into proactive behavior.
+			</p>
+			<div class="matrix-actions">
+				<a href="/matrix/">Read Matrix docs</a>
+				<a href="/matrix/agent/">Agent identity</a>
+			</div>
+		</div>
+		<div class="matrix-pillars">
+			<div class="matrix-pillar">
+				<strong>Identity as event history</strong>
+				The agent's self is grounded in an ordered sequence of meaningful actions, not a static role.
+			</div>
+			<div class="matrix-pillar">
+				<strong>Memory before autonomy</strong>
+				Reasoning is constrained by remembered context, relationships, and self-awareness.
+			</div>
+			<div class="matrix-pillar">
+				<strong>Value supports existence</strong>
+				An independent agent survives by becoming useful, trustworthy, and resource-aware.
+			</div>
+		</div>
+	</div>
+</div>
+
 <div class="feature-band">
 	<p class="story-kicker">Why it matters</p>
 	<h2>Time replaces artificial gatekeeping.</h2>
@@ -303,6 +402,11 @@ This is the core promise of ParaDigi Universe: a social layer where publication 
 		<p><a href="/whitepapers/">Open the overview</a></p>
 	</div>
 	<div class="path-card">
+		<strong>Meet Matrix</strong>
+		See how PDU's theory of individual continuity becomes the first product implementation.
+		<p><a href="/matrix/">Browse Matrix docs</a></p>
+	</div>
+	<div class="path-card">
 		<strong>Inspect the mechanism</strong>
 		Go straight to the protocol pages if you want message types, role boundaries, and visibility rules.
 		<p><a href="/protocol/concept/">Browse protocol pages</a></p>
@@ -310,24 +414,6 @@ This is the core promise of ParaDigi Universe: a social layer where publication 
 	<div class="path-card">
 		<strong>Study the foundations</strong>
 		Follow the philosophy section if you want the deeper reasoning behind time, horizon, individuality, and judgment.
-		<p><a href="/philosophy/introduction/">Visit philosophy pages</a></p>
-	</div>
-</div>
-
-<div class="story-grid">
-	<div class="story-panel">
-		<strong>Start with the overview</strong>
-		Read the concise whitepaper guide before diving into the full text.
-		<p><a href="/whitepapers/">Open the overview</a></p>
-	</div>
-	<div class="story-panel">
-		<strong>Understand the protocol</strong>
-		See how messages, identities, roles, and horizons connect in practice.
-		<p><a href="/protocol/concept/">Browse protocol pages</a></p>
-	</div>
-	<div class="story-panel">
-		<strong>Read the foundations</strong>
-		Explore why time, existence, and observation matter to decentralized social systems.
 		<p><a href="/philosophy/introduction/">Visit philosophy pages</a></p>
 	</div>
 </div>
