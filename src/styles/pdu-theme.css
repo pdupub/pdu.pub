@@ -1,0 +1,52 @@
+:root {
+	--sl-color-accent-low: #0f2432;
+	--sl-color-accent: #4aa4c8;
+	--sl-color-accent-high: #dff7ff;
+	--sl-color-text-accent: #aee8f5;
+	--sl-color-bg-accent: #aee8f5;
+
+	--pdu-title-accent: #8fd8eb;
+	--pdu-selected-bg: #4aa4c8;
+	--pdu-selected-text: #07111a;
+	--pdu-toc-current: #8fd8eb;
+	--pdu-nav-hover: #dff7ff;
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: #dff3f7;
+	--sl-color-accent: #2f8aa5;
+	--sl-color-accent-high: #0f5063;
+	--sl-color-text-accent: #2b7c94;
+	--sl-color-bg-accent: #2f8aa5;
+
+	--pdu-title-accent: #256f84;
+	--pdu-selected-bg: #2f8aa5;
+	--pdu-selected-text: #f7fcfe;
+	--pdu-toc-current: #256f84;
+	--pdu-nav-hover: #184f60;
+}
+
+.site-title {
+	color: var(--pdu-title-accent);
+}
+
+.site-title:hover,
+.site-title:focus {
+	color: var(--pdu-nav-hover);
+}
+
+.sidebar-content a[aria-current='page'],
+.sidebar-content a[aria-current='page']:hover,
+.sidebar-content a[aria-current='page']:focus {
+	background-color: var(--pdu-selected-bg);
+	color: var(--pdu-selected-text);
+}
+
+.right-sidebar-panel starlight-toc a[aria-current='true'] {
+	color: var(--pdu-toc-current);
+	font-weight: 650;
+}
+
+.right-sidebar-panel starlight-toc a:hover {
+	color: var(--pdu-nav-hover);
+}

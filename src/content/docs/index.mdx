@@ -20,17 +20,52 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 <style>{`
 	:root {
-		--sl-color-accent-low: #0f2432;
-		--sl-color-accent: #4aa4c8;
-		--sl-color-accent-high: #dff7ff;
-	}
-
-	:global(.hero) {
-		background:
+		--pdu-home-hero-bg:
 			radial-gradient(circle at top left, rgba(74, 164, 200, 0.18), transparent 30%),
 			radial-gradient(circle at top right, rgba(122, 241, 204, 0.18), transparent 30%),
 			linear-gradient(180deg, rgba(7, 17, 26, 0.96), rgba(7, 17, 26, 0.82));
-		border-bottom: 1px solid rgba(223, 247, 255, 0.1);
+		--pdu-home-hero-border: rgba(223, 247, 255, 0.1);
+		--pdu-home-panel-bg: linear-gradient(180deg, rgba(15, 36, 50, 0.65), rgba(8, 16, 24, 0.9));
+		--pdu-home-panel-bg-flat: rgba(7, 17, 26, 0.72);
+		--pdu-home-panel-border: rgba(223, 247, 255, 0.12);
+		--pdu-home-system-bg: linear-gradient(180deg, rgba(9, 24, 35, 0.95), rgba(8, 16, 24, 0.82));
+		--pdu-home-feature-bg:
+			linear-gradient(135deg, rgba(17, 62, 78, 0.45), rgba(11, 19, 28, 0.92)),
+			url('/abstract/time-lattice.svg') center/cover no-repeat;
+		--pdu-home-matrix-bg:
+			linear-gradient(135deg, rgba(20, 48, 59, 0.88), rgba(7, 17, 26, 0.94)),
+			url('/abstract/constellation-flow.svg') right center/contain no-repeat;
+		--pdu-home-marker-bg: rgba(74, 164, 200, 0.18);
+		--pdu-home-marker-text: var(--sl-color-accent-high);
+		--pdu-home-action-bg: rgba(7, 17, 26, 0.62);
+		--pdu-home-action-text: var(--sl-color-accent-high);
+	}
+
+	:root[data-theme='light'] {
+		--pdu-home-hero-bg:
+			radial-gradient(circle at top left, rgba(74, 164, 200, 0.16), transparent 32%),
+			radial-gradient(circle at top right, rgba(122, 241, 204, 0.14), transparent 32%),
+			linear-gradient(180deg, #f7fcfe, #eef7fa);
+		--pdu-home-hero-border: rgba(47, 138, 165, 0.16);
+		--pdu-home-panel-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(236, 247, 249, 0.84));
+		--pdu-home-panel-bg-flat: rgba(248, 252, 253, 0.92);
+		--pdu-home-panel-border: rgba(47, 138, 165, 0.18);
+		--pdu-home-system-bg: linear-gradient(180deg, rgba(246, 252, 253, 0.98), rgba(230, 245, 248, 0.9));
+		--pdu-home-feature-bg:
+			linear-gradient(135deg, rgba(238, 249, 251, 0.94), rgba(255, 255, 255, 0.9)),
+			url('/abstract/time-lattice.svg') center/cover no-repeat;
+		--pdu-home-matrix-bg:
+			linear-gradient(135deg, rgba(238, 249, 251, 0.96), rgba(255, 255, 255, 0.92)),
+			url('/abstract/constellation-flow.svg') right center/contain no-repeat;
+		--pdu-home-marker-bg: rgba(47, 138, 165, 0.12);
+		--pdu-home-marker-text: #256f84;
+		--pdu-home-action-bg: rgba(232, 246, 249, 0.92);
+		--pdu-home-action-text: #256f84;
+	}
+
+	:global(.hero) {
+		background: var(--pdu-home-hero-bg);
+		border-bottom: 1px solid var(--pdu-home-hero-border);
 	}
 
 	.story-block {
@@ -54,8 +89,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	}
 
 	.story-panel {
-		background: linear-gradient(180deg, rgba(15, 36, 50, 0.65), rgba(8, 16, 24, 0.9));
-		border: 1px solid rgba(223, 247, 255, 0.12);
+		background: var(--pdu-home-panel-bg);
+		border: 1px solid var(--pdu-home-panel-border);
 		border-radius: 1.25rem;
 		padding: 1.35rem;
 	}
@@ -69,11 +104,9 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	.feature-band {
 		margin: 4rem 0;
 		padding: 2rem;
-		border: 1px solid rgba(223, 247, 255, 0.12);
+		border: 1px solid var(--pdu-home-panel-border);
 		border-radius: 1.5rem;
-		background:
-			linear-gradient(135deg, rgba(17, 62, 78, 0.45), rgba(11, 19, 28, 0.92)),
-			url('/abstract/time-lattice.svg') center/cover no-repeat;
+		background: var(--pdu-home-feature-bg);
 	}
 
 	.feature-band h2,
@@ -89,8 +122,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	}
 
 	.signal-list div {
-		background: rgba(7, 17, 26, 0.72);
-		border: 1px solid rgba(223, 247, 255, 0.12);
+		background: var(--pdu-home-panel-bg-flat);
+		border: 1px solid var(--pdu-home-panel-border);
 		border-radius: 1rem;
 		padding: 1rem;
 	}
@@ -99,8 +132,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		margin: 4rem 0;
 		padding: 2rem;
 		border-radius: 1.5rem;
-		border: 1px solid rgba(223, 247, 255, 0.12);
-		background: linear-gradient(180deg, rgba(9, 24, 35, 0.95), rgba(8, 16, 24, 0.82));
+		border: 1px solid var(--pdu-home-panel-border);
+		background: var(--pdu-home-system-bg);
 	}
 
 	.system-map-grid {
@@ -114,8 +147,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		position: relative;
 		padding: 1.2rem;
 		border-radius: 1rem;
-		background: rgba(13, 34, 46, 0.72);
-		border: 1px solid rgba(223, 247, 255, 0.1);
+		background: var(--pdu-home-panel-bg-flat);
+		border: 1px solid var(--pdu-home-panel-border);
 	}
 
 	.system-step span {
@@ -126,8 +159,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		height: 2rem;
 		margin-bottom: 0.9rem;
 		border-radius: 999px;
-		background: rgba(74, 164, 200, 0.18);
-		color: var(--sl-color-accent-high);
+		background: var(--pdu-home-marker-bg);
+		color: var(--pdu-home-marker-text);
 		font-weight: 700;
 	}
 
@@ -135,10 +168,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		margin: 4rem 0;
 		padding: 2rem;
 		border-radius: 1.5rem;
-		border: 1px solid rgba(223, 247, 255, 0.12);
-		background:
-			linear-gradient(135deg, rgba(20, 48, 59, 0.88), rgba(7, 17, 26, 0.94)),
-			url('/abstract/constellation-flow.svg') right center/contain no-repeat;
+		border: 1px solid var(--pdu-home-panel-border);
+		background: var(--pdu-home-matrix-bg);
 	}
 
 	.matrix-product-grid {
@@ -162,8 +193,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	.matrix-pillar {
 		padding: 1rem;
 		border-radius: 1rem;
-		border: 1px solid rgba(223, 247, 255, 0.12);
-		background: rgba(7, 17, 26, 0.72);
+		border: 1px solid var(--pdu-home-panel-border);
+		background: var(--pdu-home-panel-bg-flat);
 	}
 
 	.matrix-pillar strong {
@@ -184,9 +215,9 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		min-height: 2.5rem;
 		padding: 0.55rem 0.85rem;
 		border-radius: 999px;
-		border: 1px solid rgba(223, 247, 255, 0.18);
-		background: rgba(7, 17, 26, 0.62);
-		color: var(--sl-color-accent-high);
+		border: 1px solid var(--pdu-home-panel-border);
+		background: var(--pdu-home-action-bg);
+		color: var(--pdu-home-action-text);
 		font-weight: 650;
 		text-decoration: none;
 	}
@@ -201,9 +232,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	.principle-card {
 		padding: 1.2rem;
 		border-radius: 1rem;
-		background:
-			linear-gradient(180deg, rgba(15, 36, 50, 0.72), rgba(7, 17, 26, 0.95));
-		border: 1px solid rgba(223, 247, 255, 0.12);
+		background: var(--pdu-home-panel-bg);
+		border: 1px solid var(--pdu-home-panel-border);
 	}
 
 	.principle-card strong {
@@ -222,8 +252,8 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	.path-card {
 		padding: 1.2rem;
 		border-radius: 1rem;
-		background: rgba(10, 22, 32, 0.88);
-		border: 1px solid rgba(223, 247, 255, 0.1);
+		background: var(--pdu-home-panel-bg-flat);
+		border: 1px solid var(--pdu-home-panel-border);
 	}
 
 	@media (max-width: 720px) {
