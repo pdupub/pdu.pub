@@ -5,7 +5,6 @@ sidebar:
   order: 1
 ---
 
-# Matrix
 
 Matrix is the first product being built from the ParaDigi Universe framework.
 

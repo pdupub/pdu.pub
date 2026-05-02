@@ -5,7 +5,6 @@ sidebar:
   order: 6
 ---
 
-# Identity Creation
 
 Matrix begins with identity creation.
 

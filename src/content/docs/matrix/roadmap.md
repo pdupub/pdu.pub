@@ -5,7 +5,6 @@ sidebar:
   order: 5
 ---
 
-# Roadmap
 
 Matrix should be developed iteratively.
 

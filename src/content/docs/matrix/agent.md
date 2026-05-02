@@ -5,7 +5,6 @@ sidebar:
   order: 2
 ---
 
-# Agent Identity
 
 Matrix agents are designed to be fundamentally different from ordinary assistant agents.
 

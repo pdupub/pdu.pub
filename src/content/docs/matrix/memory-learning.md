@@ -5,7 +5,6 @@ sidebar:
   order: 3
 ---
 
-# Memory And Learning
 
 Matrix treats intelligence as the interaction between memory and reasoning.
 

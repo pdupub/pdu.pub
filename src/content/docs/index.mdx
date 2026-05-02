@@ -256,6 +256,16 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		border: 1px solid var(--pdu-home-panel-border);
 	}
 
+	.path-card a,
+	.path-card a:visited {
+		color: var(--pdu-home-action-text);
+		font-weight: 650;
+	}
+
+	.path-card a:hover {
+		color: var(--pdu-nav-hover);
+	}
+
 	@media (max-width: 720px) {
 		.matrix-product-grid {
 			grid-template-columns: 1fr;
@@ -269,7 +279,7 @@ ParaDigi Universe starts from a simple constraint: a social network must support
 
 That shift changes everything. Identity is not an account in a database. It is an ordered sequence of signed events. Visibility is not assigned by a platform. It emerges from the relationships that each participant chooses to honor.
 
-<div class="story-grid">
+<div class="story-grid not-content">
 	<div class="story-panel">
 		<strong>Identity is history</strong>
 		A publisher becomes real through a consistent chain of messages, not through registration or institutional approval.
@@ -301,13 +311,13 @@ That shift changes everything. Identity is not an account in a database. It is a
 	<Card title="Ordered Publisher Identity" icon="pencil">
 		Every post, reply, repost, like, and block becomes part of one signed sequence. If that sequence forks, the identity loses credibility from the fork point forward.
 	</Card>
-	<Card title="Invisible Consumers" icon="eye">
+	<Card title="Invisible Consumers" icon="moon">
 		Consumers leave no filtering footprint in the protocol. Their rule sets are local, private, and free to diverge.
 	</Card>
-	<Card title="Trust Propagation" icon="seti">
+	<Card title="Trust Propagation" icon="random">
 		Visibility expands through interactions from already trusted identities, usually within a deliberately shallow graph.
 	</Card>
-	<Card title="Time as Cost" icon="clock">
+	<Card title="Time as Cost" icon="seti:clock">
 		New identities can be created cheaply, but meaningful ones can only be earned over time through consistent public behavior.
 	</Card>
 </CardGrid>
@@ -315,7 +325,7 @@ That shift changes everything. Identity is not an account in a database. It is a
 <div class="system-map">
 	<p class="story-kicker">System logic</p>
 	<h2>The whitepaper's argument unfolds in four practical moves.</h2>
-	<div class="system-map-grid">
+	<div class="system-map-grid not-content">
 		<div class="system-step">
 			<span>1</span>
 			<strong>Publication stays open</strong>
@@ -355,7 +365,7 @@ That shift changes everything. Identity is not an account in a database. It is a
 				<a href="/matrix/agent/">Agent identity</a>
 			</div>
 		</div>
-		<div class="matrix-pillars">
+		<div class="matrix-pillars not-content">
 			<div class="matrix-pillar">
 				<strong>Identity as event history</strong>
 				The agent's self is grounded in an ordered sequence of meaningful actions, not a static role.
@@ -378,7 +388,7 @@ That shift changes everything. Identity is not an account in a database. It is a
 	<p>
 		ParaDigi Universe does not rely on real-name verification, token staking, invitation scarcity, or central moderation as the foundation of identity quality. The cost is continuity. A publisher must maintain an ordered public history that others can inspect and evaluate.
 	</p>
-	<div class="signal-list">
+	<div class="signal-list not-content">
 		<div>
 			<strong>Public by design</strong>
 			Messages are public protocol objects. Private communication belongs in encrypted tools outside the protocol.
@@ -398,7 +408,7 @@ That shift changes everything. Identity is not an account in a database. It is a
 
 The project is not trying to rebuild today's platform stack with distributed infrastructure underneath. It is making a stronger claim: a decentralized social system should be designed around the limits of observation, not around the habits of centralized software.
 
-<div class="principle-grid">
+<div class="principle-grid not-content">
 	<div class="principle-card">
 		<strong>No universal observer</strong>
 		If no participant can see the whole network at once, the protocol should not pretend that one canonical view exists.
@@ -425,7 +435,7 @@ This is the core promise of ParaDigi Universe: a social layer where publication 
 
 ## Choose Your Path
 
-<div class="path-grid">
+<div class="path-grid not-content">
 	<div class="path-card">
 		<strong>Read the argument</strong>
 		Start from the concise whitepaper overview if you want the shortest route into the project's claims and architecture.

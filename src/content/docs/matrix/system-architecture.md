@@ -5,7 +5,6 @@ sidebar:
   order: 4
 ---
 
-# System Architecture
 
 Matrix is not designed as a normal chatbot. It is an agent system for continued existence, identity continuity, memory, self-evolution, and external value creation.
 
