@@ -1,0 +1,190 @@
+---
+import EditLink from 'virtual:starlight/components/EditLink';
+import LastUpdated from 'virtual:starlight/components/LastUpdated';
+import Pagination from 'virtual:starlight/components/Pagination';
+import { Icon } from '@astrojs/starlight/components';
+---
+
+<footer class="pdu-footer-shell">
+	<div class="meta sl-flex">
+		<EditLink />
+		<LastUpdated />
+	</div>
+	<Pagination />
+
+	<div class="pdu-footer">
+		<div class="pdu-footer-brand">
+			<a class="pdu-footer-title" href="/">ParaDigi Universe</a>
+			<p>
+				A decentralized social system for open publication, local trust, and durable identity.
+				Matrix is its first product for evolving AI individuals.
+			</p>
+			<a class="pdu-footer-social" href="https://github.com/pdupub" aria-label="ParaDigi Universe on GitHub">
+				<Icon name="github" />
+				GitHub
+			</a>
+		</div>
+
+		<nav class="pdu-footer-links" aria-label="Footer links">
+			<div>
+				<h2>Project</h2>
+				<a href="/whitepapers/">Whitepaper</a>
+				<a href="/protocol/concept/">Protocol</a>
+				<a href="/matrix/">Matrix</a>
+				<a href="/philosophy/introduction/">Philosophy</a>
+			</div>
+			<div>
+				<h2>Resources</h2>
+				<a href="/user-manual/">User Manual</a>
+				<a href="/matrix/roadmap/">Roadmap</a>
+				<a href="/whitepapers/slide/">Slides</a>
+				<a href="/matrix/identity-creation/">Identity Creation</a>
+			</div>
+			<div>
+				<h2>Company</h2>
+				<a href="/about/">About</a>
+				<a href="/privacy-policy/">Privacy Policy</a>
+				<a href="https://github.com/pdupub">GitHub</a>
+			</div>
+		</nav>
+	</div>
+
+	<div class="pdu-footer-bottom">
+		<span>© 2026 ParaDigi Universe.</span>
+		<span>Open publication. Local trust. Durable identity.</span>
+	</div>
+</footer>
+
+<style>
+	@layer starlight.core {
+		.pdu-footer-shell {
+			display: flex;
+			flex-direction: column;
+			gap: 1.5rem;
+		}
+
+		.meta {
+			gap: 0.75rem 3rem;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-top: 3rem;
+			font-size: var(--sl-text-sm);
+			color: var(--sl-color-gray-3);
+		}
+
+		.meta > :global(p:only-child) {
+			margin-inline-start: auto;
+		}
+	}
+
+	.pdu-footer {
+		display: grid;
+		grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 1.65fr);
+		gap: clamp(2rem, 5vw, 4rem);
+		margin-top: 3.5rem;
+		padding: clamp(1.4rem, 4vw, 2.4rem) 0 0;
+		border-top: 1px solid var(--pdu-footer-border, rgba(223, 247, 255, 0.12));
+	}
+
+	.pdu-footer-brand {
+		max-width: 26rem;
+		color: var(--pdu-footer-muted, rgba(223, 247, 255, 0.68));
+	}
+
+	.pdu-footer-title {
+		display: inline-flex;
+		margin-bottom: 0.75rem;
+		color: var(--pdu-footer-title, var(--sl-color-accent-high));
+		font-size: 1.05rem;
+		font-weight: 750;
+		text-decoration: none;
+	}
+
+	.pdu-footer-title:hover {
+		color: var(--pdu-nav-hover);
+	}
+
+	.pdu-footer-brand p {
+		margin: 0;
+		line-height: 1.65;
+	}
+
+	.pdu-footer-social {
+		display: inline-flex;
+		align-items: center;
+		gap: 0.45rem;
+		margin-top: 1.1rem;
+		color: var(--pdu-footer-link, var(--sl-color-accent-high));
+		font-weight: 650;
+		text-decoration: none;
+	}
+
+	.pdu-footer-social:hover {
+		color: var(--pdu-nav-hover);
+	}
+
+	.pdu-footer-social :global(svg) {
+		width: 1rem;
+		height: 1rem;
+	}
+
+	.pdu-footer-links {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
+		gap: 1.4rem;
+	}
+
+	.pdu-footer-links h2 {
+		margin: 0 0 0.8rem;
+		color: var(--pdu-footer-title, var(--sl-color-accent-high));
+		font-size: 0.82rem;
+		font-weight: 750;
+		letter-spacing: 0;
+		text-transform: uppercase;
+	}
+
+	.pdu-footer-links a {
+		display: block;
+		width: fit-content;
+		margin-top: 0.55rem;
+		color: var(--pdu-footer-muted, rgba(223, 247, 255, 0.68));
+		font-size: var(--sl-text-sm);
+		text-decoration: none;
+	}
+
+	.pdu-footer-links a:hover {
+		color: var(--pdu-nav-hover);
+	}
+
+	.pdu-footer-bottom {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 0.75rem 1.5rem;
+		padding: 1.2rem 0 2rem;
+		border-top: 1px solid var(--pdu-footer-border, rgba(223, 247, 255, 0.12));
+		color: var(--pdu-footer-muted, rgba(223, 247, 255, 0.68));
+		font-size: var(--sl-text-xs);
+	}
+
+	:global(:root) {
+		--pdu-footer-border: rgba(223, 247, 255, 0.12);
+		--pdu-footer-title: var(--sl-color-accent-high);
+		--pdu-footer-link: var(--sl-color-accent-high);
+		--pdu-footer-muted: rgba(223, 247, 255, 0.68);
+	}
+
+	:global(:root[data-theme='light']) {
+		--pdu-footer-border: rgba(47, 138, 165, 0.18);
+		--pdu-footer-title: #07111a;
+		--pdu-footer-link: #256f84;
+		--pdu-footer-muted: #355f6a;
+	}
+
+	@media (max-width: 760px) {
+		.pdu-footer,
+		.pdu-footer-links {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

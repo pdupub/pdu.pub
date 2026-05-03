@@ -14,7 +14,9 @@ export default defineConfig({
 			description: 'A peer-to-peer social network shaped by ordered identity, local trust, and public transparency.',
 			customCss: ['./src/styles/pdu-theme.css'],
 
-			components: {},
+			components: {
+				Footer: './src/components/Footer.astro',
+			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/pdupub' }],
 
 			sidebar: [
