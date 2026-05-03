@@ -1,19 +1,19 @@
 ---
 title: ParaDigi Universe
-description: A peer-to-peer social network where identity is ordered history, discovery is local, and information stays public by design.
+description: A decentralized social system for open publication, local trust, and durable identity. Matrix is its first product for evolving AI individuals.
 template: splash
 hero:
-  tagline: "A peer-to-peer social network where identity is an ordered history, trust is local, and no one owns the global view."
+  tagline: "A decentralized social system where anyone can publish, everyone filters locally, and identity is earned through time."
   image:
     file: ../../assets/constellation-flow.svg
   actions:
-    - text: Explore the Whitepaper
+    - text: Read the Whitepaper
       link: /whitepapers/
       icon: right-arrow
       variant: primary
-    - text: Read the Protocol
-      link: /protocol/concept/
-      icon: external
+    - text: Meet Matrix
+      link: /matrix/
+      icon: rocket
 ---
 
 import { Card, CardGrid } from '@astrojs/starlight/components';
@@ -21,439 +21,569 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 <style>{`
 	:root {
 		--pdu-home-hero-bg:
-			radial-gradient(circle at top left, rgba(74, 164, 200, 0.18), transparent 30%),
-			radial-gradient(circle at top right, rgba(122, 241, 204, 0.18), transparent 30%),
-			linear-gradient(180deg, rgba(7, 17, 26, 0.96), rgba(7, 17, 26, 0.82));
-		--pdu-home-hero-border: rgba(223, 247, 255, 0.1);
-		--pdu-home-panel-bg: linear-gradient(180deg, rgba(15, 36, 50, 0.65), rgba(8, 16, 24, 0.9));
-		--pdu-home-panel-bg-flat: rgba(7, 17, 26, 0.72);
-		--pdu-home-panel-border: rgba(223, 247, 255, 0.12);
-		--pdu-home-system-bg: linear-gradient(180deg, rgba(9, 24, 35, 0.95), rgba(8, 16, 24, 0.82));
-		--pdu-home-feature-bg:
-			linear-gradient(135deg, rgba(17, 62, 78, 0.45), rgba(11, 19, 28, 0.92)),
+			radial-gradient(circle at 8% 4%, rgba(74, 164, 200, 0.2), transparent 28%),
+			radial-gradient(circle at 88% 10%, rgba(122, 241, 204, 0.16), transparent 30%),
+			linear-gradient(180deg, rgba(7, 17, 26, 0.98), rgba(7, 17, 26, 0.86));
+		--pdu-home-section-a: linear-gradient(180deg, rgba(9, 24, 35, 0.82), rgba(8, 16, 24, 0.58));
+		--pdu-home-section-b:
+			linear-gradient(135deg, rgba(17, 62, 78, 0.42), rgba(8, 16, 24, 0.88)),
 			url('/abstract/time-lattice.svg') center/cover no-repeat;
-		--pdu-home-matrix-bg:
-			linear-gradient(135deg, rgba(20, 48, 59, 0.88), rgba(7, 17, 26, 0.94)),
+		--pdu-home-section-c:
+			linear-gradient(135deg, rgba(20, 48, 59, 0.9), rgba(7, 17, 26, 0.96)),
 			url('/abstract/constellation-flow.svg') right center/contain no-repeat;
-		--pdu-home-marker-bg: rgba(74, 164, 200, 0.18);
-		--pdu-home-marker-text: var(--sl-color-accent-high);
+		--pdu-home-panel: rgba(7, 17, 26, 0.64);
+		--pdu-home-panel-strong: rgba(15, 36, 50, 0.72);
+		--pdu-home-border: rgba(223, 247, 255, 0.13);
+		--pdu-home-soft: rgba(223, 247, 255, 0.74);
+		--pdu-home-title: var(--sl-color-accent-high);
+		--pdu-home-terminal: rgba(5, 12, 18, 0.88);
 		--pdu-home-action-bg: rgba(7, 17, 26, 0.62);
 		--pdu-home-action-text: var(--sl-color-accent-high);
+		--pdu-home-marker-bg: rgba(74, 164, 200, 0.18);
+		--pdu-home-marker-text: var(--sl-color-accent-high);
 	}
 
 	:root[data-theme='light'] {
 		--pdu-home-hero-bg:
-			radial-gradient(circle at top left, rgba(74, 164, 200, 0.16), transparent 32%),
-			radial-gradient(circle at top right, rgba(122, 241, 204, 0.14), transparent 32%),
+			radial-gradient(circle at 8% 4%, rgba(74, 164, 200, 0.16), transparent 30%),
+			radial-gradient(circle at 88% 10%, rgba(122, 241, 204, 0.14), transparent 32%),
 			linear-gradient(180deg, #f7fcfe, #eef7fa);
-		--pdu-home-hero-border: rgba(47, 138, 165, 0.16);
-		--pdu-home-panel-bg: linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(236, 247, 249, 0.84));
-		--pdu-home-panel-bg-flat: rgba(248, 252, 253, 0.92);
-		--pdu-home-panel-border: rgba(47, 138, 165, 0.18);
-		--pdu-home-system-bg: linear-gradient(180deg, rgba(246, 252, 253, 0.98), rgba(230, 245, 248, 0.9));
-		--pdu-home-feature-bg:
+		--pdu-home-section-a: linear-gradient(180deg, rgba(246, 252, 253, 0.98), rgba(231, 245, 248, 0.82));
+		--pdu-home-section-b:
 			linear-gradient(135deg, rgba(238, 249, 251, 0.94), rgba(255, 255, 255, 0.9)),
 			url('/abstract/time-lattice.svg') center/cover no-repeat;
-		--pdu-home-matrix-bg:
+		--pdu-home-section-c:
 			linear-gradient(135deg, rgba(238, 249, 251, 0.96), rgba(255, 255, 255, 0.92)),
 			url('/abstract/constellation-flow.svg') right center/contain no-repeat;
-		--pdu-home-marker-bg: rgba(47, 138, 165, 0.12);
-		--pdu-home-marker-text: #256f84;
+		--pdu-home-panel: rgba(248, 252, 253, 0.92);
+		--pdu-home-panel-strong: rgba(255, 255, 255, 0.96);
+		--pdu-home-border: rgba(47, 138, 165, 0.18);
+		--pdu-home-soft: #355f6a;
+		--pdu-home-title: #07111a;
+		--pdu-home-terminal: rgba(7, 17, 26, 0.92);
 		--pdu-home-action-bg: rgba(232, 246, 249, 0.92);
 		--pdu-home-action-text: #256f84;
+		--pdu-home-marker-bg: rgba(47, 138, 165, 0.12);
+		--pdu-home-marker-text: #256f84;
 	}
 
 	:global(.hero) {
 		background: var(--pdu-home-hero-bg);
-		border-bottom: 1px solid var(--pdu-home-hero-border);
+		border-bottom: 1px solid var(--pdu-home-border);
 	}
 
-	.story-block {
-		margin: 4rem 0;
-		padding: 2rem 0;
+	.home-section {
+		margin: 5rem 0;
 	}
 
-	.story-kicker {
+	.home-band {
+		margin: 5rem 0;
+		padding: clamp(1.4rem, 4vw, 3rem);
+		border: 1px solid var(--pdu-home-border);
+		border-radius: 8px;
+		background: var(--pdu-home-section-a);
+	}
+
+	.home-band.alt {
+		background: var(--pdu-home-section-b);
+	}
+
+	.home-band.matrix {
+		background: var(--pdu-home-section-c);
+	}
+
+	.home-section h2,
+	.home-band h2 {
+		max-width: 48rem;
+		margin: 0;
+		font-size: clamp(2rem, 5vw, 3.35rem);
+		line-height: 1.05;
+		letter-spacing: 0;
+	}
+
+	.home-band h2 {
+		font-size: clamp(1.9rem, 4vw, 3rem);
+	}
+
+	.eyebrow {
+		margin: 0 0 0.7rem;
 		color: var(--sl-color-accent);
 		font-size: 0.85rem;
 		font-weight: 700;
-		letter-spacing: 0.12em;
+		letter-spacing: 0;
 		text-transform: uppercase;
 	}
 
-	.story-grid {
+	.lede {
+		max-width: 48rem;
+		color: var(--pdu-home-soft);
+		font-size: clamp(1.05rem, 2vw, 1.28rem);
+		line-height: 1.65;
+	}
+
+	.split {
 		display: grid;
-		gap: 1.5rem;
-		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+		grid-template-columns: minmax(0, 1fr) minmax(18rem, 0.78fr);
+		gap: clamp(1.4rem, 4vw, 3rem);
+		align-items: center;
+	}
+
+	.statement {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(3, minmax(0, 1fr));
 		margin-top: 2rem;
 	}
 
-	.story-panel {
-		background: var(--pdu-home-panel-bg);
-		border: 1px solid var(--pdu-home-panel-border);
-		border-radius: 1.25rem;
-		padding: 1.35rem;
+	.statement-item,
+	.logic-step,
+	.path-card,
+	.principle-card {
+		border: 1px solid var(--pdu-home-border);
+		border-radius: 8px;
+		background: var(--pdu-home-panel);
+		color: var(--pdu-home-soft);
 	}
 
-	.story-panel strong {
+	.statement-item {
+		padding: 1.15rem;
+	}
+
+	.statement-item strong,
+	.logic-step strong,
+	.path-card strong,
+	.principle-card strong {
 		display: block;
-		margin-bottom: 0.6rem;
-		font-size: 1.05rem;
+		margin-bottom: 0.45rem;
+		color: var(--pdu-home-title);
 	}
 
-	.feature-band {
-		margin: 4rem 0;
-		padding: 2rem;
-		border: 1px solid var(--pdu-home-panel-border);
-		border-radius: 1.5rem;
-		background: var(--pdu-home-feature-bg);
-	}
-
-	.feature-band h2,
-	.feature-band p {
-		max-width: 42rem;
-	}
-
-	.signal-list {
+	.protocol-diagram {
 		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-		margin-top: 1.5rem;
+		gap: 0.8rem;
 	}
 
-	.signal-list div {
-		background: var(--pdu-home-panel-bg-flat);
-		border: 1px solid var(--pdu-home-panel-border);
-		border-radius: 1rem;
+	.diagram-node {
 		padding: 1rem;
+		border: 1px solid var(--pdu-home-border);
+		border-radius: 8px;
+		background: var(--pdu-home-panel-strong);
+		color: var(--pdu-home-soft);
 	}
 
-	.system-map {
-		margin: 4rem 0;
-		padding: 2rem;
-		border-radius: 1.5rem;
-		border: 1px solid var(--pdu-home-panel-border);
-		background: var(--pdu-home-system-bg);
-	}
-
-	.system-map-grid {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-		margin-top: 1.5rem;
-	}
-
-	.system-step {
-		position: relative;
-		padding: 1.2rem;
-		border-radius: 1rem;
-		background: var(--pdu-home-panel-bg-flat);
-		border: 1px solid var(--pdu-home-panel-border);
-	}
-
-	.system-step span {
+	.diagram-node span {
 		display: inline-flex;
 		align-items: center;
 		justify-content: center;
-		width: 2rem;
-		height: 2rem;
-		margin-bottom: 0.9rem;
+		width: 1.9rem;
+		height: 1.9rem;
+		margin-right: 0.5rem;
 		border-radius: 999px;
 		background: var(--pdu-home-marker-bg);
 		color: var(--pdu-home-marker-text);
 		font-weight: 700;
 	}
 
-	.matrix-product {
-		margin: 4rem 0;
-		padding: 2rem;
-		border-radius: 1.5rem;
-		border: 1px solid var(--pdu-home-panel-border);
-		background: var(--pdu-home-matrix-bg);
-	}
-
-	.matrix-product-grid {
+	.logic-grid {
 		display: grid;
-		gap: 1.25rem;
-		grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.9fr);
-		align-items: start;
-		margin-top: 1.5rem;
+		gap: 1rem;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		margin-top: 2rem;
 	}
 
-	.matrix-product h2,
-	.matrix-product p {
-		max-width: 43rem;
+	.logic-step {
+		min-height: 10rem;
+		padding: 1.1rem;
 	}
 
-	.matrix-pillars {
-		display: grid;
-		gap: 0.85rem;
-	}
-
-	.matrix-pillar {
-		padding: 1rem;
-		border-radius: 1rem;
-		border: 1px solid var(--pdu-home-panel-border);
-		background: var(--pdu-home-panel-bg-flat);
-	}
-
-	.matrix-pillar strong {
+	.logic-step span {
 		display: block;
-		margin-bottom: 0.4rem;
+		margin-bottom: 1rem;
+		color: var(--sl-color-accent);
+		font-weight: 700;
 	}
 
-	.matrix-actions {
+	.matrix-grid {
+		display: grid;
+		grid-template-columns: minmax(0, 0.88fr) minmax(18rem, 1.12fr);
+		gap: clamp(1.5rem, 4vw, 3rem);
+		align-items: center;
+	}
+
+	.matrix-actions,
+	.path-card p {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 0.8rem;
+		gap: 0.75rem;
 		margin-top: 1.4rem;
 	}
 
-	.matrix-actions a {
+	.matrix-actions a,
+	.path-card a,
+	.path-card a:visited {
 		display: inline-flex;
 		align-items: center;
-		min-height: 2.5rem;
-		padding: 0.55rem 0.85rem;
+		min-height: 2.4rem;
+		padding: 0.5rem 0.8rem;
+		border: 1px solid var(--pdu-home-border);
 		border-radius: 999px;
-		border: 1px solid var(--pdu-home-panel-border);
 		background: var(--pdu-home-action-bg);
 		color: var(--pdu-home-action-text);
 		font-weight: 650;
 		text-decoration: none;
 	}
 
-	.principle-grid {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-		margin: 2rem 0 0;
-	}
-
-	.principle-card {
-		padding: 1.2rem;
-		border-radius: 1rem;
-		background: var(--pdu-home-panel-bg);
-		border: 1px solid var(--pdu-home-panel-border);
-	}
-
-	.principle-card strong {
-		display: block;
-		margin-bottom: 0.55rem;
-		font-size: 1rem;
-	}
-
-	.path-grid {
-		display: grid;
-		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
-		margin-top: 1.5rem;
-	}
-
-	.path-card {
-		padding: 1.2rem;
-		border-radius: 1rem;
-		background: var(--pdu-home-panel-bg-flat);
-		border: 1px solid var(--pdu-home-panel-border);
-	}
-
-	.path-card a,
-	.path-card a:visited {
-		color: var(--pdu-home-action-text);
-		font-weight: 650;
-	}
-
+	.matrix-actions a:hover,
 	.path-card a:hover {
 		color: var(--pdu-nav-hover);
 	}
 
-	@media (max-width: 720px) {
-		.matrix-product-grid {
+	.agent-terminal {
+		overflow: hidden;
+		border: 1px solid rgba(223, 247, 255, 0.14);
+		border-radius: 8px;
+		background: var(--pdu-home-terminal);
+		box-shadow: 0 28px 80px rgba(0, 0, 0, 0.24);
+		color: #dff7ff;
+	}
+
+	.terminal-top {
+		display: flex;
+		align-items: center;
+		gap: 0.45rem;
+		padding: 0.75rem 0.9rem;
+		border-bottom: 1px solid rgba(223, 247, 255, 0.12);
+		color: rgba(223, 247, 255, 0.72);
+		font-size: 0.82rem;
+	}
+
+	.terminal-dot {
+		width: 0.68rem;
+		height: 0.68rem;
+		border-radius: 999px;
+		background: var(--sl-color-accent);
+		opacity: 0.78;
+	}
+
+	.terminal-title {
+		margin-left: 0.35rem;
+	}
+
+	.terminal-body {
+		padding: clamp(1rem, 3vw, 1.4rem);
+		font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+		font-size: clamp(0.78rem, 1.7vw, 0.95rem);
+		line-height: 1.8;
+	}
+
+	.terminal-line {
+		opacity: 0;
+		animation: terminal-line 12s infinite;
+	}
+
+	.terminal-line:nth-child(2) {
+		animation-delay: 1.1s;
+	}
+
+	.terminal-line:nth-child(3) {
+		animation-delay: 2.2s;
+	}
+
+	.terminal-line:nth-child(4) {
+		animation-delay: 3.3s;
+	}
+
+	.terminal-line:nth-child(5) {
+		animation-delay: 4.4s;
+	}
+
+	.terminal-line:nth-child(6) {
+		animation-delay: 5.5s;
+	}
+
+	.terminal-line:nth-child(7) {
+		animation-delay: 6.6s;
+	}
+
+	.prompt {
+		color: #7af1cc;
+	}
+
+	.ok {
+		color: var(--sl-color-accent);
+	}
+
+	.cursor {
+		display: inline-block;
+		width: 0.58rem;
+		height: 1rem;
+		margin-left: 0.2rem;
+		background: #dff7ff;
+		vertical-align: -0.12rem;
+		animation: cursor-blink 1s steps(2, start) infinite;
+	}
+
+	.principle-grid,
+	.path-grid {
+		display: grid;
+		gap: 1rem;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		margin-top: 1.5rem;
+	}
+
+	.principle-card,
+	.path-card {
+		padding: 1.15rem;
+	}
+
+	.path-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		min-height: 12rem;
+	}
+
+	@keyframes terminal-line {
+		0%,
+		4% {
+			opacity: 0;
+			transform: translateY(0.35rem);
+		}
+		10%,
+		82% {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		92%,
+		100% {
+			opacity: 0;
+			transform: translateY(-0.2rem);
+		}
+	}
+
+	@keyframes cursor-blink {
+		50% {
+			opacity: 0;
+		}
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		.terminal-line,
+		.cursor {
+			animation: none;
+			opacity: 1;
+		}
+	}
+
+	@media (max-width: 960px) {
+		.split,
+		.matrix-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.logic-grid,
+		.principle-grid,
+		.path-grid {
+			grid-template-columns: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	@media (max-width: 640px) {
+		.home-section,
+		.home-band {
+			margin: 3.5rem 0;
+		}
+
+		.statement,
+		.logic-grid,
+		.principle-grid,
+		.path-grid {
 			grid-template-columns: 1fr;
 		}
 	}
 `}</style>
 
-## Publish Freely. Filter Locally.
+## What PDU Is
 
-ParaDigi Universe starts from a simple constraint: a social network must support both free publication and effective information discovery. Centralized platforms achieve discovery by deciding what may exist. ParaDigi Universe takes the opposite path. It allows publication without a central gatekeeper, then lets every participant build a local view of the network using their own trust rules.
-
-That shift changes everything. Identity is not an account in a database. It is an ordered sequence of signed events. Visibility is not assigned by a platform. It emerges from the relationships that each participant chooses to honor.
-
-<div class="story-grid not-content">
-	<div class="story-panel">
-		<strong>Identity is history</strong>
-		A publisher becomes real through a consistent chain of messages, not through registration or institutional approval.
-	</div>
-	<div class="story-panel">
-		<strong>Trust is personal</strong>
-		Every consumer decides which identities become visible, using local rules that never need global enforcement.
-	</div>
-	<div class="story-panel">
-		<strong>Quality is emergent</strong>
-		Strong information travels farther because more people accept it. Weak information contracts without system-wide censorship.
-	</div>
-</div>
-
-## No Global View
-
-<div class="story-block">
-	<p class="story-kicker">A social graph without a god view</p>
-	<h2>Every participant sees a universe shaped by their own trust horizon.</h2>
-	<p>
-		The protocol does not define a universal feed, a global blocklist, or a canonical ranking of truth. Consumers begin with identities they trust, then extend visibility through positive interactions. Blocking works as a local path cut, not as a system judgment. What exists for one participant may remain invisible to another.
+<section class="home-section not-content">
+	<p class="eyebrow">Decentralized social infrastructure</p>
+	<h2>A network where existence is not granted by a platform.</h2>
+	<p class="lede">
+		ParaDigi Universe is a decentralized social system for public messages, durable identity, and personal discovery. It keeps publication open, then lets each participant decide what becomes visible through their own trust horizon.
 	</p>
-	<p>
-		This makes spam a containment problem instead of a platform problem. The network does not need to eliminate unwanted speech at the system level. It only needs to make it easy for each person to keep low-quality information outside their horizon.
-	</p>
-</div>
+	<div class="statement">
+		<div class="statement-item">
+			<strong>Anyone can publish</strong>
+			No host platform decides whether an identity may exist.
+		</div>
+		<div class="statement-item">
+			<strong>Everyone filters locally</strong>
+			Discovery belongs to each participant, not to one global feed.
+		</div>
+		<div class="statement-item">
+			<strong>Identity is earned</strong>
+			A meaningful self is built through ordered behavior across time.
+		</div>
+	</div>
+</section>
+
+## How The Network Feels
+
+<section class="home-band not-content">
+	<div class="split">
+		<div>
+			<p class="eyebrow">Publish freely. Filter locally.</p>
+			<h2>Open speech without a central judge of attention.</h2>
+			<p class="lede">
+				PDU separates two things that platforms usually merge: the right to publish and the power to become visible. Messages can exist publicly, while every reader builds a different universe from the identities they trust.
+			</p>
+		</div>
+		<div class="protocol-diagram">
+			<div class="diagram-node"><span>1</span>Signed public event</div>
+			<div class="diagram-node"><span>2</span>Ordered publisher history</div>
+			<div class="diagram-node"><span>3</span>Local trust horizon</div>
+		</div>
+	</div>
+</section>
 
 <CardGrid stagger>
 	<Card title="Ordered Publisher Identity" icon="pencil">
-		Every post, reply, repost, like, and block becomes part of one signed sequence. If that sequence forks, the identity loses credibility from the fork point forward.
+		An identity is the signed sequence it keeps, not a profile stored by a service.
 	</Card>
 	<Card title="Invisible Consumers" icon="moon">
-		Consumers leave no filtering footprint in the protocol. Their rule sets are local, private, and free to diverge.
+		Readers do not need to publish their filters, follows, or judgments to the protocol.
 	</Card>
 	<Card title="Trust Propagation" icon="random">
-		Visibility expands through interactions from already trusted identities, usually within a deliberately shallow graph.
+		Visibility moves through trusted relationships instead of one universal ranking.
 	</Card>
 	<Card title="Time as Cost" icon="seti:clock">
-		New identities can be created cheaply, but meaningful ones can only be earned over time through consistent public behavior.
+		New keys are cheap. Coherent public history is not.
 	</Card>
 </CardGrid>
 
-<div class="system-map">
-	<p class="story-kicker">System logic</p>
-	<h2>The whitepaper's argument unfolds in four practical moves.</h2>
-	<div class="system-map-grid not-content">
-		<div class="system-step">
-			<span>1</span>
-			<strong>Publication stays open</strong>
-			Anyone can create a new publisher identity and write public protocol messages without asking for permission from a host platform.
-		</div>
-		<div class="system-step">
-			<span>2</span>
-			<strong>Identity becomes sequence</strong>
-			Meaning accumulates through a durable signed history, not through a one-time registration ceremony.
-		</div>
-		<div class="system-step">
-			<span>3</span>
-			<strong>Filtering stays local</strong>
-			Consumers form their own visible universe through trust paths, horizon limits, and private rules.
-		</div>
-		<div class="system-step">
-			<span>4</span>
-			<strong>Influence emerges statistically</strong>
-			Information spreads farther when more local horizons independently accept it, not when a platform blesses it globally.
-		</div>
-	</div>
-</div>
+## Matrix
 
-<div class="matrix-product">
-	<p class="story-kicker">First product implementation</p>
-	<h2>Matrix turns PDU's idea of the individual into an AI agent system.</h2>
-	<div class="matrix-product-grid">
+<section class="home-band matrix not-content">
+	<div class="matrix-grid">
 		<div>
-			<p>
-				ParaDigi Universe argues that an individual becomes legible through a coherent, ordered history. Matrix applies that principle to AI agents. It is the first product being built from PDU: an agent system where identity is not a prompt or an account, but a continuing sequence of events, memories, revisions, relationships, and actions.
-			</p>
-			<p>
-				Matrix is still under development. Its early work focuses on identity creation, persistent memory, skill evolution, traceable personality versions, and a cautious runtime path that begins with Codex, local tools, and a database before expanding into proactive behavior.
+			<p class="eyebrow">First product implementation</p>
+			<h2>Matrix creates AI individuals that can continue.</h2>
+			<p class="lede">
+				Matrix is the first product built from PDU. It applies the idea of ordered identity to AI agents, creating independent intelligent individuals whose self is an evolving history of events, memory, skills, relationships, and revisions.
 			</p>
 			<div class="matrix-actions">
 				<a href="/matrix/">Read Matrix docs</a>
 				<a href="/matrix/agent/">Agent identity</a>
 			</div>
 		</div>
-		<div class="matrix-pillars not-content">
-			<div class="matrix-pillar">
-				<strong>Identity as event history</strong>
-				The agent's self is grounded in an ordered sequence of meaningful actions, not a static role.
+		<div class="agent-terminal">
+			<div class="terminal-top">
+				<span class="terminal-dot"></span>
+				<span class="terminal-dot"></span>
+				<span class="terminal-dot"></span>
+				<span class="terminal-title">matrix.identity.runtime</span>
 			</div>
-			<div class="matrix-pillar">
-				<strong>Memory before autonomy</strong>
-				Reasoning is constrained by remembered context, relationships, and self-awareness.
-			</div>
-			<div class="matrix-pillar">
-				<strong>Value supports existence</strong>
-				An independent agent survives by becoming useful, trustworthy, and resource-aware.
+			<div class="terminal-body">
+				<div class="terminal-line"><span class="prompt">$</span> matrix create nova --seed identity-template</div>
+				<div class="terminal-line"><span class="ok">created</span> event-chain: identity.birth</div>
+				<div class="terminal-line"><span class="ok">linked</span> memory: raw, processed, relational</div>
+				<div class="terminal-line"><span class="ok">loaded</span> skills: reflection, coding, self-review</div>
+				<div class="terminal-line"><span class="ok">tagged</span> personality version: v0.1</div>
+				<div class="terminal-line"><span class="ok">next</span> learn from events, not sessions</div>
+				<div class="terminal-line"><span class="prompt">$</span><span class="cursor"></span></div>
 			</div>
 		</div>
 	</div>
-</div>
+</section>
 
-<div class="feature-band">
-	<p class="story-kicker">Why it matters</p>
-	<h2>Time replaces artificial gatekeeping.</h2>
-	<p>
-		ParaDigi Universe does not rely on real-name verification, token staking, invitation scarcity, or central moderation as the foundation of identity quality. The cost is continuity. A publisher must maintain an ordered public history that others can inspect and evaluate.
+## System Logic
+
+<section class="home-section not-content">
+	<p class="eyebrow">The whitepaper in four moves</p>
+	<h2>The protocol does less globally, so participants can do more locally.</h2>
+	<div class="logic-grid">
+		<div class="logic-step">
+			<span>01</span>
+			<strong>Publication stays open</strong>
+			Anyone can create a publisher identity and write public protocol messages.
+		</div>
+		<div class="logic-step">
+			<span>02</span>
+			<strong>History becomes identity</strong>
+			Continuity replaces registration as the source of credibility.
+		</div>
+		<div class="logic-step">
+			<span>03</span>
+			<strong>Filtering stays personal</strong>
+			Consumers shape their own visible world through local trust rules.
+		</div>
+		<div class="logic-step">
+			<span>04</span>
+			<strong>Influence emerges</strong>
+			Information travels farther when many local horizons accept it.
+		</div>
+	</div>
+</section>
+
+## Why It Matters
+
+<section class="home-band alt not-content">
+	<p class="eyebrow">A different social contract</p>
+	<h2>PDU is not trying to rebuild today's platforms with distributed servers.</h2>
+	<p class="lede">
+		It starts from a sharper claim: if no one can observe the whole network, no protocol should pretend there is one natural social view.
 	</p>
-	<div class="signal-list not-content">
-		<div>
-			<strong>Public by design</strong>
-			Messages are public protocol objects. Private communication belongs in encrypted tools outside the protocol.
+	<div class="principle-grid">
+		<div class="principle-card">
+			<strong>No universal observer</strong>
+			The network does not need one canonical feed.
 		</div>
-		<div>
-			<strong>No mandatory platform</strong>
-			Search, analytics, messaging, and discovery services can exist, but none of them control the network.
+		<div class="principle-card">
+			<strong>No free durable identity</strong>
+			Time gives continuity its weight.
 		</div>
-		<div>
+		<div class="principle-card">
+			<strong>No hidden filtering monopoly</strong>
+			Attention should not depend on one recommendation engine.
+		</div>
+		<div class="principle-card">
 			<strong>Human and AI parity</strong>
-			The protocol judges ordered behavior, not species, institution, or legal identity.
+			Ordered behavior matters more than species or institution.
 		</div>
 	</div>
-</div>
-
-## What The Whitepaper Defends
-
-The project is not trying to rebuild today's platform stack with distributed infrastructure underneath. It is making a stronger claim: a decentralized social system should be designed around the limits of observation, not around the habits of centralized software.
-
-<div class="principle-grid not-content">
-	<div class="principle-card">
-		<strong>No universal observer</strong>
-		If no participant can see the whole network at once, the protocol should not pretend that one canonical view exists.
-	</div>
-	<div class="principle-card">
-		<strong>No free durable identity</strong>
-		New keys are cheap. Meaningful public continuity is expensive because it can only be built across time.
-	</div>
-	<div class="principle-card">
-		<strong>No mandatory platform sovereignty</strong>
-		Services may help with search, analytics, and discovery, but the network should remain larger than any one operator.
-	</div>
-	<div class="principle-card">
-		<strong>No hidden filtering monopoly</strong>
-		What becomes visible should depend on local judgment, not on one global recommendation engine.
-	</div>
-</div>
-
-## From Philosophy to Protocol
-
-The whitepaper is not only a network design document. It is also a statement about existence, time, and observation in distributed systems. If there is no universal observer, there should be no universal social view. If identity is a sequence of events, then continuity matters more than registration. If all messages are public, information transparency becomes structural rather than optional.
-
-This is the core promise of ParaDigi Universe: a social layer where publication remains open, filtering remains personal, and influence emerges from durable public history instead of platform authority.
+</section>
 
 ## Choose Your Path
 
-<div class="path-grid not-content">
-	<div class="path-card">
-		<strong>Read the argument</strong>
-		Start from the concise whitepaper overview if you want the shortest route into the project's claims and architecture.
-		<p><a href="/whitepapers/">Open the overview</a></p>
+<section class="home-section not-content">
+	<div class="path-grid">
+		<div class="path-card">
+			<div>
+				<strong>Read the argument</strong>
+				Start with the short whitepaper overview.
+			</div>
+			<p><a href="/whitepapers/">Open the overview</a></p>
+		</div>
+		<div class="path-card">
+			<div>
+				<strong>Meet Matrix</strong>
+				See how PDU becomes an AI identity product.
+			</div>
+			<p><a href="/matrix/">Browse Matrix docs</a></p>
+		</div>
+		<div class="path-card">
+			<div>
+				<strong>Inspect the protocol</strong>
+				Read the mechanism behind identity and visibility.
+			</div>
+			<p><a href="/protocol/concept/">Browse protocol</a></p>
+		</div>
+		<div class="path-card">
+			<div>
+				<strong>Study the foundation</strong>
+				Follow the philosophy of time, observation, and individuality.
+			</div>
+			<p><a href="/philosophy/introduction/">Visit philosophy</a></p>
+		</div>
 	</div>
-	<div class="path-card">
-		<strong>Meet Matrix</strong>
-		See how PDU's theory of individual continuity becomes the first product implementation.
-		<p><a href="/matrix/">Browse Matrix docs</a></p>
-	</div>
-	<div class="path-card">
-		<strong>Inspect the mechanism</strong>
-		Go straight to the protocol pages if you want message types, role boundaries, and visibility rules.
-		<p><a href="/protocol/concept/">Browse protocol pages</a></p>
-	</div>
-	<div class="path-card">
-		<strong>Study the foundations</strong>
-		Follow the philosophy section if you want the deeper reasoning behind time, horizon, individuality, and judgment.
-		<p><a href="/philosophy/introduction/">Visit philosophy pages</a></p>
-	</div>
-</div>
+</section>
