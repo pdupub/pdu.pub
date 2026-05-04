@@ -11,7 +11,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'ParaDigi Universe',
-			description: 'A peer-to-peer social network shaped by ordered identity, local trust, and public transparency.',
+			description: 'A peer-to-peer social networking service shaped by ordered identity, local trust, and public transparency.',
 			customCss: ['./src/styles/pdu-theme.css'],
 
 			components: {

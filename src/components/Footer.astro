@@ -3,56 +3,75 @@ import EditLink from 'virtual:starlight/components/EditLink';
 import LastUpdated from 'virtual:starlight/components/LastUpdated';
 import Pagination from 'virtual:starlight/components/Pagination';
 import { Icon } from '@astrojs/starlight/components';
+
+const isHome = Astro.url.pathname === '/';
 ---
 
 <footer class="pdu-footer-shell">
-	<div class="meta sl-flex">
-		<EditLink />
-		<LastUpdated />
-	</div>
-	<Pagination />
+	{
+		isHome ? (
+			<>
+				<div class="meta sl-flex">
+					<EditLink />
+					<LastUpdated />
+				</div>
+				<Pagination />
 
-	<div class="pdu-footer">
-		<div class="pdu-footer-brand">
-			<a class="pdu-footer-title" href="/">ParaDigi Universe</a>
-			<p>
-				A decentralized social system for open publication, local trust, and durable identity.
-				Matrix is its first product for evolving AI individuals.
-			</p>
-			<a class="pdu-footer-social" href="https://github.com/pdupub" aria-label="ParaDigi Universe on GitHub">
-				<Icon name="github" />
-				GitHub
-			</a>
-		</div>
+				<div class="pdu-footer">
+					<div class="pdu-footer-brand">
+						<a class="pdu-footer-title" href="/">ParaDigi Universe</a>
+						<p>
+							A decentralized social system for open publication, local trust, and durable
+							identity. Matrix is its first product for evolving AI individuals.
+						</p>
+						<a
+							class="pdu-footer-social"
+							href="https://github.com/pdupub"
+							aria-label="ParaDigi Universe on GitHub"
+						>
+							<Icon name="github" />
+							GitHub
+						</a>
+					</div>
 
-		<nav class="pdu-footer-links" aria-label="Footer links">
-			<div>
-				<h2>Project</h2>
-				<a href="/whitepapers/">Whitepaper</a>
-				<a href="/protocol/concept/">Protocol</a>
-				<a href="/matrix/">Matrix</a>
-				<a href="/philosophy/introduction/">Philosophy</a>
-			</div>
-			<div>
-				<h2>Resources</h2>
-				<a href="/user-manual/">User Manual</a>
-				<a href="/matrix/roadmap/">Roadmap</a>
-				<a href="/whitepapers/slide/">Slides</a>
-				<a href="/matrix/identity-creation/">Identity Creation</a>
-			</div>
-			<div>
-				<h2>Company</h2>
-				<a href="/about/">About</a>
-				<a href="/privacy-policy/">Privacy Policy</a>
-				<a href="https://github.com/pdupub">GitHub</a>
-			</div>
-		</nav>
-	</div>
+					<nav class="pdu-footer-links" aria-label="Footer links">
+						<div>
+							<h2>Project</h2>
+							<a href="/whitepapers/">Whitepaper</a>
+							<a href="/protocol/concept/">Protocol</a>
+							<a href="/matrix/">Matrix</a>
+							<a href="/philosophy/introduction/">Philosophy</a>
+						</div>
+						<div>
+							<h2>Resources</h2>
+							<a href="/user-manual/">User Manual</a>
+							<a href="/matrix/roadmap/">Roadmap</a>
+							<a href="/whitepapers/slide/">Slides</a>
+							<a href="/matrix/identity-creation/">Identity Creation</a>
+						</div>
+						<div>
+							<h2>Company</h2>
+							<a href="/about/">About</a>
+							<a href="/privacy-policy/">Privacy Policy</a>
+							<a href="https://github.com/pdupub">GitHub</a>
+						</div>
+					</nav>
+				</div>
 
-	<div class="pdu-footer-bottom">
-		<span>© 2026 ParaDigi Universe.</span>
-		<span>Open publication. Local trust. Durable identity.</span>
-	</div>
+				<div class="pdu-footer-bottom">
+					<span>© 2026 ParaDigi Universe.</span>
+					<span>Open publication. Local trust. Durable identity.</span>
+				</div>
+			</>
+		) : (
+			<>
+				<Pagination />
+				<div class="pdu-footer-bottom pdu-footer-bottom-minimal">
+					<span>© 2026 ParaDigi Universe.</span>
+				</div>
+			</>
+		)
+	}
 </footer>
 
 <style>
@@ -165,6 +184,12 @@ import { Icon } from '@astrojs/starlight/components';
 		border-top: 1px solid var(--pdu-footer-border, rgba(223, 247, 255, 0.12));
 		color: var(--pdu-footer-muted, rgba(223, 247, 255, 0.68));
 		font-size: var(--sl-text-xs);
+	}
+
+	.pdu-footer-bottom-minimal {
+		justify-content: flex-start;
+		margin-top: 3rem;
+		padding-bottom: 1.5rem;
 	}
 
 	:global(:root) {

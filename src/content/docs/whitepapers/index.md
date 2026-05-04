@@ -7,35 +7,35 @@ sidebar:
 
 # ParaDigi Universe in Brief
 
-ParaDigi Universe is a peer-to-peer social network model built around one core idea: a network should preserve **free publication** without sacrificing **effective information acquisition**.
+ParaDigi Universe is a peer-to-peer social networking model built around one core idea: a network should preserve **free publication** without sacrificing **effective information acquisition**.
 
-Instead of trying to eliminate spam or fake accounts at the system level, the protocol treats those as local filtering problems. Everyone can publish. Everyone can also decide what becomes visible.
+Instead of trying to eliminate spam or malicious accounts at the system level, the protocol treats those as local filtering problems. Everyone can publish. Everyone can also decide what becomes visible.
 
 ## The Design in One Sentence
 
-Publisher identity is an ordered sequence of signed public messages, while consumer visibility is a private, local result of trust-based filtering.
+Publisher identity is the totally ordered sequence of public messages signed by one private key, while consumer visibility is the private, local result of trust propagation and filtering.
 
 ## Five Core Claims
 
 ### 1. Identity is not registration
 
-In ParaDigi Universe, identity is not a username stored by a service. It is the full, ordered history of messages signed by one key. A publisher exists through continuity.
+In ParaDigi Universe, identity is not a username stored by a service. It is the full, totally ordered history of messages signed by one key. Maintaining that order is the publisher's own responsibility.
 
 ### 2. Consumers do not need to be public
 
-Consumers do not need a globally visible account, follow list, or moderation record. Their filtering rules stay local and define which publishers appear in their own view of the network.
+Consumers do not need a globally visible account, follow list, or moderation record. Their filtering rules stay local and define which publishers appear in their own horizon of the network.
 
-### 3. There is no global consensus feed
+### 3. There is no system-level consensus
 
-The protocol does not aim to create a single ranking of truth, quality, or relevance. Information quality appears statistically, as trusted participants independently accept or reject what they encounter.
+The protocol does not aim to create a single ranking of truth, quality, relevance, or spam. Information quality appears statistically, as consumers independently accept or reject what they encounter.
 
 ### 4. Time is the real cost of identity
 
-Anyone can create a new key instantly. What cannot be forged instantly is a stable, interpretable public history. Time gives identity weight.
+Anyone can create a new key instantly. What cannot be forged instantly is a stable, interpretable public history. The system does not attach an explicit account-creation cost; time gives identity weight.
 
 ### 5. Public transparency is structural
 
-Messages in the protocol are public by design. Optional third-party services may help with search, messaging, analytics, or discovery, but they do not own the network.
+Messages in the protocol are public by design. Optional third-party services may help with search, encrypted messaging, analytics, advertising, voting, or discovery, but they remain auxiliary and non-decisive.
 
 ## Why This Matters
 
