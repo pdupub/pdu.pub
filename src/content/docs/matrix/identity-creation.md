@@ -2,7 +2,7 @@
 title: Identity Creation
 description: How Matrix creates initial agent identities from originals, people, fictional characters, public figures, or mixed references.
 sidebar:
-  order: 6
+  order: 7
 ---
 
 

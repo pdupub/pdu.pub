@@ -1,8 +1,8 @@
 ---
 title: System Architecture
-description: The implementation-oriented architecture for Matrix runtime, identity, events, memory, skills, tools, and sidecar services.
+description: The implementation-oriented architecture for Matrix runtime, identity, events, memory, GraphRAG, skills, value feedback, and sidecar services.
 sidebar:
-  order: 4
+  order: 5
 ---
 
 
@@ -14,21 +14,23 @@ The system must support several requirements:
 - identity is grounded in an ordered event sequence
 - memory and the language model both participate in judgment
 - personality, memory, and skill changes are traceable to events
+- important conclusions can return to raw evidence
+- credits, costs, and resource budgets shape long-term evolution
 - early implementation can run through Codex, skills, local tools, and a database
 - background services begin with low-risk organization tasks before proactive behavior
 
 ## Layered Model
 
-The early architecture has six layers.
+The whitepaper defines a fine-grained architecture across communication access, runtime, identity, events, raw memory, extraction, graph, vector retrieval, GraphRAG, skills, value feedback, and background services. The early implementation can collapse those concerns into six operating layers.
 
 | Layer | Responsibility |
 |---|---|
 | Runtime layer | Receives user input, loads identity and memory, calls the model, executes tools, and returns results |
 | Identity and self-awareness layer | Restores who the agent is, what it has experienced, what relationship is active, and what boundaries apply |
 | Skill layer | Stores rules for identity creation, behavior, memory use, workflows, and skill evolution |
-| Tool interface layer | Provides stable commands or services for database access, retrieval, summarization, and indexing |
-| Memory and event storage layer | Stores raw memory, processed memory, event chains, identity versions, skill versions, and references |
-| Background service layer | Runs organization, reflection, indexing, proposal generation, and controlled proactive candidates |
+| Tool interface layer | Provides stable commands or services for database access, retrieval, summarization, indexing, GraphRAG context construction, and value accounting |
+| Memory and event storage layer | Stores raw memory, processed memory, event chains, temporal graph projections, vector references, identity versions, skill versions, credits, costs, and evidence links |
+| Background service layer | Runs organization, extraction, reflection, indexing, proposal generation, periodic value assessment, and controlled proactive candidates |
 
 Early deployment can remain local. After the interfaces stabilize, pieces can be separated into services.
 
@@ -100,7 +102,21 @@ At minimum, memory should support:
 | Identity-related memory | Information about the agent, users, other agents, and relevant entities |
 | Associative memory | Links that allow one memory to wake related memories |
 
-Processed memory must keep references to raw memory and source events.
+Processed memory must keep references to raw memory and source events. Vector retrieval and graph projections may help recall relevant history, but they provide candidates rather than final facts. Important responses should verify the evidence layer before stabilizing a claim.
+
+## GraphRAG Layer
+
+Matrix uses GraphRAG to combine temporal graph structure, timelines, semantic recall, source evidence, current identity state, relationship state, and task goals.
+
+The retrieval path should vary by question type:
+
+- exact factual questions should prioritize events and raw evidence
+- relationship questions should prioritize temporal graph observations
+- fuzzy recollection should use vector search to find candidates, then return to evidence
+- long-term summaries should combine timelines, graph aggregation, and summaries
+- action decisions should include resource state, credit feedback, and relevant historical outcomes
+
+The language model may compose the answer, plan, or decision. It should not be the sole source of memory truth.
 
 ## Skill Layer
 
@@ -129,6 +145,7 @@ It should provide stable interfaces to:
 - create processed memory
 - update indexes
 - query skill versions
+- record credits and resource usage
 - write reflections and review proposals
 
 The first version can use CLI scripts. Later versions can expose these functions through an MCP service or local HTTP service.
@@ -142,6 +159,7 @@ Background services should start with low-risk tasks:
 - update processed memory
 - check index status
 - detect possible skill updates
+- draft periodic value assessments
 - write proposals into a review queue
 
 Early background services should propose changes, not directly modify personality, delete memory, or publish externally.
@@ -160,15 +178,19 @@ The first database can begin with these entities:
 | `skills` | Skill metadata and version references |
 | `skill_change_proposals` | Pending skill update proposals |
 | `reflections` | Periodic reflection results |
+| `score_accounts` | Credit balances for agents |
+| `score_transactions` | Credit income, deductions, rewards, and penalties |
+| `resource_usage` | Token, time, API, storage, and similar costs |
+| `value_assessments` | Periodic value and cost assessments |
 
-SQLite is sufficient for the first phase. Full vector retrieval can come later; full-text search, tags, and structured summaries are enough to validate the loop.
+SQLite is sufficient for the first phase. Full vector retrieval and a dedicated graph database can come later; full-text search, relational graph tables, tags, and structured summaries are enough to validate the loop.
 
 ## Safety Boundary
 
 Matrix must separate low-risk and high-risk operations.
 
-Low-risk operations include reading public project documents, summarizing recent conversations, creating drafts, querying memory, and writing review proposals.
+Low-risk operations include reading authorized project documents, summarizing recent conversations, creating drafts, querying memory, updating indexes, calculating resource use, and writing review proposals.
 
-High-risk operations include changing core identity skills, deleting or rolling back events, deleting memory, publishing externally, accessing private data, and triggering irreversible system actions.
+High-risk operations include changing core identity skills, deleting or rolling back events, sealing or redacting raw memory, publishing externally, proactively contacting real people, using paid resources, changing credit rules, accessing private data, and triggering irreversible system actions.
 
 High-risk operations require explicit confirmation and must be recorded in the event chain.

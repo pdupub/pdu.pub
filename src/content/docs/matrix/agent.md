@@ -2,7 +2,7 @@
 title: Agent Identity
 description: How Matrix defines an independent agent, its emotional orientation, highest goal, identity sequence, and evolution.
 sidebar:
-  order: 2
+  order: 3
 ---
 
 
