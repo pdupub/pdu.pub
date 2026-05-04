@@ -1,0 +1,53 @@
+---
+title: Slide of Matrix
+description: Presentation slides for Matrix Identity Blueprint.
+tableOfContents: false
+---
+
+import { Aside } from '@astrojs/starlight/components';
+import SlideViewer from '../../../components/SlideViewer.astro';
+
+This page contains the Matrix slide deck. You can preview it below, open it in a new tab, or download the PDF directly.
+
+<div style={{
+  display: 'flex',
+  gap: '0.75rem',
+  flexWrap: 'wrap',
+  margin: '1rem 0 1.25rem 0'
+}}>
+  <a
+    href="/matrix/Matrix.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      display: 'inline-block',
+      padding: '0.72rem 1rem',
+      borderRadius: '0.85rem',
+      textDecoration: 'none',
+      fontWeight: 600,
+      border: '1px solid var(--sl-color-gray-5)',
+      background: 'var(--sl-color-bg-nav)'
+    }}
+  >
+    Open PDF in New Tab
+  </a>
+
+  <a
+    href="/matrix/Matrix.pdf"
+    download
+    style={{
+      display: 'inline-block',
+      padding: '0.72rem 1rem',
+      borderRadius: '0.85rem',
+      textDecoration: 'none',
+      fontWeight: 600,
+      border: '1px solid var(--sl-color-gray-5)',
+      background: 'var(--sl-color-bg)'
+    }}
+  >
+    Download PDF
+  </a>
+</div>
+
+
+<SlideViewer basePath="/matrix/slide" total={15} extension="png" />
