@@ -1,24 +1,65 @@
 ---
-const total = 15;
+export interface Props {
+  slides?: string[];
+  basePath?: string;
+  total?: number;
+  extension?: string;
+  padLength?: number;
+  startIndex?: number;
+  alt?: string;
+}
+
+const {
+  slides,
+  basePath = "/pdu/whitepapers/slide",
+  total = 15,
+  extension = "jpg",
+  padLength = 2,
+  startIndex = 1,
+  alt = "Slide",
+} = Astro.props;
+
+function joinPath(path: string, file: string) {
+  return `${path.replace(/\/$/, "")}/${file}`;
+}
+
+function pad(n: number) {
+  return String(n).padStart(padLength, "0");
+}
+
+const slideSources =
+  slides ??
+  Array.from({ length: total }, (_, index) =>
+    joinPath(basePath, `${pad(startIndex + index)}.${extension.replace(/^\./, "")}`),
+  );
+
+const firstSlide = slideSources[0] ?? "";
+const slideCount = slideSources.length;
 ---
 
-<div class="slide-viewer">
+<slide-viewer
+  class="slide-viewer"
+  data-slides={JSON.stringify(slideSources)}
+  data-alt={alt}
+  data-pad-length={padLength}
+>
 
-  <img id="img" src="/whitepapers/slide/01.jpg" />
+  <img src={firstSlide} alt={`${alt} 1`} />
   <div class="toolbar">
-    <button id="prev">←</button>
-    <span id="indicator">01 / 15</span>
-    <button id="next">→</button>
+    <button class="prev" type="button" aria-label="Previous slide">←</button>
+    <span class="indicator">01 / {String(slideCount).padStart(padLength, "0")}</span>
+    <button class="next" type="button" aria-label="Next slide">→</button>
   </div>
 
-</div>
+</slide-viewer>
 
 <style>
   .slide-viewer {
+    display: block;
     text-align: center;
   }
 
-  img {
+  .slide-viewer img {
     width: 100%;
     max-width: 1000px;
     height: auto;
@@ -30,35 +71,51 @@ const total = 15;
 </style>
 
 <script>
-  const total = 15;
-  let current = 1;
+  class SlideViewer extends HTMLElement {
+    connectedCallback() {
+      const slides = JSON.parse(this.dataset.slides ?? "[]");
+      const alt = this.dataset.alt ?? "Slide";
+      const padLength = Number(this.dataset.padLength ?? 2);
+      let current = 0;
 
-  const img = document.getElementById("img");
-  const indicator = document.getElementById("indicator");
-  const prev = document.getElementById("prev");
-  const next = document.getElementById("next");
+      const img = this.querySelector("img");
+      const indicator = this.querySelector(".indicator");
+      const prev = this.querySelector(".prev");
+      const next = this.querySelector(".next");
 
-  function pad(n) {
-    return String(n).padStart(2, "0");
+      if (!(img instanceof HTMLImageElement)) return;
+      if (!(indicator instanceof HTMLElement)) return;
+      if (!(prev instanceof HTMLButtonElement)) return;
+      if (!(next instanceof HTMLButtonElement)) return;
+
+      function pad(n) {
+        return String(n).padStart(padLength, "0");
+      }
+
+      function render() {
+        img.src = slides[current] ?? "";
+        img.alt = `${alt} ${current + 1}`;
+        indicator.textContent = `${pad(current + 1)} / ${pad(slides.length)}`;
+
+        prev.disabled = current === 0;
+        next.disabled = current === slides.length - 1;
+      }
+
+      prev.addEventListener("click", () => {
+        if (current > 0) current--;
+        render();
+      });
+
+      next.addEventListener("click", () => {
+        if (current < slides.length - 1) current++;
+        render();
+      });
+
+      render();
+    }
   }
 
-  function render() {
-    img.src = `/whitepapers/slide/${pad(current)}.jpg`;
-    indicator.textContent = `${pad(current)} / ${pad(total)}`;
-
-    prev.disabled = current === 1;
-    next.disabled = current === total;
+  if (!customElements.get("slide-viewer")) {
+    customElements.define("slide-viewer", SlideViewer);
   }
-
-  prev.onclick = () => {
-    if (current > 1) current--;
-    render();
-  };
-
-  next.onclick = () => {
-    if (current < total) current++;
-    render();
-  };
-
-  render();
 </script>
