@@ -4,8 +4,6 @@ description: A decentralized social system for open publication, local trust, an
 template: splash
 hero:
   tagline: "A decentralized social system where anyone can publish, everyone filters locally, and identity is earned through time."
-  image:
-    file: ../../assets/constellation-flow.svg
   actions:
     - text: Read the Whitepaper
       link: /whitepapers/
@@ -67,9 +65,101 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 		--pdu-home-marker-text: #256f84;
 	}
 
-	:global(.hero) {
-		background: var(--pdu-home-hero-bg);
-		border-bottom: 1px solid var(--pdu-home-border);
+	.hero {
+		position: relative;
+		left: 50%;
+		transform: translateX(-50%);
+		overflow: hidden;
+		isolation: isolate;
+		box-sizing: border-box;
+		width: 100vw !important;
+		max-width: none;
+		margin-inline: 0;
+		padding-inline: max(1.5rem, calc((100vw - 1080px) / 2));
+		background:
+			radial-gradient(ellipse at 78% 42%, rgba(74, 164, 200, 0.11), transparent 46%),
+			linear-gradient(180deg, rgba(7, 17, 26, 0.14), rgba(7, 17, 26, 0));
+		border-bottom: 0;
+	}
+
+	.hero::before,
+	.hero::after {
+		content: "";
+		position: absolute;
+		inset: 0;
+		pointer-events: none;
+	}
+
+	.hero::before {
+		z-index: 0;
+		background: url('/abstract/pdu-universe-hero-bg.webp') center / cover no-repeat;
+		opacity: 0.72;
+		-webkit-mask-image: radial-gradient(ellipse 68% 62% at 72% 48%, #000 0%, #000 43%, rgba(0, 0, 0, 0.48) 62%, transparent 88%);
+		mask-image: radial-gradient(ellipse 68% 62% at 72% 48%, #000 0%, #000 43%, rgba(0, 0, 0, 0.48) 62%, transparent 88%);
+	}
+
+	.hero::after {
+		z-index: 1;
+		background:
+			linear-gradient(90deg, rgba(17, 18, 22, 0.98) 0%, rgba(17, 18, 22, 0.86) 40%, rgba(17, 18, 22, 0.24) 70%, rgba(17, 18, 22, 0.08) 100%),
+			linear-gradient(180deg, rgba(17, 18, 22, 0.82) 0%, transparent 24%, transparent 68%, rgba(17, 18, 22, 0.9) 100%);
+	}
+
+	.hero > * {
+		position: relative;
+		z-index: 2;
+	}
+
+	.hero .sl-link-button {
+		min-height: 2.85rem;
+		padding: 0.68rem 0.95rem;
+		border: 1px solid var(--pdu-home-border);
+		border-radius: 8px;
+		background: rgba(7, 17, 26, 0.58);
+		box-shadow: inset 0 1px 0 rgba(223, 247, 255, 0.08);
+		color: var(--sl-color-accent-high);
+		font-weight: 650;
+	}
+
+	.hero .sl-link-button.primary {
+		background: linear-gradient(180deg, rgba(20, 48, 59, 0.76), rgba(7, 17, 26, 0.64));
+		color: var(--sl-color-accent-high);
+	}
+
+	.hero .sl-link-button:hover,
+	.hero .sl-link-button:focus-visible {
+		border-color: rgba(143, 216, 235, 0.48);
+		background: linear-gradient(180deg, rgba(29, 78, 94, 0.82), rgba(10, 28, 40, 0.72));
+		color: var(--pdu-nav-hover);
+	}
+
+	:root[data-theme='light'] .hero .sl-link-button {
+		border-color: rgba(47, 138, 165, 0.24);
+		background: rgba(255, 255, 255, 0.74);
+		box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.72);
+		color: #184f60;
+	}
+
+	:root[data-theme='light'] .hero .sl-link-button.primary {
+		background: linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(232, 246, 249, 0.78));
+		color: #184f60;
+	}
+
+	:root[data-theme='light'] .hero .sl-link-button:hover,
+	:root[data-theme='light'] .hero .sl-link-button:focus-visible {
+		border-color: rgba(47, 138, 165, 0.42);
+		background: linear-gradient(180deg, rgba(238, 249, 251, 0.98), rgba(217, 241, 247, 0.9));
+		color: #0f5063;
+	}
+
+	:root[data-theme='light'] .hero::after {
+		background:
+			linear-gradient(90deg, rgba(247, 252, 254, 0.96) 0%, rgba(247, 252, 254, 0.84) 42%, rgba(247, 252, 254, 0.26) 72%, rgba(247, 252, 254, 0.08) 100%),
+			linear-gradient(180deg, rgba(247, 252, 254, 0.84) 0%, transparent 24%, transparent 70%, rgba(247, 252, 254, 0.88) 100%);
+	}
+
+	:root[data-theme='light'] .hero::before {
+		opacity: 0.48;
 	}
 
 	.home-section {
@@ -376,6 +466,22 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	}
 
 	@media (max-width: 960px) {
+		.hero {
+			padding-inline: clamp(1rem, 5vw, 3rem);
+		}
+
+		.hero::after {
+			background:
+				linear-gradient(90deg, rgba(17, 18, 22, 0.98) 0%, rgba(17, 18, 22, 0.9) 48%, rgba(17, 18, 22, 0.36) 78%, rgba(17, 18, 22, 0.12) 100%),
+				linear-gradient(180deg, rgba(17, 18, 22, 0.84) 0%, transparent 24%, transparent 68%, rgba(17, 18, 22, 0.92) 100%);
+		}
+
+		.hero::before {
+			background-position: 78% center;
+			background-size: auto 124%;
+			opacity: 0.44;
+		}
+
 		.split,
 		.matrix-grid {
 			grid-template-columns: 1fr;
@@ -389,6 +495,20 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 	}
 
 	@media (max-width: 640px) {
+		.hero {
+			padding-block: 4.25rem 3.25rem;
+		}
+
+		.hero::before {
+			background-position: 82% center;
+			background-size: auto 120%;
+			opacity: 0.3;
+		}
+
+		.hero .sl-link-button {
+			min-height: 2.7rem;
+		}
+
 		.home-section,
 		.home-band {
 			margin: 3.5rem 0;
